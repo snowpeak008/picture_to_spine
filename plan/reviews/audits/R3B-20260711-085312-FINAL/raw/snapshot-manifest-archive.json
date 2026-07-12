@@ -1,0 +1,24 @@
+{
+    "schemaVersion":  "1.0.0",
+    "snapshotId":  "R3B-20260711-085312-FINAL",
+    "checkId":  "SNAPSHOT-MANIFEST-ARCHIVE",
+    "status":  "PASS",
+    "metric":  {
+                   "phase":  "R3B",
+                   "manifestSha256":  "7763d20d4f46c5d62b249bc8a080a761cfbe8390cab7d0a55748743af0cc46ae",
+                   "manifestReadOnly":  true,
+                   "archivePath":  "plan/reviews/snapshots/R3B-20260711-085312-FINAL.zip",
+                   "expectedArchiveSha256":  "35f9cede19dffda0954e1b9ddd1fb11f52b20662554fe5bc5fdb088e820e8b7f",
+                   "actualArchiveSha256":  "35f9cede19dffda0954e1b9ddd1fb11f52b20662554fe5bc5fdb088e820e8b7f",
+                   "archiveReadOnly":  true,
+                   "issueCount":  0
+               },
+    "command":  "powershell -NoProfile -ExecutionPolicy Bypass -File plan/reviews/tools/Invoke-PlanAudit.ps1 -SnapshotId R3B-20260711-085312-FINAL",
+    "tool":  "PowerShell 5.1.22621.4391; Invoke-PlanAudit.ps1/1.0.3",
+    "exitCode":  0,
+    "startedAtAsiaShanghai":  "2026-07-11T08:53:31.7349486+08:00",
+    "endedAtAsiaShanghai":  "2026-07-11T08:53:31.8242853+08:00",
+    "details":  [
+
+                ]
+}

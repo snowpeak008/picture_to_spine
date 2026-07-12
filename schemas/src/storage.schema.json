@@ -1,0 +1,53 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "F2S-SCHEMA-STORAGE-001",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schemaVersion", "projectId", "headRevision", "manifestSha256", "previousHeadSha256"],
+  "properties": {
+    "schemaVersion": { "const": "1.0.0" },
+    "projectId": { "type": "string", "minLength": 1, "maxLength": 128, "pattern": "^[A-Za-z0-9._-]+$" },
+    "headRevision": { "type": "integer", "minimum": 0 },
+    "manifestSha256": { "$ref": "common.schema.json#/$defs/Sha256" },
+    "previousHeadSha256": {
+      "anyOf": [
+        { "$ref": "common.schema.json#/$defs/Sha256" },
+        { "type": "null" }
+      ]
+    },
+    "keyId": { "type": "string", "minLength": 1, "maxLength": 128, "pattern": "^[A-Za-z0-9._-]+$" },
+    "previousHeadMac": { "$ref": "common.schema.json#/$defs/Sha256" },
+    "headMac": { "$ref": "common.schema.json#/$defs/Sha256" }
+  },
+  "oneOf": [
+    {
+      "title": "Legacy unsigned head (migration tooling only)",
+      "not": {
+        "anyOf": [
+          { "required": ["keyId"] },
+          { "required": ["previousHeadMac"] },
+          { "required": ["headMac"] }
+        ]
+      }
+    },
+    {
+      "title": "Production HMAC-sealed head",
+      "required": ["keyId", "headMac"],
+      "allOf": [
+        {
+          "if": { "properties": { "headRevision": { "const": 0 } } },
+          "then": {
+            "properties": { "previousHeadSha256": { "type": "null" } },
+            "not": { "required": ["previousHeadMac"] }
+          },
+          "else": {
+            "required": ["previousHeadMac"],
+            "properties": {
+              "previousHeadSha256": { "$ref": "common.schema.json#/$defs/Sha256" }
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

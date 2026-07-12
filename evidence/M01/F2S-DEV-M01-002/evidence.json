@@ -1,0 +1,42 @@
+{
+  "schemaVersion": "1.0.0",
+  "evidenceId": "F2S-EVD-M01-002",
+  "taskId": "F2S-DEV-M01-002",
+  "status": "PASS",
+  "command": "npm run bootstrap:check",
+  "exitCode": 0,
+  "startedAtUtc": "2026-07-11T07:47:16.791Z",
+  "endedAtUtc": "2026-07-11T07:47:16.791Z",
+  "runner": {
+    "kind": "local-development",
+    "os": "win32 10.0.22631",
+    "architecture": "x64",
+    "hostnameHash": "f3da3e8c48fbc119008475bba247ec014ab39af1f7e5d05bd1609c4951e6d3d5"
+  },
+  "toolVersions": {
+    "node": "v24.15.0"
+  },
+  "inputHashes": {},
+  "outputHashes": {
+    ".node-version": "b911698dc3cf3227d34d0ad6727f1c4408791203c9665de99ab959331a1fb07d",
+    ".python-version": "5cc778d1706795315f05298c95d77eed576a5cdc850b2eb0b71870e5ed669e17",
+    "rust-toolchain.toml": "48e1da63fc8bc6dffa6192921cf6b0705cd15ab333049bb621b23f5c2c536350",
+    "package.json": "c56ffaba0828f08b4f4f68d8e7c19a313cd61082a7bed691946b0d06177dc643",
+    "package-lock.json": "8de9b37192d0a4da595acb1524eaecf2c6a39886f5745f0bce99b19df0debbfe",
+    "Cargo.lock": "9fdb441580084ee3226ccafe8187d123edee7621155da2f27fdb54af4714196e",
+    "tools/python-lock/pyproject.toml": "653b1b942e52fe33b27010028bf368a83060a80d504be0c02b6358ccc73decff",
+    "tools/python-lock/uv.lock": "911a00f07e4a7e53ad6684df57390fb45bdd9e471ff323cb319f29373e401994"
+  },
+  "logRefs": [],
+  "reportRefs": [
+    "evidence/M01/F2S-DEV-M01-002/F2S-WU-M01-002-03/toolchain-check.json"
+  ],
+  "capabilityState": "UNVERIFIED",
+  "externalBlockers": [],
+  "previousEvidenceRef": null,
+  "notRunReason": null,
+  "payload": {
+    "summary": "Exact local locks pass; clean VM pair pending.",
+    "generatedBy": "tools/evidence/create-envelope.mjs"
+  }
+}

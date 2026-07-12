@@ -1,0 +1,39 @@
+{
+  "schemaVersion": "1.0.0",
+  "evidenceId": "F2S-EVD-M00-004",
+  "taskId": "F2S-DEV-M00-004",
+  "status": "PASS",
+  "command": "npm run test:integration",
+  "exitCode": 0,
+  "startedAtUtc": "2026-07-11T07:47:16.646Z",
+  "endedAtUtc": "2026-07-11T07:47:16.646Z",
+  "runner": {
+    "kind": "local-development",
+    "os": "win32 10.0.22631",
+    "architecture": "x64",
+    "hostnameHash": "f3da3e8c48fbc119008475bba247ec014ab39af1f7e5d05bd1609c4951e6d3d5"
+  },
+  "toolVersions": {
+    "node": "v24.15.0"
+  },
+  "inputHashes": {},
+  "outputHashes": {
+    "tools/spikes/m00/appcontainer-probe.ps1": "9fa1c8700b958fc7cf33e2995286389a3786eef56e607b4da2f154ad9def5282",
+    "tools/spikes/m00/gpu-profile-probe.ps1": "0906090470ae512f7f527e808fdaab509347b7103b9adec0212f2ddd535c76bd",
+    "tools/spikes/m00/spike-result.schema.json": "03ff5861dca9951466e78201ec10a16be95193e82e67de3863a384cba3e6d879",
+    "docs/spikes/F2S-M00-8GB-APPCONTAINER-001.md": "e84df5c7f0c1c9e9eee8cb9501fb3896536dd8a69e7d29fc7c91a187a6d9ed6b"
+  },
+  "logRefs": [],
+  "reportRefs": [
+    "evidence/M00/F2S-DEV-M00-004/F2S-WU-M00-004-01/sandbox-probe.json",
+    "evidence/M00/F2S-DEV-M00-004/F2S-WU-M00-004-02/gpu-matrix.json"
+  ],
+  "capabilityState": "UNVERIFIED",
+  "externalBlockers": [],
+  "previousEvidenceRef": null,
+  "notRunReason": null,
+  "payload": {
+    "summary": "Read-only identity and contract probes complete; native five-control/load runs pending.",
+    "generatedBy": "tools/evidence/create-envelope.mjs"
+  }
+}

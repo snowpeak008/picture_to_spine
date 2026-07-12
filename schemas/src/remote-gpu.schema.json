@@ -1,0 +1,82 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "F2S-SCHEMA-REMOTE-GPU-001",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schemaVersion",
+    "enabled",
+    "profileId",
+    "ownership",
+    "origin",
+    "allowedPorts",
+    "certificateSpkiSha256",
+    "organizationIdentitySha256",
+    "credentialManagerTarget",
+    "allowedMethods",
+    "allowedInputMediaTypes",
+    "allowedModelManifestSha256",
+    "maxUploadBytes",
+    "maxResponseBytes",
+    "requestTimeoutSeconds"
+  ],
+  "properties": {
+    "schemaVersion": { "const": "1.0.0" },
+    "enabled": { "type": "boolean", "default": false },
+    "profileId": { "type": "string", "pattern": "^[a-z0-9][a-z0-9_.-]{1,94}[a-z0-9]$" },
+    "ownership": { "const": "USER_CONTROLLED_PRIVATE" },
+    "origin": {
+      "type": "string",
+      "maxLength": 512,
+      "pattern": "^https://[^/@?#\\\\%]+$"
+    },
+    "allowedPorts": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": { "type": "integer", "minimum": 1, "maximum": 65535 }
+    },
+    "certificateSpkiSha256": { "type": "string", "pattern": "^[0-9a-f]{64}$" },
+    "organizationIdentitySha256": { "type": "string", "pattern": "^[0-9a-f]{64}$" },
+    "credentialManagerTarget": {
+      "type": "string",
+      "maxLength": 160,
+      "pattern": "^FlashToSpine/RemoteGpu/[a-z0-9][a-z0-9_.-]+$"
+    },
+    "allowedMethods": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": {
+        "enum": [
+          "LAYER_SEGMENTATION_CANDIDATE",
+          "RIG_PROPOSAL_CANDIDATE",
+          "MOTION_CURVE_CANDIDATE"
+        ]
+      }
+    },
+    "allowedInputMediaTypes": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": {
+        "enum": [
+          "IMAGE_PNG",
+          "IMAGE_JPEG",
+          "IMAGE_WEBP",
+          "APPLICATION_JSON",
+          "APPLICATION_RIG_IR_JSON"
+        ]
+      }
+    },
+    "allowedModelManifestSha256": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": { "type": "string", "pattern": "^[0-9a-f]{64}$" }
+    },
+    "maxUploadBytes": { "type": "integer", "minimum": 1, "maximum": 536870912 },
+    "maxResponseBytes": { "type": "integer", "minimum": 1, "maximum": 536870912 },
+    "requestTimeoutSeconds": { "type": "integer", "minimum": 5, "maximum": 900 }
+  }
+}

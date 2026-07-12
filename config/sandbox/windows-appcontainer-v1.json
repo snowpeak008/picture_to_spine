@@ -1,0 +1,14 @@
+{
+  "schemaVersion": "1.0.0",
+  "profile": "windows-appcontainer-v1",
+  "requiredControls": [
+    "appcontainer-token",
+    "network-capability-empty",
+    "dedicated-job-root-acl",
+    "job-object-kill-and-limits",
+    "breakaway-denied"
+  ],
+  "fallbackProfile": null,
+  "currentCapabilityState": "UNVERIFIED",
+  "workerPackEligible": false
+}

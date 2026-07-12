@@ -1,0 +1,43 @@
+{
+    "schemaVersion":  "1.0.0",
+    "snapshotId":  "R3A-20260711-083804-FINAL2",
+    "checkId":  "POLICY-LICENSE-ALLOWLIST",
+    "status":  "PASS",
+    "metric":  {
+                   "expected":  [
+                                    "MIT",
+                                    "Apache-2.0",
+                                    "BSD-2-Clause",
+                                    "BSD-3-Clause",
+                                    "ISC",
+                                    "Zlib",
+                                    "0BSD",
+                                    "PSF-2.0",
+                                    "CC0-1.0",
+                                    "LicenseRef-Public-Domain"
+                                ],
+                   "actual":  [
+                                  "MIT",
+                                  "Apache-2.0",
+                                  "BSD-2-Clause",
+                                  "BSD-3-Clause",
+                                  "ISC",
+                                  "Zlib",
+                                  "0BSD",
+                                  "PSF-2.0",
+                                  "CC0-1.0",
+                                  "LicenseRef-Public-Domain"
+                              ],
+                   "exactOrderedMatch":  true,
+                   "forbiddenPolicyTokenCount":  7,
+                   "issueCount":  0
+               },
+    "command":  "powershell -NoProfile -ExecutionPolicy Bypass -File plan/reviews/tools/Invoke-PlanAudit.ps1 -SnapshotId R3A-20260711-083804-FINAL2",
+    "tool":  "PowerShell 5.1.22621.4391; Invoke-PlanAudit.ps1/1.0.3; canonical fenced-block parser",
+    "exitCode":  0,
+    "startedAtAsiaShanghai":  "2026-07-11T08:38:10.4784747+08:00",
+    "endedAtAsiaShanghai":  "2026-07-11T08:38:10.4859645+08:00",
+    "details":  [
+
+                ]
+}

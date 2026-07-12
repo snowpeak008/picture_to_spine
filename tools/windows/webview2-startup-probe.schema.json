@@ -1,0 +1,58 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "F2S-WEBVIEW2-LOCAL-STARTUP-PROBE-001",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schemaVersion", "status", "runtimeScope", "cleanVm", "failureCode", "executable", "startup", "windowContract", "shutdown"],
+  "properties": {
+    "schemaVersion": { "const": "f2s-webview2-local-startup-probe/1.0.0" },
+    "status": { "type": "string", "pattern": "^(PASS|FAIL)$" },
+    "runtimeScope": { "const": "LOCAL_RUNTIME_ONLY" },
+    "cleanVm": { "const": false },
+    "failureCode": { "type": "string", "pattern": "^[A-Z0-9_]+$" },
+    "executable": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["name", "sha256", "reparsePoint"],
+      "properties": {
+        "name": { "type": "string", "pattern": "^[A-Za-z0-9._-]+\\.exe$" },
+        "sha256": { "type": "string", "pattern": "^[0-9a-f]{64}$" },
+        "reparsePoint": { "type": "boolean" }
+      }
+    },
+    "startup": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["hidden", "waitSeconds"],
+      "properties": {
+        "hidden": { "const": true },
+        "waitSeconds": { "const": 5 }
+      }
+    },
+    "windowContract": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["expectedTopLevelClass", "expectedTopLevelTitle", "topLevelMatched", "chromeWidgetChildFound", "renderWidgetChildFound", "processResponding"],
+      "properties": {
+        "expectedTopLevelClass": { "const": "FlashToSpineWebView" },
+        "expectedTopLevelTitle": { "const": "FlashToSpine Production Assist" },
+        "topLevelMatched": { "type": "boolean" },
+        "chromeWidgetChildFound": { "type": "boolean" },
+        "renderWidgetChildFound": { "type": "boolean" },
+        "processResponding": { "type": "boolean" }
+      }
+    },
+    "shutdown": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["wmCloseSent", "gracefulExit", "forcedCleanupRequired", "cleanupSucceeded"],
+      "properties": {
+        "wmCloseSent": { "type": "boolean" },
+        "gracefulExit": { "type": "boolean" },
+        "forcedCleanupRequired": { "type": "boolean" },
+        "cleanupSucceeded": { "type": "boolean" }
+      }
+    }
+  }
+}
+

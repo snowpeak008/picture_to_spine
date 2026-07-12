@@ -1,0 +1,14 @@
+{
+  "skeleton": { "hash": "f2s-open-fixture", "spine": "4.2.43", "x": 0, "y": 0, "width": 512, "height": 512, "images": "./attachments/" },
+  "bones": [
+    { "name": "root" },
+    { "name": "body", "parent": "root" },
+    { "name": "weapon", "parent": "body", "x": 48, "y": 72, "rotation": -45 }
+  ],
+  "slots": [
+    { "name": "body-slot", "bone": "body", "attachment": "body" },
+    { "name": "weapon-slot", "bone": "weapon", "attachment": "weapon" }
+  ],
+  "skins": [{ "name": "default", "attachments": { "body-slot": { "body": { "path": "body", "width": 512, "height": 512 } }, "weapon-slot": { "weapon": { "path": "weapon", "width": 128, "height": 128 } } } }],
+  "animations": { "idle": { "bones": { "body": { "rotate": [{ "time": 0, "value": 0 }, { "time": 1, "value": 0 }] } } } }
+}

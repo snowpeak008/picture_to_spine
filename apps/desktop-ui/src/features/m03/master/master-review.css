@@ -1,0 +1,68 @@
+.style-spec select {
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  background: #15121b;
+  color: #e9e7f2;
+  padding: 8px;
+}
+
+.reject-reason {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-top: 14px;
+  color: var(--muted);
+  font-size: 11px;
+}
+
+.reject-reason textarea {
+  min-height: 82px;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  background: #15121b;
+  color: #eee;
+  padding: 8px;
+  resize: vertical;
+}
+
+.import-grid + .master-review,
+.candidate-actions + .master-review {
+  margin-top: 14px;
+}
+
+.master-authority-preview {
+  display: grid;
+  grid-template-columns: minmax(160px, 280px) 1fr;
+  gap: 14px;
+  margin: 0 0 14px;
+  padding: 12px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: #111018;
+}
+
+.master-authority-preview img {
+  width: 100%;
+  max-height: 280px;
+  object-fit: contain;
+  image-rendering: auto;
+}
+
+.master-authority-preview figcaption {
+  display: flex;
+  min-width: 0;
+  flex-direction: column;
+  gap: 8px;
+  justify-content: center;
+}
+
+.master-authority-preview figcaption span,
+.master-authority-preview figcaption code {
+  overflow-wrap: anywhere;
+  color: var(--muted);
+  font-size: 10px;
+}
+
+@media (max-width: 900px) {
+  .master-authority-preview { grid-template-columns: 1fr; }
+}

@@ -1,0 +1,11 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "F2S-SCHEMA-COMMON-001",
+  "$defs": {
+    "StableId": { "type": "string", "pattern": "^[A-Za-z0-9][A-Za-z0-9._:-]{0,127}$" },
+    "Sha256": { "type": "string", "pattern": "^[0-9a-f]{64}$" },
+    "UtcTimestamp": { "type": "string", "format": "date-time" },
+    "ActionKey": { "enum": ["idle", "run", "jump", "fall", "dash", "attack_01", "attack_02", "attack_03", "hit", "death"] },
+    "TimeBase": { "type": "object", "additionalProperties": false, "required": ["numerator", "denominator"], "properties": { "numerator": { "const": 1 }, "denominator": { "const": 30000 } } }
+  }
+}

@@ -1,0 +1,119 @@
+{
+    "schemaVersion":  "1.0.0",
+    "snapshotId":  "R3A-20260711-083655-FINAL",
+    "checkId":  "MARKDOWN-FENCE-BALANCE",
+    "status":  "PASS",
+    "metric":  {
+                   "documents":  [
+                                     {
+                                         "prefix":  "00",
+                                         "fenceLineCount":  0
+                                     },
+                                     {
+                                         "prefix":  "01",
+                                         "fenceLineCount":  0
+                                     },
+                                     {
+                                         "prefix":  "02",
+                                         "fenceLineCount":  0
+                                     },
+                                     {
+                                         "prefix":  "03",
+                                         "fenceLineCount":  4
+                                     },
+                                     {
+                                         "prefix":  "04",
+                                         "fenceLineCount":  2
+                                     },
+                                     {
+                                         "prefix":  "05",
+                                         "fenceLineCount":  2
+                                     },
+                                     {
+                                         "prefix":  "06",
+                                         "fenceLineCount":  12
+                                     },
+                                     {
+                                         "prefix":  "07",
+                                         "fenceLineCount":  6
+                                     },
+                                     {
+                                         "prefix":  "08",
+                                         "fenceLineCount":  12
+                                     },
+                                     {
+                                         "prefix":  "09",
+                                         "fenceLineCount":  24
+                                     },
+                                     {
+                                         "prefix":  "10",
+                                         "fenceLineCount":  14
+                                     },
+                                     {
+                                         "prefix":  "11",
+                                         "fenceLineCount":  24
+                                     },
+                                     {
+                                         "prefix":  "12",
+                                         "fenceLineCount":  12
+                                     },
+                                     {
+                                         "prefix":  "13",
+                                         "fenceLineCount":  30
+                                     },
+                                     {
+                                         "prefix":  "14",
+                                         "fenceLineCount":  12
+                                     },
+                                     {
+                                         "prefix":  "15",
+                                         "fenceLineCount":  0
+                                     },
+                                     {
+                                         "prefix":  "16",
+                                         "fenceLineCount":  8
+                                     },
+                                     {
+                                         "prefix":  "17",
+                                         "fenceLineCount":  2
+                                     },
+                                     {
+                                         "prefix":  "18",
+                                         "fenceLineCount":  30
+                                     },
+                                     {
+                                         "prefix":  "19",
+                                         "fenceLineCount":  0
+                                     },
+                                     {
+                                         "prefix":  "20",
+                                         "fenceLineCount":  4
+                                     },
+                                     {
+                                         "prefix":  "21",
+                                         "fenceLineCount":  2
+                                     },
+                                     {
+                                         "prefix":  "22",
+                                         "fenceLineCount":  2
+                                     },
+                                     {
+                                         "prefix":  "23",
+                                         "fenceLineCount":  0
+                                     },
+                                     {
+                                         "prefix":  "24",
+                                         "fenceLineCount":  0
+                                     }
+                                 ],
+                   "issueCount":  0
+               },
+    "command":  "powershell -NoProfile -ExecutionPolicy Bypass -File plan/reviews/tools/Invoke-PlanAudit.ps1 -SnapshotId R3A-20260711-083655-FINAL",
+    "tool":  "PowerShell 5.1.22621.4391; Invoke-PlanAudit.ps1/1.0.2; regex",
+    "exitCode":  0,
+    "startedAtAsiaShanghai":  "2026-07-11T08:37:12.0828651+08:00",
+    "endedAtAsiaShanghai":  "2026-07-11T08:37:12.1043025+08:00",
+    "details":  [
+
+                ]
+}

@@ -1,0 +1,50 @@
+body {
+  min-width: 0;
+}
+
+button:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible,
+[tabindex]:focus-visible {
+  outline: 2px solid var(--cyan);
+  outline-offset: 2px;
+}
+
+.workspace,
+.title-project,
+.title-status {
+  min-width: 0;
+}
+
+@media (max-width: 1050px) {
+  .app-shell { grid-template-columns: 190px minmax(0, 1fr); }
+  .workspace { padding: 22px 20px 48px; }
+  .title-project { margin-left: 12px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+  .title-status { max-width: 260px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+  .gate-grid,
+  .bottom-grid { grid-template-columns: 1fr; }
+  .import-grid,
+  .master-review { grid-template-columns: 1fr; }
+}
+
+@media (max-width: 760px) {
+  .app-shell { grid-template-columns: 150px minmax(0, 1fr); }
+  .sidebar { padding-inline: 6px; }
+  .sidebar nav button { grid-template-columns: 22px 1fr 10px; padding-inline: 6px; }
+  .workflow-title small,
+  .title-status { display: none; }
+  .workspace { padding-inline: 14px; }
+  .hero-panel,
+  .m03-workspace > header,
+  .layer-workspace > header { align-items: stretch; flex-direction: column; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    scroll-behavior: auto !important;
+    animation-duration: .01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: .01ms !important;
+  }
+}

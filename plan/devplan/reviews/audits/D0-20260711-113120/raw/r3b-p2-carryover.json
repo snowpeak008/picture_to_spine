@@ -1,0 +1,115 @@
+{
+    "schemaVersion":  "1.0.0",
+    "evidenceId":  "F2S-AUD-DEVPLAN-D0-001",
+    "snapshotId":  "D0-20260711-113120",
+    "phase":  "D0",
+    "checkId":  "R3B-P2-CARRYOVER",
+    "status":  "PASS",
+    "metric":  {
+                   "p2Count":  8,
+                   "mappings":  [
+                                    {
+                                        "p2":  "F2S-R3A-B06-P2-001",
+                                        "primaryTask":  "F2S-DEV-M01-001",
+                                        "present":  true,
+                                        "evd":  "F2S-EVD-M01-001"
+                                    },
+                                    {
+                                        "p2":  "F2S-R3A-B06-P2-001",
+                                        "primaryTask":  "F2S-DEV-M02-001",
+                                        "present":  true,
+                                        "evd":  "F2S-EVD-M02-001"
+                                    },
+                                    {
+                                        "p2":  "F2S-R3A-B07-P2-001",
+                                        "primaryTask":  "F2S-DEV-M00-001",
+                                        "present":  true,
+                                        "evd":  "F2S-EVD-M00-001"
+                                    },
+                                    {
+                                        "p2":  "F2S-R3A-B07-P2-001",
+                                        "primaryTask":  "F2S-DEV-M01-002",
+                                        "present":  true,
+                                        "evd":  "F2S-EVD-M01-002"
+                                    },
+                                    {
+                                        "p2":  "F2S-R3A-B08-P2-001",
+                                        "primaryTask":  "F2S-DEV-M07-003",
+                                        "present":  true,
+                                        "evd":  "F2S-EVD-M07-003"
+                                    },
+                                    {
+                                        "p2":  "F2S-R3A-B08-P2-001",
+                                        "primaryTask":  "F2S-DEV-M09-005",
+                                        "present":  true,
+                                        "evd":  "F2S-EVD-M09-005"
+                                    },
+                                    {
+                                        "p2":  "F2S-R3A-B09-P2-001",
+                                        "primaryTask":  "F2S-DEV-M02-001",
+                                        "present":  true,
+                                        "evd":  "F2S-EVD-M02-001"
+                                    },
+                                    {
+                                        "p2":  "F2S-R3A-B09-P2-001",
+                                        "primaryTask":  "F2S-DEV-M02-002",
+                                        "present":  true,
+                                        "evd":  "F2S-EVD-M02-002"
+                                    },
+                                    {
+                                        "p2":  "F2S-R3A-B10-P2-001",
+                                        "primaryTask":  "F2S-DEV-M03-002",
+                                        "present":  true,
+                                        "evd":  "F2S-EVD-M03-002"
+                                    },
+                                    {
+                                        "p2":  "F2S-R3A-B10-P2-001",
+                                        "primaryTask":  "F2S-DEV-M03-003",
+                                        "present":  true,
+                                        "evd":  "F2S-EVD-M03-003"
+                                    },
+                                    {
+                                        "p2":  "F2S-R3A-B11-P2-001",
+                                        "primaryTask":  "F2S-DEV-M02-006",
+                                        "present":  true,
+                                        "evd":  "F2S-EVD-M02-006"
+                                    },
+                                    {
+                                        "p2":  "F2S-R3A-B11-P2-001",
+                                        "primaryTask":  "F2S-DEV-M02-007",
+                                        "present":  true,
+                                        "evd":  "F2S-EVD-M02-007"
+                                    },
+                                    {
+                                        "p2":  "F2S-R3A-B11-P2-001",
+                                        "primaryTask":  "F2S-DEV-M09-006",
+                                        "present":  true,
+                                        "evd":  "F2S-EVD-M09-006"
+                                    },
+                                    {
+                                        "p2":  "F2S-R3A-B12-P2-001",
+                                        "primaryTask":  "F2S-DEV-M00-004",
+                                        "present":  true,
+                                        "evd":  "F2S-EVD-M00-004"
+                                    },
+                                    {
+                                        "p2":  "F2S-R3A-B12-P2-001",
+                                        "primaryTask":  "F2S-DEV-M09-001",
+                                        "present":  true,
+                                        "evd":  "F2S-EVD-M09-001"
+                                    },
+                                    {
+                                        "p2":  "F2S-R3A-SPINE-13-P2-001",
+                                        "primaryTask":  "F2S-DEV-M08-007",
+                                        "present":  true,
+                                        "evd":  "F2S-EVD-M08-007"
+                                    }
+                                ]
+               },
+    "details":  [
+
+                ],
+    "command":  "powershell -NoProfile -ExecutionPolicy Bypass -File plan/devplan/reviews/tools/Invoke-DevPlanAudit.ps1 -Phase D0 -SnapshotId D0-20260711-113120 -EvidenceId F2S-AUD-DEVPLAN-D0-001",
+    "toolPath":  "plan/devplan/reviews/tools/Invoke-DevPlanAudit.ps1",
+    "toolSha256":  "3e90815b5fabcaffcdc9a4bbd78b2867ba46a62a6f268d33f9d98d932a4fb561"
+}

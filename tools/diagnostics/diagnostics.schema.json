@@ -1,0 +1,12 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "F2S-ENVIRONMENT-DIAGNOSTICS-001",
+  "type": "object",
+  "required": ["schemaVersion", "generatedAtUtc", "capabilities", "redaction"],
+  "properties": {
+    "schemaVersion": { "const": "1.0.0" },
+    "generatedAtUtc": { "type": "string" },
+    "capabilities": { "type": "array" },
+    "redaction": { "type": "object" }
+  }
+}

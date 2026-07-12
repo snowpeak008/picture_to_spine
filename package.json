@@ -1,0 +1,26 @@
+{
+  "name": "flash-to-spine",
+  "version": "0.1.0",
+  "private": true,
+  "license": "UNLICENSED",
+  "packageManager": "npm@11.12.1",
+  "engines": { "node": "24.15.0", "npm": "11.12.1" },
+  "workspaces": ["apps/desktop-ui"],
+  "scripts": {
+    "bootstrap:check": "node tools/bootstrap/toolchain-check.mjs",
+    "format:check": "node tools/quality/format-check.mjs && cargo fmt --all -- --check",
+    "lint": "node tools/architecture/check-boundaries.mjs && npm run lint -w @f2s/desktop-ui",
+    "typecheck": "npm run typecheck -w @f2s/desktop-ui",
+    "test": "node --test tests/unit/*.test.mjs tests/ui/*.test.mjs && cargo test --workspace --locked",
+    "test:integration": "node --test tests/integration/*.test.mjs && cargo test -p f2s-adapters -p f2s-application --locked",
+    "test:spine": "node --test tests/spine/*.test.mjs",
+    "test:webview-local": "powershell.exe -NoLogo -NoProfile -ExecutionPolicy Bypass -File tools/windows/webview2-startup-probe.ps1 -Output JSON",
+    "build:ui": "npm run build -w @f2s/desktop-ui",
+    "build:core": "powershell.exe -NoLogo -NoProfile -ExecutionPolicy Bypass -File tools/windows/build-core.ps1",
+    "package:core": "powershell.exe -NoLogo -NoProfile -ExecutionPolicy Bypass -File tools/windows/package-core.ps1",
+    "package:core:from-build": "powershell.exe -NoLogo -NoProfile -ExecutionPolicy Bypass -File tools/windows/package-core.ps1 -SkipBuild",
+    "test:package": "powershell.exe -NoLogo -NoProfile -ExecutionPolicy Bypass -File tools/windows/verify-core-package.ps1",
+    "release:verify": "node tools/compliance/license-inventory-check.mjs && node tools/ci/verify-ci-contract.mjs && npm run test:spine && npm run package:core && npm run test:package",
+    "dev": "npm run dev -w @f2s/desktop-ui"
+  }
+}

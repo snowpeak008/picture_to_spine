@@ -1,0 +1,5 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema", "$id": "F2S-SCHEMA-JOB-001", "type": "object", "additionalProperties": false,
+  "required": ["jobId", "kind", "state", "projectRevision", "createdAtUtc"],
+  "properties": { "jobId": { "type": "string" }, "kind": { "type": "string" }, "state": { "enum": ["QUEUED", "RUNNING", "CANCEL_REQUESTED", "SUCCEEDED", "FAILED", "CANCELLED"] }, "projectRevision": { "type": "integer", "minimum": 0 }, "createdAtUtc": { "type": "string", "format": "date-time" } }
+}

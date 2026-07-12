@@ -1,0 +1,45 @@
+{
+  "schemaVersion": "1.0.0",
+  "items": [
+    {
+      "id": "windows-11",
+      "category": "system-runtime",
+      "name": "Microsoft Windows 11 x64",
+      "packageInclusion": "never",
+      "responsibility": "user-operating-system",
+      "capabilityState": "OBSERVED_LOCAL"
+    },
+    {
+      "id": "webview2-evergreen",
+      "category": "system-runtime",
+      "name": "Microsoft Edge WebView2 Evergreen Runtime",
+      "packageInclusion": "never",
+      "responsibility": "system-prerequisite",
+      "capabilityState": "UNVERIFIED"
+    },
+    {
+      "id": "spine-editor-4.2.43",
+      "category": "user-commercial-tool",
+      "name": "Spine Editor/Professional CLI 4.2.43",
+      "packageInclusion": "never",
+      "responsibility": "user-license-and-installation",
+      "capabilityState": "EXTERNAL"
+    },
+    {
+      "id": "nvidia-cuda-stack",
+      "category": "optional-hardware-runtime",
+      "name": "User-authorized NVIDIA driver/CUDA stack",
+      "packageInclusion": "never",
+      "responsibility": "optional-worker-environment",
+      "capabilityState": "UNVERIFIED"
+    },
+    {
+      "id": "private-remote-gpu",
+      "category": "user-private-system",
+      "name": "User-configured private remote GPU endpoint",
+      "packageInclusion": "never",
+      "responsibility": "user-endpoint-credentials-and-data-approval",
+      "capabilityState": "EXTERNAL"
+    }
+  ]
+}

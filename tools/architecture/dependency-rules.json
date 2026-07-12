@@ -1,0 +1,12 @@
+{
+  "schemaVersion": "1.0.0",
+  "layers": ["domain", "application", "adapters", "delivery", "ui"],
+  "rust": {
+    "domainForbidden": ["tauri", "reqwest", "redb", "tokio", "f2s-application", "f2s-adapters"],
+    "applicationForbidden": ["tauri", "reqwest", "redb", "f2s-adapters"]
+  },
+  "typescript": {
+    "forbiddenAnywhere": ["@tauri-apps/api", "@tauri-apps/plugin-shell", "@tauri-apps/plugin-fs", "@tauri-apps/plugin-http"],
+    "tauriApiAllowedRoots": []
+  }
+}

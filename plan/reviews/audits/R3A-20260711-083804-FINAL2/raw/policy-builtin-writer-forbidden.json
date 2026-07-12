@@ -1,0 +1,19 @@
+{
+    "schemaVersion":  "1.0.0",
+    "snapshotId":  "R3A-20260711-083804-FINAL2",
+    "checkId":  "POLICY-BUILTIN-WRITER-FORBIDDEN",
+    "status":  "PASS",
+    "metric":  {
+                   "writerArtifactProhibitionFound":  true,
+                   "fallbackWriterProhibitionFound":  true,
+                   "professionalCliBoundaryFound":  true
+               },
+    "command":  "powershell -NoProfile -ExecutionPolicy Bypass -File plan/reviews/tools/Invoke-PlanAudit.ps1 -SnapshotId R3A-20260711-083804-FINAL2",
+    "tool":  "PowerShell 5.1.22621.4391; Invoke-PlanAudit.ps1/1.0.3; export-boundary assertion",
+    "exitCode":  0,
+    "startedAtAsiaShanghai":  "2026-07-11T08:38:10.5541748+08:00",
+    "endedAtAsiaShanghai":  "2026-07-11T08:38:10.5562828+08:00",
+    "details":  [
+
+                ]
+}

@@ -1,0 +1,7 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema", "$id": "F2S-SCHEMA-GOVERNANCE-001",
+  "$defs": {
+    "GateState": { "enum": ["PENDING", "APPROVED", "REJECTED", "INVALIDATED"] },
+    "Decision": { "type": "object", "additionalProperties": false, "required": ["decisionId", "gateId", "state", "actorId", "targetRevision", "decidedAtUtc"], "properties": { "decisionId": { "type": "string" }, "gateId": { "type": "string" }, "state": { "$ref": "#/$defs/GateState" }, "actorId": { "type": "string" }, "targetRevision": { "type": "integer", "minimum": 0 }, "decidedAtUtc": { "type": "string", "format": "date-time" } } }
+  }
+}

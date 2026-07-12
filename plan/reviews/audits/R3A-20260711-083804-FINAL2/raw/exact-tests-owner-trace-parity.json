@@ -1,0 +1,36 @@
+{
+    "schemaVersion":  "1.0.0",
+    "snapshotId":  "R3A-20260711-083804-FINAL2",
+    "checkId":  "EXACT-TESTS-OWNER-TRACE-PARITY",
+    "status":  "PASS",
+    "metric":  {
+                   "ownerPrefixes":  [
+                                         "06",
+                                         "07",
+                                         "08",
+                                         "09",
+                                         "10",
+                                         "11",
+                                         "12",
+                                         "15"
+                                     ],
+                   "ownerExactTestCount":  133,
+                   "traceExactTestCount":  133,
+                   "missingCount":  0,
+                   "extraCount":  0,
+                   "missing":  [
+
+                               ],
+                   "extra":  [
+
+                             ]
+               },
+    "command":  "powershell -NoProfile -ExecutionPolicy Bypass -File plan/reviews/tools/Invoke-PlanAudit.ps1 -SnapshotId R3A-20260711-083804-FINAL2",
+    "tool":  "PowerShell 5.1.22621.4391; Invoke-PlanAudit.ps1/1.0.3; exact-ID registry reducer",
+    "exitCode":  0,
+    "startedAtAsiaShanghai":  "2026-07-11T08:38:10.2700255+08:00",
+    "endedAtAsiaShanghai":  "2026-07-11T08:38:10.2882064+08:00",
+    "details":  [
+
+                ]
+}

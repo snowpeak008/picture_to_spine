@@ -1,0 +1,40 @@
+.recent-projects {
+  margin: 14px 0;
+  padding: 14px;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background: var(--panel);
+}
+
+.recent-projects > header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 9px;
+  font-size: 12px;
+}
+
+.recent-projects > header span { color: var(--muted); font-size: 10px; }
+
+.recent-projects > button {
+  display: grid;
+  grid-template-columns: minmax(180px, 1fr) 220px 180px;
+  width: 100%;
+  border: 0;
+  border-top: 1px solid var(--line);
+  background: transparent;
+  color: #ddd;
+  padding: 11px 5px;
+  text-align: left;
+  cursor: pointer;
+}
+
+.recent-projects > button:hover { background: #25202e; }
+.recent-projects > button.unavailable {
+  cursor: not-allowed;
+  opacity: .72;
+  background: #291d22;
+}
+.recent-projects > button.unavailable strong,
+.recent-projects > button.unavailable em { color: #ef9a9a; }
+.recent-projects > button span { color: var(--muted); }
+.recent-projects > button em { color: var(--amber); font-style: normal; text-align: right; }

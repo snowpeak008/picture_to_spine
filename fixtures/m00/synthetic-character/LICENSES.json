@@ -1,0 +1,7 @@
+{
+  "schemaVersion": "1.0.0",
+  "fixtureId": "F2S-FIXTURE-SYNTHETIC-CHARACTER-001",
+  "authorDeclaration": "Created from original geometric primitives for this repository; no user image, web image, brand, model weight, or third-party artwork was used.",
+  "license": "CC0-1.0",
+  "files": ["source.svg", "master.png", "action-keyframes.png", "manifest.json"]
+}

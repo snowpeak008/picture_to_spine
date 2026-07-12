@@ -1,0 +1,21 @@
+{
+    "schemaVersion":  "1.0.0",
+    "evidenceId":  "F2S-AUD-DEVPLAN-D0-002",
+    "snapshotId":  "D0-20260711-121452-R1",
+    "phase":  "D0",
+    "checkId":  "TRACE-MATRIX-REVERSE-COVERAGE",
+    "status":  "PASS",
+    "metric":  {
+                   "dev":  80,
+                   "evd":  80,
+                   "wu":  187,
+                   "requirements":  102,
+                   "tests":  133
+               },
+    "details":  [
+
+                ],
+    "command":  "powershell -NoProfile -ExecutionPolicy Bypass -File plan/devplan/reviews/tools/Invoke-DevPlanAudit.ps1 -Phase D0 -SnapshotId D0-20260711-121452-R1 -EvidenceId F2S-AUD-DEVPLAN-D0-002",
+    "toolPath":  "plan/devplan/reviews/tools/Invoke-DevPlanAudit.ps1",
+    "toolSha256":  "3e90815b5fabcaffcdc9a4bbd78b2867ba46a62a6f268d33f9d98d932a4fb561"
+}

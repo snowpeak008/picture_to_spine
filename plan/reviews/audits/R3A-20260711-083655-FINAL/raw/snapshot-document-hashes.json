@@ -1,0 +1,27 @@
+{
+    "schemaVersion":  "1.0.0",
+    "snapshotId":  "R3A-20260711-083655-FINAL",
+    "checkId":  "SNAPSHOT-DOCUMENT-HASHES",
+    "status":  "PASS",
+    "metric":  {
+                   "manifestDocumentCount":  25,
+                   "directSnapshotDocumentCount":  25,
+                   "verifiedRecordCount":  25,
+                   "readOnlyCount":  25,
+                   "sizeMatchCount":  25,
+                   "sha256MatchCount":  25,
+                   "duplicatePathCount":  0,
+                   "duplicateDocIdCount":  0,
+                   "missingCount":  0,
+                   "extraCount":  0,
+                   "issueCount":  0
+               },
+    "command":  "powershell -NoProfile -ExecutionPolicy Bypass -File plan/reviews/tools/Invoke-PlanAudit.ps1 -SnapshotId R3A-20260711-083655-FINAL",
+    "tool":  "PowerShell 5.1.22621.4391; Invoke-PlanAudit.ps1/1.0.2; .NET SHA256",
+    "exitCode":  0,
+    "startedAtAsiaShanghai":  "2026-07-11T08:37:11.7946498+08:00",
+    "endedAtAsiaShanghai":  "2026-07-11T08:37:11.8603018+08:00",
+    "details":  [
+
+                ]
+}

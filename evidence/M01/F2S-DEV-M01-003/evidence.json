@@ -1,0 +1,49 @@
+{
+  "schemaVersion": "1.0.0",
+  "evidenceId": "F2S-EVD-M01-003",
+  "taskId": "F2S-DEV-M01-003",
+  "status": "PASS",
+  "command": "npm run build:core",
+  "exitCode": 0,
+  "startedAtUtc": "2026-07-11T07:47:16.837Z",
+  "endedAtUtc": "2026-07-11T07:47:16.837Z",
+  "runner": {
+    "kind": "local-development",
+    "os": "win32 10.0.22631",
+    "architecture": "x64",
+    "hostnameHash": "f3da3e8c48fbc119008475bba247ec014ab39af1f7e5d05bd1609c4951e6d3d5"
+  },
+  "toolVersions": {
+    "node": "v24.15.0"
+  },
+  "inputHashes": {},
+  "outputHashes": {
+    "apps/desktop/src-tauri/Cargo.toml": "46fd31daadc3d92e3d5a4498600e71e6a3740678eeb4aaef2a42388d704daeb8",
+    "apps/desktop/src-tauri/gen/schemas/acl-manifests.json": "b8665c2471bd4c59d570c77e226f37410ce396da52525383a15b5cbbff9d786e",
+    "apps/desktop/src-tauri/gen/schemas/capabilities.json": "6071178349981ee90501547db4e8fef03c711fd991047f66f46f7b4f1ebef674",
+    "apps/desktop/src-tauri/gen/schemas/desktop-schema.json": "f68a9c570ecff07ac6826145d33b966d6fc02f7d680967f44437268b08a6ba78",
+    "apps/desktop/src-tauri/gen/schemas/windows-schema.json": "f68a9c570ecff07ac6826145d33b966d6fc02f7d680967f44437268b08a6ba78",
+    "apps/desktop/src-tauri/icons/icon.ico": "73da7e72a2a8533cb366adcc0d1ca70e140cea801172f4c51b330a7149bebda2",
+    "apps/desktop/src-tauri/icons/icon.png": "00e00e2ecf63520eb838d4b24ac0539686558701a17f4df3958e1e54f79bfc86",
+    "apps/desktop/src-tauri/src/main.rs": "9d31219a7ed94c89f867ac6f798b75c5693ae67630607245f3a430db8f1dbf1f",
+    "apps/desktop-ui/src/app/AppShell.tsx": "959ee5d8bdcbc58687c155471d8cd8228d23f2469aab0c577e80beaebd36abd7",
+    "apps/desktop-ui/src/features/diagnostics/BootstrapErrorBoundary.tsx": "b000a48f8d2588e6803a8898564a3f3eb641778c9299971a9c8e35dd4bf04215",
+    "apps/desktop-ui/src/features/diagnostics/DiagnosticsPage.tsx": "0e22919f1e98271ec62a4f06dff6f9846ed2d1c439690bad427fd59119817f77",
+    "apps/desktop-ui/src/i18n/zh-CN.json": "7d2cdcbdb358bb09ee168594cd9a5d382a0c82ad5453b20a42b7d1a0e8efa522",
+    "apps/desktop-ui/src/main.tsx": "323380be8e0449690968ab9e5d3d1c7a7a2edaf8197f4b4de1e9c0dbcb24f97f",
+    "apps/desktop-ui/src/styles/base.css": "9002260ffc9ab6cd292cdb7d738c7154cdb9182a47da30e94a632fa382a279e1",
+    "apps/desktop-ui/src/types.d.ts": "da5bf71d48cf909584a01c80b445f730507068f5b34c920f352e2bfcf0315e4c",
+    "tools/frontend/build-ui.mjs": "855333213ff7550662226b1b76cc881fa08e9d5e376412d997537364cd4d30b3",
+    "docs/decisions/F2S-ADR-DELIVERY-002.md": "524f4213e50aa99675b11ec2f326270cb80048637576be18bd3c39c890869a8e"
+  },
+  "logRefs": [],
+  "reportRefs": [],
+  "capabilityState": "UNVERIFIED",
+  "externalBlockers": [],
+  "previousEvidenceRef": null,
+  "notRunReason": null,
+  "payload": {
+    "summary": "Direct WebView2 host and Chinese React shell compile; runtime smoke pending.",
+    "generatedBy": "tools/evidence/create-envelope.mjs"
+  }
+}

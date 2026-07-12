@@ -1,0 +1,20 @@
+{
+  "schemaVersion": "1.0.0",
+  "status": "PASS",
+  "writer": "f2s-minimal-psd-v1",
+  "license": "workspace-owned-proprietary",
+  "sha256": "a0315f6c611048586c1d7c5b9bb55e0948eeae017f0f19d98757b3ef4f5e3ff9",
+  "parsed": {
+    "channels": 4,
+    "height": 64,
+    "width": 64,
+    "depth": 8,
+    "colorMode": 3,
+    "layerCount": 2,
+    "layerNames": [
+      "body",
+      "weapon"
+    ]
+  },
+  "issues": []
+}

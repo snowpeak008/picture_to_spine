@@ -1,0 +1,37 @@
+{
+    "schemaVersion":  "1.0.0",
+    "evidenceId":  "F2S-AUD-DEVPLAN-D0-001",
+    "snapshotId":  "D0-20260711-113120",
+    "phase":  "D0",
+    "checkId":  "WU-DAG-FIELDS-PATH-OWNERS",
+    "status":  "FAIL",
+    "metric":  {
+                   "wuCount":  187,
+                   "duplicateWus":  [
+
+                                    ],
+                   "wuCycleNodes":  [
+
+                                    ],
+                   "devCycleNodes":  [
+
+                                     ],
+                   "exactWritePathCount":  429,
+                   "pathConflicts":  [
+                                         "apps/desktop-ui/src/i18n/zh-cn.json \u003c= F2S-DEV-M01-003,F2S-DEV-M10-004",
+                                         "apps/desktop/src-tauri/tauri.conf.json \u003c= F2S-DEV-M01-003,F2S-DEV-M10-001"
+                                     ],
+                   "danglingDevMentions":  [
+
+                                           ],
+                   "danglingEvdMentions":  [
+
+                                           ]
+               },
+    "details":  [
+                    "Exact write-path multi-owner conflicts: apps/desktop-ui/src/i18n/zh-cn.json \u003c= F2S-DEV-M01-003,F2S-DEV-M10-004 | apps/desktop/src-tauri/tauri.conf.json \u003c= F2S-DEV-M01-003,F2S-DEV-M10-001"
+                ],
+    "command":  "powershell -NoProfile -ExecutionPolicy Bypass -File plan/devplan/reviews/tools/Invoke-DevPlanAudit.ps1 -Phase D0 -SnapshotId D0-20260711-113120 -EvidenceId F2S-AUD-DEVPLAN-D0-001",
+    "toolPath":  "plan/devplan/reviews/tools/Invoke-DevPlanAudit.ps1",
+    "toolSha256":  "3e90815b5fabcaffcdc9a4bbd78b2867ba46a62a6f268d33f9d98d932a4fb561"
+}

@@ -1,0 +1,57 @@
+{
+  "schemaVersion": "f2s-implementation-validation/1.0.0",
+  "observedAtAsiaShanghai": "2026-07-12T10:54:29+08:00",
+  "status": "INTERNAL_CORE_IMPLEMENTATION_CANDIDATE",
+  "implementationAuthorized": true,
+  "releaseAuthorized": false,
+  "planBinding": {
+    "snapshotId": "FINAL-20260711-135705-R2",
+    "manifestSha256": "c3a0d964cbe34290619951dd1a8b9c32e8f06e228e9b234374611748ee76c9cc",
+    "userAuthorizationEvidenceId": "F2S-USER-START-AUTH-001"
+  },
+  "checks": [
+    { "command": "npm run bootstrap:check", "status": "PASS", "boundary": "OBSERVED_LOCAL / UNVERIFIED_CLEAN_VM" },
+    { "command": "npm run format:check", "status": "PASS" },
+    { "command": "npm run lint", "status": "PASS" },
+    { "command": "npm run typecheck", "status": "PASS" },
+    { "command": "npm test", "status": "PASS", "nodeUiTests": 26 },
+    { "command": "npm run test:integration", "status": "PASS" },
+    { "command": "npm run test:spine", "status": "PASS", "staticContractTests": 3 },
+    { "command": "node tools/compliance/license-inventory-check.mjs", "status": "PASS" },
+    { "command": "node tools/ci/verify-ci-contract.mjs", "status": "PASS" },
+    { "command": "npm run package:core", "status": "PASS" },
+    { "command": "npm run test:package", "status": "PASS", "smoke": "PASS_WITHOUT_WEBVIEW2_PROBE" },
+    { "command": "npm run test:webview-local", "status": "PASS", "boundary": "LOCAL_RUNTIME_ONLY / startup DOM ready / cleanVm=false" }
+  ],
+  "storageCrossProcess": {
+    "status": "PASS",
+    "contract": "CORE_STORAGE_CROSS_PROCESS",
+    "covered": "separate create/open processes, persisted HMAC/CAS, wrong-key MAC fail-closed",
+    "notCovered": "DPAPI provisioning and GUI business flow"
+  },
+  "package": {
+    "kind": "windows-portable-core-internal",
+    "entrypoint": "FlashToSpineLauncher.exe",
+    "executableSha256": "658718d055374000e0cf008cb0b1427e92986b8f898ce92a64fccc687bddff82",
+    "buildInputSha256": "7a6906f08c8794615e9de6a04c7a4801f1e2db355856190960dbc9ae5cf39590",
+    "sourceTreeSha256": "402a244d37d4ee6aaf23529f2913bc54fc4cbdaff683c95d7b530f2d13c097e9",
+    "uiBundleSha256": "42070ac60ba951906a320e40a16e9b700114da1a085e7cd51f86aa3ef0480614",
+    "manifestSha256": "648b6976f011a4841e57c7c5db9291628109e6d019d1f082edbf843eca32b74d",
+    "signatureStatus": "NOT_RUN_EXTERNAL",
+    "cleanVmStatus": "UNVERIFIED"
+  },
+  "documentation": {
+    "projectMemorySha256": "3b2fc9ddb6c3ccc41d104930e2d19bfa0aab6431b73bbb7cb91f1a42dafe4379",
+    "implementationStatusSha256": "c1d02eb7442e6a650b5126e4552a4ad1ea27720e9fe421d289690601d5ccad2c",
+    "webView2LocalEvidenceSha256": "4d1f9b2bf87b474edb39413eed073b5be156385994aee1f389394195209c6475",
+    "licenseEvidenceSha256": "b0c52ff4f8ed3da483c43cc714ec1a3b235c82eee15adaa073b694c18982a6f0"
+  },
+  "unvalidatedOrExternal": {
+    "guiFullBusinessChain": "UNVALIDATED",
+    "spineEditorCliRoundTrip": "NOT_RUN_EXTERNAL",
+    "privateRemoteGpuTransport": "NOT_INTEGRATED_EXTERNAL_PENDING",
+    "appContainerWorker": "UNVERIFIED_EXCLUDED",
+    "installerUpdaterSigning": "NOT_IMPLEMENTED_OR_NOT_RUN",
+    "organizationReleaseGate": "NOT_AUTHORIZED"
+  }
+}

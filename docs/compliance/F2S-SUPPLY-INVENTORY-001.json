@@ -1,0 +1,75 @@
+{
+  "schemaVersion": "1.0.0",
+  "policyId": "F2S-LIC-POLICY-001",
+  "generatedFrom": "reviewed source inventory",
+  "items": [
+    {
+      "id": "f2s-product-source",
+      "category": "release-source",
+      "name": "FlashToSpine proprietary product source",
+      "version": "0.1.0-internal",
+      "source": "workspace-owned",
+      "sha256": null,
+      "licenseExpression": "LicenseRef-Proprietary-Internal",
+      "licenseEvidence": "project ownership record; closed-source commercial product",
+      "packageInclusion": "core",
+      "reviewState": "allowed"
+    },
+    {
+      "id": "synthetic-fixture",
+      "category": "test-asset",
+      "name": "F2S synthetic side-view character fixture",
+      "version": "1.0.0",
+      "source": "fixtures/m00/synthetic-character/source.svg",
+      "sha256": null,
+      "licenseExpression": "CC0-1.0",
+      "licenseEvidence": "fixtures/m00/synthetic-character/LICENSES.json",
+      "packageInclusion": "tests-only",
+      "reviewState": "allowed"
+    },
+    {
+      "id": "npm:react", "category": "release-dependency", "name": "react", "version": "19.2.7", "source": "https://registry.npmjs.org/react", "sha256": null, "licenseExpression": "MIT", "licenseEvidence": "package-lock.json", "packageInclusion": "core", "reviewState": "allowed"
+    },
+    {
+      "id": "npm:react-dom", "category": "release-dependency", "name": "react-dom", "version": "19.2.7", "source": "https://registry.npmjs.org/react-dom", "sha256": null, "licenseExpression": "MIT", "licenseEvidence": "package-lock.json", "packageInclusion": "core", "reviewState": "allowed"
+    },
+    {
+      "id": "npm:pixi.js", "category": "release-dependency", "name": "pixi.js", "version": "8.19.0", "source": "https://registry.npmjs.org/pixi.js", "sha256": null, "licenseExpression": "MIT", "licenseEvidence": "package-lock.json", "packageInclusion": "core", "reviewState": "allowed"
+    },
+    {
+      "id": "npm:zustand", "category": "release-dependency", "name": "zustand", "version": "5.0.14", "source": "https://registry.npmjs.org/zustand", "sha256": null, "licenseExpression": "MIT", "licenseEvidence": "package-lock.json", "packageInclusion": "core", "reviewState": "allowed"
+    },
+    {
+      "id": "npm:esbuild", "category": "build-tool", "name": "esbuild", "version": "0.28.1", "source": "https://registry.npmjs.org/esbuild", "sha256": null, "licenseExpression": "MIT", "licenseEvidence": "package-lock.json", "packageInclusion": "build-only", "reviewState": "allowed"
+    },
+    {
+      "id": "npm:typescript", "category": "build-tool", "name": "typescript", "version": "7.0.2", "source": "https://registry.npmjs.org/typescript", "sha256": null, "licenseExpression": "Apache-2.0", "licenseEvidence": "package-lock.json", "packageInclusion": "build-only", "reviewState": "allowed"
+    },
+    {
+      "id": "cargo:webview2-com", "category": "release-dependency", "name": "webview2-com", "version": "0.39.1", "source": "https://crates.io/crates/webview2-com", "sha256": null, "licenseExpression": "MIT", "licenseEvidence": "Cargo.lock", "packageInclusion": "core", "reviewState": "allowed"
+    },
+    {
+      "id": "cargo:windows", "category": "release-dependency", "name": "windows", "version": "0.62.2", "source": "https://crates.io/crates/windows", "sha256": null, "licenseExpression": "MIT", "licenseEvidence": "Cargo.lock", "packageInclusion": "core", "reviewState": "allowed"
+    },
+    {
+      "id": "cargo:image", "category": "release-dependency", "name": "image", "version": "0.25.10", "source": "https://crates.io/crates/image", "sha256": null, "licenseExpression": "MIT", "licenseEvidence": "Cargo.lock", "packageInclusion": "core", "reviewState": "allowed"
+    },
+    {
+      "id": "cargo:base64", "category": "release-dependency", "name": "base64", "version": "0.22.1", "source": "https://crates.io/crates/base64", "sha256": null, "licenseExpression": "MIT", "licenseEvidence": "Cargo.lock", "packageInclusion": "core", "reviewState": "allowed"
+    },
+    {
+      "id": "cargo:serde", "category": "release-dependency", "name": "serde", "version": "1.0.228", "source": "https://crates.io/crates/serde", "sha256": null, "licenseExpression": "Apache-2.0", "licenseEvidence": "Cargo.lock", "packageInclusion": "core", "reviewState": "allowed"
+    },
+    {
+      "id": "cargo:serde_json", "category": "release-dependency", "name": "serde_json", "version": "1.0.150", "source": "https://crates.io/crates/serde_json", "sha256": null, "licenseExpression": "MIT", "licenseEvidence": "Cargo.lock", "packageInclusion": "core", "reviewState": "allowed"
+    },
+    {
+      "id": "cargo:thiserror", "category": "release-dependency", "name": "thiserror", "version": "2.0.18", "source": "https://crates.io/crates/thiserror", "sha256": null, "licenseExpression": "MIT", "licenseEvidence": "Cargo.lock", "packageInclusion": "core", "reviewState": "allowed"
+    },
+    {
+      "id": "cargo:uuid", "category": "release-dependency", "name": "uuid", "version": "1.23.4", "source": "https://crates.io/crates/uuid", "sha256": null, "licenseExpression": "Apache-2.0", "licenseEvidence": "Cargo.lock", "packageInclusion": "core", "reviewState": "allowed"
+    }
+  ],
+  "allowedProductionSpdx": ["MIT", "Apache-2.0", "Apache-2.0 WITH LLVM-exception", "BSD-2-Clause", "BSD-3-Clause", "ISC", "Zlib", "0BSD", "CC0-1.0", "Unicode-3.0", "Unlicense", "BlueOak-1.0.0"],
+  "forbiddenFamilies": ["AGPL", "GPL", "LGPL", "MPL", "SSPL", "BUSL", "NC", "Research-Only", "unknown"]
+}

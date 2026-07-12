@@ -1,0 +1,38 @@
+{
+  "schemaVersion": "1.0.0",
+  "evidenceId": "F2S-EVD-M02-002",
+  "taskId": "F2S-DEV-M02-002",
+  "status": "PASS",
+  "command": "cargo test -p f2s-domain",
+  "exitCode": 0,
+  "startedAtUtc": "2026-07-11T07:47:17.015Z",
+  "endedAtUtc": "2026-07-11T07:47:17.015Z",
+  "runner": {
+    "kind": "local-development",
+    "os": "win32 10.0.22631",
+    "architecture": "x64",
+    "hostnameHash": "f3da3e8c48fbc119008475bba247ec014ab39af1f7e5d05bd1609c4951e6d3d5"
+  },
+  "toolVersions": {
+    "node": "v24.15.0"
+  },
+  "inputHashes": {},
+  "outputHashes": {
+    "crates/domain/src/canonical.rs": "e9e82eb0d31bd2cef4a0e3ddeff415c197814c1a65f778fa87e8a7bf63722ffe",
+    "crates/domain/src/governance/decision.rs": "d11ba2ff6413b2f1c3ef680c0a3952671d4d669381f5045144f230c763b8cf67",
+    "crates/domain/src/governance/gate.rs": "edb93fa53556f8183f64e9b6d06fffe1038380a4367737f20a6bd78ce36c9964",
+    "crates/domain/src/governance/mod.rs": "daa655e9b22e630ef0a57b8e57217a8aea5145fc89bc512e307064e85cdaad40",
+    "crates/domain/src/governance/priority.rs": "836f48a5a64d02ca846af50895a617df73aa7b9aab79150927a98b23a4f15df2",
+    "crates/domain/src/governance/rule.rs": "2bc5691037d2537e0d4c7dd94172e3f1289347e353bda2fcb27a071527e5dcd8"
+  },
+  "logRefs": [],
+  "reportRefs": [],
+  "capabilityState": "VERIFIED",
+  "externalBlockers": [],
+  "previousEvidenceRef": null,
+  "notRunReason": null,
+  "payload": {
+    "summary": "Priority, anti-downgrade, gate and decision invariants implemented.",
+    "generatedBy": "tools/evidence/create-envelope.mjs"
+  }
+}

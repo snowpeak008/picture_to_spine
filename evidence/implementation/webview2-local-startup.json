@@ -1,0 +1,30 @@
+{
+  "schemaVersion": "f2s-webview2-local-startup-probe/1.0.0",
+  "status": "PASS",
+  "runtimeScope": "LOCAL_RUNTIME_ONLY",
+  "cleanVm": false,
+  "failureCode": "NONE",
+  "executable": {
+    "name": "FlashToSpineLauncher.exe",
+    "sha256": "658718d055374000e0cf008cb0b1427e92986b8f898ce92a64fccc687bddff82",
+    "reparsePoint": false
+  },
+  "startup": {
+    "hidden": true,
+    "waitSeconds": 5
+  },
+  "windowContract": {
+    "expectedTopLevelClass": "FlashToSpineWebView",
+    "expectedTopLevelTitle": "FlashToSpine Production Assist",
+    "topLevelMatched": true,
+    "chromeWidgetChildFound": true,
+    "renderWidgetChildFound": true,
+    "processResponding": true
+  },
+  "shutdown": {
+    "wmCloseSent": true,
+    "gracefulExit": true,
+    "forcedCleanupRequired": false,
+    "cleanupSucceeded": true
+  }
+}

@@ -1,0 +1,29 @@
+{
+    "schemaVersion":  "1.0.0",
+    "snapshotId":  "R3A-20260711-083655-FINAL",
+    "checkId":  "DOCUMENT-SET-00-24",
+    "status":  "PASS",
+    "metric":  {
+                   "documentCount":  25,
+                   "decodedDocumentCount":  25,
+                   "uniquePrefixCount":  25,
+                   "missingPrefixes":  [
+
+                                       ],
+                   "extraPrefixes":  [
+
+                                     ],
+                   "duplicatePrefixes":  [
+
+                                         ],
+                   "issueCount":  0
+               },
+    "command":  "powershell -NoProfile -ExecutionPolicy Bypass -File plan/reviews/tools/Invoke-PlanAudit.ps1 -SnapshotId R3A-20260711-083655-FINAL",
+    "tool":  "PowerShell 5.1.22621.4391; Invoke-PlanAudit.ps1/1.0.2; UTF-8 strict decoder",
+    "exitCode":  0,
+    "startedAtAsiaShanghai":  "2026-07-11T08:37:11.9485152+08:00",
+    "endedAtAsiaShanghai":  "2026-07-11T08:37:12.0122009+08:00",
+    "details":  [
+
+                ]
+}

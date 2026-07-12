@@ -1,0 +1,87 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "F2S-WINDOWS-CORE-PACKAGE-MANIFEST-001",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schemaVersion", "product", "version", "packageKind", "target", "entrypoint", "deterministicInputs", "prerequisites", "capabilities", "security", "files"],
+  "properties": {
+    "schemaVersion": { "const": "1.0.0" },
+    "product": { "const": "FlashToSpine" },
+    "version": { "type": "string", "minLength": 1 },
+    "packageKind": { "const": "windows-portable-core-internal" },
+    "target": { "const": "x86_64-pc-windows-msvc" },
+    "entrypoint": { "const": "FlashToSpine.exe" },
+    "deterministicInputs": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["cargoLocked", "cargoOffline", "nodeLock", "cargoLock", "buildInputSha256", "toolchainFingerprintSha256", "sourceTreeSha256", "sourceFileCount", "cargoLockSha256", "nodeLockSha256", "uiBundleSha256", "uiBundleFileCount", "buildBindingSha256"],
+      "properties": {
+        "cargoLocked": { "const": true },
+        "cargoOffline": { "const": true },
+        "nodeLock": { "const": "package-lock.json" },
+        "cargoLock": { "const": "Cargo.lock" },
+        "buildInputSha256": { "type": "string", "pattern": "^[0-9a-f]{64}$" },
+        "toolchainFingerprintSha256": { "type": "string", "pattern": "^[0-9a-f]{64}$" },
+        "sourceTreeSha256": { "type": "string", "pattern": "^[0-9a-f]{64}$" },
+        "sourceFileCount": { "type": "integer", "minimum": 1 },
+        "cargoLockSha256": { "type": "string", "pattern": "^[0-9a-f]{64}$" },
+        "nodeLockSha256": { "type": "string", "pattern": "^[0-9a-f]{64}$" },
+        "uiBundleSha256": { "type": "string", "pattern": "^[0-9a-f]{64}$" },
+        "uiBundleFileCount": { "type": "integer", "minimum": 3 },
+        "buildBindingSha256": { "type": "string", "pattern": "^[0-9a-f]{64}$" }
+      }
+    },
+    "prerequisites": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["webView2"],
+      "properties": { "webView2": { "const": "SYSTEM_EVERGREEN_REQUIRED_UNVERIFIED" } }
+    },
+    "capabilities": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["coreBinary", "uiEmbedded", "spineEditor", "appContainerWorker", "codeSignature"],
+      "properties": {
+        "coreBinary": { "const": "BUILT_UNVERIFIED_CLEAN_VM" },
+        "uiEmbedded": { "const": "BUILT" },
+        "spineEditor": { "const": "EXTERNAL_NOT_INCLUDED" },
+        "appContainerWorker": { "const": "NOT_INCLUDED_UNVERIFIED" },
+        "codeSignature": { "const": "NOT_RUN_EXTERNAL" }
+      }
+    },
+    "security": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["networkInstaller", "elevationRequired", "downloadsDependencies"],
+      "properties": {
+        "networkInstaller": { "const": false },
+        "elevationRequired": { "const": false },
+        "downloadsDependencies": { "const": false }
+      }
+    },
+    "files": {
+      "type": "array",
+      "minItems": 3,
+      "maxItems": 3,
+      "uniqueItems": true,
+      "prefixItems": [
+        { "allOf": [{ "$ref": "#/$defs/file" }, { "properties": { "path": { "const": "FlashToSpine.exe" } } }] },
+        { "allOf": [{ "$ref": "#/$defs/file" }, { "properties": { "path": { "const": "README.txt" } } }] },
+        { "allOf": [{ "$ref": "#/$defs/file" }, { "properties": { "path": { "const": "build-binding.json" } } }] }
+      ],
+      "items": false
+    }
+  },
+  "$defs": {
+    "file": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["path", "sha256", "bytes"],
+      "properties": {
+        "path": { "type": "string", "pattern": "^[A-Za-z0-9._-]+$" },
+        "sha256": { "type": "string", "pattern": "^[0-9a-f]{64}$" },
+        "bytes": { "type": "integer", "minimum": 1 }
+      }
+    }
+  }
+}

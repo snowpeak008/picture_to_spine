@@ -1,0 +1,36 @@
+{
+  "schemaVersion": "1.0.0",
+  "fixtureId": "F2S-FIXTURE-SYNTHETIC-CHARACTER-001",
+  "title": "Original synthetic anime-like side-view humanoid",
+  "author": "FlashToSpine test fixture generator",
+  "source": "fixtures/m00/synthetic-character/source.svg",
+  "license": "CC0-1.0",
+  "generator": {
+    "path": "tools/fixtures/generate-synthetic-character.mjs",
+    "version": "1.0.0",
+    "algorithm": "deterministic-rgba-png-v1"
+  },
+  "canvas": {
+    "width": 512,
+    "height": 512
+  },
+  "actionKeys": [
+    "idle",
+    "run",
+    "jump",
+    "fall",
+    "dash",
+    "attack_01",
+    "attack_02",
+    "attack_03",
+    "hit",
+    "death"
+  ],
+  "sourceSha256": "26dc72e9115307bf7724662f80b6f39cca22ccf0c84306f3e35539de2829f7ba",
+  "outputHashes": {
+    "master.png": "9ba52e1db41fbd2a10e90242bf14939158a1819d24740be7301f72f41f956c0b",
+    "action-keyframes.png": "78fa17d487413fa96ffe95fa9830cf211bc129891df89c37c02d783c6dd8eb0d"
+  },
+  "approvalState": "UNAPPROVED_TEST_ONLY",
+  "realDomainClaimAllowed": false
+}

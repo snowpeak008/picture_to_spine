@@ -1,0 +1,27 @@
+{
+    "schemaVersion":  "1.0.0",
+    "snapshotId":  "R3B-20260711-085312-FINAL",
+    "checkId":  "CANONICAL-FOR-REGISTRY",
+    "status":  "PASS",
+    "metric":  {
+                   "tokenCount":  384,
+                   "expectedTokenCount":  384,
+                   "uniqueTokenCount":  384,
+                   "duplicateCount":  0,
+                   "duplicates":  [
+
+                                  ],
+                   "invalidCount":  0,
+                   "invalid":  [
+
+                               ]
+               },
+    "command":  "powershell -NoProfile -ExecutionPolicy Bypass -File plan/reviews/tools/Invoke-PlanAudit.ps1 -SnapshotId R3B-20260711-085312-FINAL",
+    "tool":  "PowerShell 5.1.22621.4391; Invoke-PlanAudit.ps1/1.0.3; frontmatter registry reducer",
+    "exitCode":  0,
+    "startedAtAsiaShanghai":  "2026-07-11T08:53:32.0941359+08:00",
+    "endedAtAsiaShanghai":  "2026-07-11T08:53:32.1142681+08:00",
+    "details":  [
+
+                ]
+}

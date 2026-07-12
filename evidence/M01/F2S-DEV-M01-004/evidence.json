@@ -1,0 +1,36 @@
+{
+  "schemaVersion": "1.0.0",
+  "evidenceId": "F2S-EVD-M01-004",
+  "taskId": "F2S-DEV-M01-004",
+  "status": "PASS",
+  "command": "npm run test:integration",
+  "exitCode": 0,
+  "startedAtUtc": "2026-07-11T07:47:16.881Z",
+  "endedAtUtc": "2026-07-11T07:47:16.881Z",
+  "runner": {
+    "kind": "local-development",
+    "os": "win32 10.0.22631",
+    "architecture": "x64",
+    "hostnameHash": "f3da3e8c48fbc119008475bba247ec014ab39af1f7e5d05bd1609c4951e6d3d5"
+  },
+  "toolVersions": {
+    "node": "v24.15.0"
+  },
+  "inputHashes": {},
+  "outputHashes": {
+    "FlashToSpine-开发入口.cmd": "b8deca66998430fd688e30260099fcbe54666eba3b8f356a937d9c18d7c741a2",
+    "tools/launcher/dev-launch-result.schema.json": "d775015709bfbd2ac95d4c0fdaa0ccf1996ad2b56d84bbd8b86b42948be01644",
+    "tools/launcher/dev-launch-selftest.ps1": "a3206dd4913e2fe6a95830af140a7ef5abd7f757366ef2cf166ab6e5ae17dbf4",
+    "tools/launcher/dev-launch.ps1": "7aacee5d895f7d36fadc7004ed902397948ade112ced2ffe90215c76c2e590d0"
+  },
+  "logRefs": [],
+  "reportRefs": [],
+  "capabilityState": "UNVERIFIED",
+  "externalBlockers": [],
+  "previousEvidenceRef": null,
+  "notRunReason": null,
+  "payload": {
+    "summary": "Launcher has no download/elevation/build side effects; formal exe pending.",
+    "generatedBy": "tools/evidence/create-envelope.mjs"
+  }
+}

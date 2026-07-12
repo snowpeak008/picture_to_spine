@@ -1,0 +1,37 @@
+{
+  "schemaVersion": "1.0.0",
+  "evidenceId": "F2S-EVD-M02-005",
+  "taskId": "F2S-DEV-M02-005",
+  "status": "PASS",
+  "command": "cargo test -p f2s-adapters",
+  "exitCode": 0,
+  "startedAtUtc": "2026-07-11T07:47:17.151Z",
+  "endedAtUtc": "2026-07-11T07:47:17.151Z",
+  "runner": {
+    "kind": "local-development",
+    "os": "win32 10.0.22631",
+    "architecture": "x64",
+    "hostnameHash": "f3da3e8c48fbc119008475bba247ec014ab39af1f7e5d05bd1609c4951e6d3d5"
+  },
+  "toolVersions": {
+    "node": "v24.15.0"
+  },
+  "inputHashes": {},
+  "outputHashes": {
+    "crates/application/src/ports/ipc.rs": "e55753af0ddeafeebf73e89896bcecbe773376598efa2266903c1207a7be42e6",
+    "crates/application/src/ports/worker_gateway.rs": "07f6c7b88012ec50e03720d4e954ee737f8e3d623733e4e91dd8e0eb539dcfaa",
+    "crates/adapters/src/ipc/framing.rs": "e65c09149f65803cc0856beb1eb054a7a106b831a7a0d7a67a145145919d81a7",
+    "crates/adapters/src/ipc/mock.rs": "9877638c1a244dc9ce8a1d0b5e96edafe78d99044a30a5c2beda7b16b8a24076",
+    "crates/adapters/src/ipc/mod.rs": "022c1d0cc262f5bea1f461850265d20ed90d9d11d528f17b4edc203bb618fa27"
+  },
+  "logRefs": [],
+  "reportRefs": [],
+  "capabilityState": "VERIFIED",
+  "externalBlockers": [],
+  "previousEvidenceRef": null,
+  "notRunReason": null,
+  "payload": {
+    "summary": "Versioned framing and fault mock implemented.",
+    "generatedBy": "tools/evidence/create-envelope.mjs"
+  }
+}

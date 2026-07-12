@@ -1,0 +1,21 @@
+{
+    "schemaVersion":  "1.0.0",
+    "snapshotId":  "R3B-20260711-085312-FINAL",
+    "checkId":  "POLICY-STRICT-ULID",
+    "status":  "PASS",
+    "metric":  {
+                   "grammar":  "^[0-7][0-9A-HJKMNP-TV-Z]{25}$",
+                   "grammarFound":  true,
+                   "forbiddenAliasRuleFound":  true,
+                   "monotonicRuleFound":  true,
+                   "roundTripRuleFound":  true
+               },
+    "command":  "powershell -NoProfile -ExecutionPolicy Bypass -File plan/reviews/tools/Invoke-PlanAudit.ps1 -SnapshotId R3B-20260711-085312-FINAL",
+    "tool":  "PowerShell 5.1.22621.4391; Invoke-PlanAudit.ps1/1.0.3; literal grammar assertion",
+    "exitCode":  0,
+    "startedAtAsiaShanghai":  "2026-07-11T08:53:32.4793185+08:00",
+    "endedAtAsiaShanghai":  "2026-07-11T08:53:32.4813122+08:00",
+    "details":  [
+
+                ]
+}

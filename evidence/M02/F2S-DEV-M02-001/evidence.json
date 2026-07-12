@@ -1,0 +1,45 @@
+{
+  "schemaVersion": "1.0.0",
+  "evidenceId": "F2S-EVD-M02-001",
+  "taskId": "F2S-DEV-M02-001",
+  "status": "PASS",
+  "command": "node schemas/generate.mjs",
+  "exitCode": 0,
+  "startedAtUtc": "2026-07-11T07:47:16.971Z",
+  "endedAtUtc": "2026-07-11T07:47:16.971Z",
+  "runner": {
+    "kind": "local-development",
+    "os": "win32 10.0.22631",
+    "architecture": "x64",
+    "hostnameHash": "f3da3e8c48fbc119008475bba247ec014ab39af1f7e5d05bd1609c4951e6d3d5"
+  },
+  "toolVersions": {
+    "node": "v24.15.0"
+  },
+  "inputHashes": {},
+  "outputHashes": {
+    "schemas/generate.mjs": "04128c4c5e8b7b930be568bb7a8094e44dcc19c2592c5f5b7e2c754adfa79642",
+    "schemas/generated/golden/adversarial.json": "df502cf77e12148ada9440096caf6b5ba34b3d629acab9700b5da85251790c3e",
+    "schemas/generated/golden/canonical.json": "87b46a95f58b82072582f17b68f5e2bb5174c7ce7b07ba6dd523fe0967016267",
+    "schemas/generated/rust/mod.rs": "843d19d45c7f903e0dbd646d511289f2bb6e6340fcac268e3875d0acb60d4fb8",
+    "schemas/generated/ts/index.ts": "2c4e0221cd19751dff91ac946ca3ef62356560a39a98a20376dc7200c7eaabe8",
+    "schemas/src/common.schema.json": "1033c077215fd9ac97d80d757bd29dedba5019905510aa844a131d63334fc2cf",
+    "schemas/src/evidence.schema.json": "0e6fc7ab55370cf42005c95f9070f352da263d3cc24647eac180bb348f680eed",
+    "schemas/src/governance.schema.json": "7ad0d0e997b9b5b0a3c42da40da37f8402d6e812011c2baf85539cf3602c0f98",
+    "schemas/src/ipc.schema.json": "cf7b24cd1283940b993988be61cfd716db1e8de4c8db042fb9b636c994b3aa3b",
+    "schemas/src/job.schema.json": "920defb1599fbe958fc61a3a72a9613ccdbc960bb1c5e0875a3250805798b788",
+    "schemas/src/project.schema.json": "a600e535851b965e75f3082d36d27e2fa8225550471375f34c732fb542622396",
+    "schemas/src/rig-ir.schema.json": "972d269f1489fa5d71b42d1632c46eb3e0ce8d41892ed0dcbded9d86b4f57ea9",
+    "schemas/src/storage.schema.json": "31c10fe79884b99cad74a786f0ea91f22706f1be875077850b7b8578f19a58b9"
+  },
+  "logRefs": [],
+  "reportRefs": [],
+  "capabilityState": "VERIFIED",
+  "externalBlockers": [],
+  "previousEvidenceRef": null,
+  "notRunReason": null,
+  "payload": {
+    "summary": "Eight source schemas and generated registry/golden complete.",
+    "generatedBy": "tools/evidence/create-envelope.mjs"
+  }
+}

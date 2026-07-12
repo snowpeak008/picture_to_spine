@@ -1,0 +1,58 @@
+{
+  "schemaVersion": "1.0.0",
+  "evidenceId": "F2S-EVD-M02-006",
+  "taskId": "F2S-DEV-M02-006",
+  "status": "PASS",
+  "command": "cargo test -p f2s-adapters",
+  "exitCode": 0,
+  "startedAtUtc": "2026-07-11T07:47:17.200Z",
+  "endedAtUtc": "2026-07-11T07:47:17.200Z",
+  "runner": {
+    "kind": "local-development",
+    "os": "win32 10.0.22631",
+    "architecture": "x64",
+    "hostnameHash": "f3da3e8c48fbc119008475bba247ec014ab39af1f7e5d05bd1609c4951e6d3d5"
+  },
+  "toolVersions": {
+    "node": "v24.15.0"
+  },
+  "inputHashes": {},
+  "outputHashes": {
+    "crates/domain/src/storage/cas.rs": "8df4e4e1a5c072b19e9a0b5f3e8a0ec67dc6690c493a659c8c8fa3dbbfc186dc",
+    "crates/domain/src/storage/clock.rs": "863f048d66424e1d491900e70d3076974ff0df06ebb0723edec576023f4aae92",
+    "crates/domain/src/storage/governance_stream.rs": "b1871fa0854e34deab93a62dabe16a9adb6329065d85c3be3d820694c019a5c7",
+    "crates/domain/src/storage/mod.rs": "894b47ef4fc94d8b4e1ad224b50a766d6296afd83957342ac97c540200116c25",
+    "crates/domain/src/storage/project.rs": "d93bfd23ec2edf1bd59680432fe4eea629785a47ad543d3bc7538a9afa8bbcbc",
+    "crates/application/src/ports/audit_sink.rs": "d452f0c5f9c95d6e068f1e4972916ac27d6242613134dd487510f03a9cfb0c81",
+    "crates/application/src/ports/cas_store.rs": "1ac884cf9b1cd2bea45518944b57b27b9dc242f8a48db12ee6b83a00985d7898",
+    "crates/application/src/ports/clock_store.rs": "39a62214f565c68e0f2eb56e9ec9608024dd89ccadd4b8164ff57fcc827ad0ba",
+    "crates/application/src/ports/event_sink.rs": "c7f66318609b4f7da2bfeecf2f8611db0c28e4d7b6f8965cb7399be511ede1fc",
+    "crates/application/src/ports/ipc.rs": "e55753af0ddeafeebf73e89896bcecbe773376598efa2266903c1207a7be42e6",
+    "crates/application/src/ports/mod.rs": "af787b5c607eefceaba4f8f9bb1521a77931723329488864da9bdd7e0b5a6d7c",
+    "crates/application/src/ports/project_store.rs": "bff4f87a8423f47ba1352a2019d8f9440865f692bb66c03aa00bfafd12d223ac",
+    "crates/application/src/ports/worker_gateway.rs": "07f6c7b88012ec50e03720d4e954ee737f8e3d623733e4e91dd8e0eb539dcfaa",
+    "crates/application/src/storage/governance_streams.rs": "3ff551162d13fe40ae51de00206a7d7d15ac6fd52a84672b06f4a5073d0de78b",
+    "crates/application/src/storage/migrate_project.rs": "783ba43551064726d332788fa5a58c09759d607b87e810d771fab9f9ee78935c",
+    "crates/application/src/storage/mod.rs": "b8d11494a8e5d2c61629a74a4d2fd4023a3850491b30af9a149de7a88774fe71",
+    "crates/application/src/storage/project_transaction.rs": "8f5faf5c0778241f856836eeed4cf6173765f40d7d3e21dfc81d4d6600dd1ea5",
+    "crates/application/src/storage/recover_project.rs": "39ce4d1d05ea320b94e437724113f76ec5be570bff7153686471d1ad85a5feaf",
+    "crates/adapters/src/storage/cas.rs": "6ab47045ef6ea119524e75f265326c07f836a439e3b2d6ffd9e8ca954e0e3aa6",
+    "crates/adapters/src/storage/fs_project_store.rs": "42ea15b14950b6139ed58bb03b4bfdff8e04bf0ba6fdbd65e51899e39c3848ee",
+    "crates/adapters/src/storage/journal.rs": "785a96b3e2c94faa93871f178fb5f44eb823d5ba734d0706e8134e6b402349ac",
+    "crates/adapters/src/storage/migration.rs": "599b23b8ced25bf975b1249cc2c1686e943bef935566b622b0ebb078846b5353",
+    "crates/adapters/src/storage/mod.rs": "e2f28eb2387d8d10962adafdd09bbeff15775ad59ab2edfa159547d4d6a3684d",
+    "crates/adapters/src/storage/ntfs_atomic.rs": "a0e52e92d9b5fbe36eb7af7b8c43b492d80daede680045933a0f6f977c516d59",
+    "crates/adapters/src/storage/recovery.rs": "5b95f21ef643003430f22bdde407af1dc2ca8a9dc2e87007dfcea0f91e4ac571",
+    "crates/adapters/src/storage/redb_index.rs": "9214b683ea5ddedd8dfed40d0cce9e6825173771d5db391133694d98978a4d9a"
+  },
+  "logRefs": [],
+  "reportRefs": [],
+  "capabilityState": "UNVERIFIED",
+  "externalBlockers": [],
+  "previousEvidenceRef": null,
+  "notRunReason": null,
+  "payload": {
+    "summary": "CAS and atomic store pass local tests; full NTFS kill/flush matrix pending.",
+    "generatedBy": "tools/evidence/create-envelope.mjs"
+  }
+}

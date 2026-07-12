@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512">
+  <title>F2S original synthetic side-view character fixture</title>
+  <desc>Original geometric test art. No network or user asset is used.</desc>
+  <g id="character" stroke="#241d35" stroke-width="8" stroke-linejoin="round">
+    <ellipse id="hair-back" cx="254" cy="132" rx="74" ry="82" fill="#3a2b58"/>
+    <ellipse id="head" cx="270" cy="142" rx="58" ry="65" fill="#ffd1b8"/>
+    <path id="hair-front" d="M218 126 Q244 58 310 86 L330 124 Q286 100 252 136 Z" fill="#584078"/>
+    <path id="torso" d="M228 204 L310 204 L326 330 L210 330 Z" fill="#4068a8"/>
+    <path id="arm-back" d="M235 222 L182 288 L202 305 L268 252 Z" fill="#ffd1b8"/>
+    <path id="arm-front" d="M298 222 L346 278 L330 297 L270 250 Z" fill="#ffd1b8"/>
+    <path id="leg-back" d="M236 326 L224 435 L254 435 L278 328 Z" fill="#2c355b"/>
+    <path id="leg-front" d="M278 328 L300 435 L332 435 L316 326 Z" fill="#37446f"/>
+    <path id="boot-back" d="M218 430 L258 430 L270 452 L205 452 Z" fill="#342b42"/>
+    <path id="boot-front" d="M298 430 L335 430 L357 451 L296 451 Z" fill="#342b42"/>
+    <path id="weapon" d="M344 281 L448 184 L460 196 L358 300 Z" fill="#d9e3ef"/>
+    <path id="guard" d="M332 276 L372 311" fill="none" stroke="#c59a45" stroke-width="14"/>
+  </g>
+</svg>

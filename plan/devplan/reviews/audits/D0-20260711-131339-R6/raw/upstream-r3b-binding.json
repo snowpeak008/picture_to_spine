@@ -1,0 +1,19 @@
+{
+    "schemaVersion":  "1.0.0",
+    "evidenceId":  "F2S-AUD-DEVPLAN-D0-007",
+    "snapshotId":  "D0-20260711-131339-R6",
+    "phase":  "D0",
+    "checkId":  "UPSTREAM-R3B-BINDING",
+    "status":  "PASS",
+    "metric":  {
+                   "manifestSha256":  "7763d20d4f46c5d62b249bc8a080a761cfbe8390cab7d0a55748743af0cc46ae",
+                   "reviewSha256":  "4d6d7b7699be3b02577b464f8030ae5ad32aafa0b9dcbcb48c56a6a8c9fd53fd",
+                   "baselineSha256":  "cd1652bb62b462f16e184a027a380dd71a69626fafa764da4843f72cca6f00b2"
+               },
+    "details":  [
+
+                ],
+    "command":  "powershell -NoProfile -ExecutionPolicy Bypass -File plan/devplan/reviews/tools/Invoke-DevPlanAudit.ps1 -Phase D0 -SnapshotId D0-20260711-131339-R6 -EvidenceId F2S-AUD-DEVPLAN-D0-007",
+    "toolPath":  "plan/devplan/reviews/tools/Invoke-DevPlanAudit.ps1",
+    "toolSha256":  "206e808b72b3f22d87b576d58901118da28ae34ca81038d74f46ff2933267ab0"
+}

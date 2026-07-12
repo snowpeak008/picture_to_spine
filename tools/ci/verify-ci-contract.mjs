@@ -1,0 +1,3 @@
+#!/usr/bin/env node
+import { readFile } from 'node:fs/promises';
+const workflow=await readFile('.github/workflows/ci.yml','utf8');const required=['npm ci','npm run format:check','npm run lint','npm run typecheck','npm test','npm run build:core','npm run release:verify'];const missing=required.filter(v=>!workflow.includes(v));const forbidden=['npm install','@latest','--force'].filter(v=>workflow.includes(v));const report={schemaVersion:'1.0.0',status:missing.length||forbidden.length?'FAIL':'PASS',missing,forbidden};process.stdout.write(JSON.stringify(report,null,2)+'\n');if(report.status==='FAIL')process.exitCode=2;

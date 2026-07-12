@@ -1,0 +1,77 @@
+{
+  "generated_at": "2026-07-12T11:26:19",
+  "files": {
+    "AI_README.md": {
+      "sha256": "9159b90b56061face7d621d52c50cc3c3b1cd1795b960e042b21132485ae8dd7",
+      "size": 3865
+    },
+    "AGENTS.md": {
+      "sha256": "e56bd104f8a16aad698c0823aab133d11085e30724cea6d3cc35667aad7d3139",
+      "size": 178
+    },
+    "knowledge/ai_memory/project_understanding/memory_config.json": {
+      "sha256": "325a2ca23d708ded47480179069625d0933eb447e113b0893d3e13314c0970e2",
+      "size": 804
+    },
+    "README.md": {
+      "sha256": "a37acb72ca38ea2dee6edc6c9109d11a7b70ea7eef4899a89874d1cf75211fbd",
+      "size": 3852
+    },
+    "PROJECT_MEMORY.md": {
+      "sha256": "3b2fc9ddb6c3ccc41d104930e2d19bfa0aab6431b73bbb7cb91f1a42dafe4379",
+      "size": 9428
+    },
+    "package.json": {
+      "sha256": "d69d5acc2c41851f78322a98aa47e3b40f9fe77688d61b7e7e2f7728bcd0b476",
+      "size": 1764
+    },
+    "Cargo.toml": {
+      "sha256": "19928e9df89012549f28db73b6f232e50ffb12731f2ceefcff29a378c28ff8e4",
+      "size": 1081
+    },
+    "Cargo.lock": {
+      "sha256": "c5b99bab571aa365b49df0e3a6c22598b8ec9d0243b27fa0b27576e6cedfde8d",
+      "size": 17615
+    },
+    "apps/desktop/src-tauri/src/main.rs": {
+      "sha256": "629c0229ac20e66fc349f93df622b9bb7151708db990003b9ab9e54dba3cad11",
+      "size": 23071
+    },
+    "apps/desktop-ui/src/app/AppShell.tsx": {
+      "sha256": "c4ed7c2667f54ec8ca5008189a6314cdbfd436462150156da5ec59ccd1632999",
+      "size": 10266
+    },
+    "crates/domain/src/lib.rs": {
+      "sha256": "b7b52ee15babe6c1b4d4ee4faa702c3d4818fb06fcec6fc84405a313b370f3f4",
+      "size": 1749
+    },
+    "crates/application/src/lib.rs": {
+      "sha256": "2ae5f23c7f31e923945b06698b95fbbec24343d01453fe5b7a8019cfd51fa962",
+      "size": 1448
+    },
+    "crates/adapters/src/lib.rs": {
+      "sha256": "4bc45227d33f13932597f05919ec93ace47e69b5c24e4e6a0518e74db94cbbc7",
+      "size": 953
+    },
+    "docs/limits/known-limitations.md": {
+      "sha256": "93aefe0a3bf038b47c62e5dea18efc59cdb51aa08a8620f7a31257aceab2b752",
+      "size": 9285
+    },
+    "docs/maintenance/operations.md": {
+      "sha256": "4d66001949df7f4f669b744cbef4809e2512f71f053c081edca7144fe25b1c4f",
+      "size": 14940
+    },
+    "evidence/implementation/implementation-status.md": {
+      "sha256": "c1d02eb7442e6a650b5126e4552a4ad1ea27720e9fe421d289690601d5ccad2c",
+      "size": 4607
+    },
+    "evidence/implementation/final-validation.json": {
+      "sha256": "694ff2ef3ba4cc24048c6dca23b597bf94c86aaf4b1c7a90466effc6d7c4c333",
+      "size": 3127
+    },
+    "dist/FlashToSpine-Core/package-manifest.json": {
+      "sha256": "648b6976f011a4841e57c7c5db9291628109e6d019d1f082edbf843eca32b74d",
+      "size": 2948
+    }
+  }
+}

@@ -1,0 +1,26 @@
+{
+    "schemaVersion":  "1.0.0",
+    "snapshotId":  "R3A-20260711-083655-FINAL",
+    "checkId":  "DEV-EVD-21-SUFFIX-PARITY",
+    "status":  "PASS",
+    "metric":  {
+                   "devCount":  80,
+                   "evdCount":  80,
+                   "missingEvdSuffixCount":  0,
+                   "extraEvdSuffixCount":  0,
+                   "missingEvdSuffixes":  [
+
+                                          ],
+                   "extraEvdSuffixes":  [
+
+                                        ]
+               },
+    "command":  "powershell -NoProfile -ExecutionPolicy Bypass -File plan/reviews/tools/Invoke-PlanAudit.ps1 -SnapshotId R3A-20260711-083655-FINAL",
+    "tool":  "PowerShell 5.1.22621.4391; Invoke-PlanAudit.ps1/1.0.2; exact-ID registry reducer",
+    "exitCode":  0,
+    "startedAtAsiaShanghai":  "2026-07-11T08:37:12.3083401+08:00",
+    "endedAtAsiaShanghai":  "2026-07-11T08:37:12.3506131+08:00",
+    "details":  [
+
+                ]
+}

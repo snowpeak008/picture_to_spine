@@ -1,0 +1,5 @@
+{
+  "product": { "name": "FlashToSpine Production Assist", "mode": "闭源商业 · Windows 桌面 · Core 手工链" },
+  "errors": { "bootstrap": "应用初始化失败", "retry": "重新加载", "details": "查看诊断" },
+  "status": { "verified": "已验证", "unverified": "未验证", "external": "外部条件", "failed": "失败" }
+}

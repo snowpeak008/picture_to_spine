@@ -1,0 +1,15 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "F2S-M00-SPIKE-RESULT-001",
+  "type": "object",
+  "additionalProperties": true,
+  "required": ["schemaVersion", "probeId", "status", "capabilityState", "observedAtUtc", "controls"],
+  "properties": {
+    "schemaVersion": { "const": "1.0.0" },
+    "probeId": { "type": "string" },
+    "status": { "enum": ["PASS", "FAIL", "NOT_RUN"] },
+    "capabilityState": { "enum": ["VERIFIED", "UNVERIFIED", "FAILED", "EXTERNAL"] },
+    "observedAtUtc": { "type": "string", "format": "date-time" },
+    "controls": { "type": "array" }
+  }
+}

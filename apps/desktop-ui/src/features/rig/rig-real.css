@@ -1,0 +1,21 @@
+.rig-viewport > svg {
+  width: min(100%, 560px);
+  max-height: 520px;
+  border: 1px solid #4b4456;
+  background: #111017;
+}
+.rig-viewport svg line { stroke: #9b83ef; stroke-width: 3; }
+.rig-viewport svg circle { fill: #55d7ca; stroke: #17141e; stroke-width: 2; }
+.rig-viewport svg circle.selected { fill: #ffd06e; }
+.rig-data { width: 100%; border-collapse: collapse; font-size: 11px; }
+.rig-data th,.rig-data td { padding: 6px 4px; border-bottom: 1px solid var(--line); text-align: left; }
+.rig-data td { color: var(--muted); overflow-wrap: anywhere; }
+.property-form input,.property-form select { min-height: 34px; }
+.slot-editor-panel { padding: 14px; overflow: auto; border: 1px solid var(--line); background: #17141e; }
+.slot-editor-panel .rig-data { min-width: 760px; font-size: 12px; }
+.slot-editor-panel td:first-child { display: grid; gap: 3px; }
+.slot-editor-panel td:first-child small { color: #81798d; }
+.slot-editor-panel select,.slot-editor-panel input { width: 100%; min-height: 32px; border: 1px solid #484052; border-radius: 4px; background: #211d29; color: #f1ecf8; padding: 5px 7px; }
+.slot-editor-panel label { display: grid; grid-template-columns: 42px minmax(90px,1fr); align-items: center; gap: 6px; }
+.slot-editor-panel > p { color: #8f879b; font-size: 12px; }
+@media(max-width:1200px){.rig-layout{grid-template-columns:210px minmax(400px,1fr)}.rig-inspector{grid-column:1/3}}

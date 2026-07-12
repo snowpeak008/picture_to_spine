@@ -1,0 +1,135 @@
+{
+    "schemaVersion":  "1.0.0",
+    "evidenceId":  "F2S-REV-DEVPLAN-D0-006",
+    "phase":  "D0",
+    "snapshotId":  "D0-20260711-131230-R5",
+    "createdAtAsiaShanghai":  "2026-07-11T13:12:30.6838758+08:00",
+    "archivePath":  "plan/devplan/reviews/snapshots/D0-20260711-131230-R5.zip",
+    "archiveSha256":  "93d657d57a44f37e15e184fb9bbc959798fc28e16bdfa997e8fed5d311d0bd40",
+    "sourceRoot":  "plan/devplan",
+    "documentCount":  "16",
+    "generator":  {
+                      "name":  "New-DevPlanSnapshot.ps1",
+                      "version":  "1.0.0",
+                      "scriptPath":  "plan/devplan/reviews/tools/New-DevPlanSnapshot.ps1",
+                      "scriptSha256":  "f158cd09c4cc391a2da1d8c9929da0beae635999edfcb7a77b3a609209480f84",
+                      "runtimePath":  "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+                      "runtimeVersion":  "5.1.22621.4391",
+                      "runtimeSha256":  "3247bcfd60f6dd25f34cb74b5889ab10ef1b3ec72b4d4b3d95b5b25b534560b8",
+                      "exactCommand":  "powershell -NoProfile -ExecutionPolicy Bypass -File plan/devplan/reviews/tools/New-DevPlanSnapshot.ps1 -Phase D0 -SnapshotId D0-20260711-131230-R5 -EvidenceId F2S-REV-DEVPLAN-D0-006"
+                  },
+    "documents":  [
+                      {
+                          "docId":  "F2S-DOC-DEVPLAN-INDEX-001",
+                          "path":  "devplan/00-原子计划索引与执行治理.md",
+                          "revision":  "1.0",
+                          "size":  "11446",
+                          "sha256":  "b6bc4f3c019c0461aa4b7b5671efd6cb459d06bf2d1af2ee6d26587084293d99"
+                      },
+                      {
+                          "docId":  "F2S-DOC-DEVPLAN-M00-001",
+                          "path":  "devplan/01-M00-决策与可行性Spike.md",
+                          "revision":  "1.0",
+                          "size":  "34420",
+                          "sha256":  "2d26689feb9d88a15e52544ed1bb47eb938953d0a32f5d76e584584585d1230f"
+                      },
+                      {
+                          "docId":  "F2S-DOC-DEVPLAN-M01-001",
+                          "path":  "devplan/02-M01-工程骨架与工具链.md",
+                          "revision":  "1.0",
+                          "size":  "26654",
+                          "sha256":  "3c18837d1b6a416bc1c2eff9649cbb5874ba2f760e9f565c9e5b6a61f11751c3"
+                      },
+                      {
+                          "docId":  "F2S-DOC-DEVPLAN-M02-001",
+                          "path":  "devplan/03-M02-领域存储与协议基线.md",
+                          "revision":  "1.0",
+                          "size":  "49116",
+                          "sha256":  "cb662a7840c8769fec783192c4d4e1b923587446566bf51895ce56a019613e29"
+                      },
+                      {
+                          "docId":  "F2S-DOC-DEVPLAN-M03-001",
+                          "path":  "devplan/04-M03-项目导入母版与审批.md",
+                          "revision":  "1.0",
+                          "size":  "39308",
+                          "sha256":  "029722ced744fcfb9f0b6b8c3abb71de50d8fcf9a8104ff5b3e8c7a634b099d3"
+                      },
+                      {
+                          "docId":  "F2S-DOC-DEVPLAN-M04-001",
+                          "path":  "devplan/05-M04-分层与素材修复.md",
+                          "revision":  "1.0",
+                          "size":  "40674",
+                          "sha256":  "5f5a92fac1c13f2f0e5072b1e07cd76ac90b7c40b6fe8bbcca4a9546bcfaa4d7"
+                      },
+                      {
+                          "docId":  "F2S-DOC-DEVPLAN-M05-001",
+                          "path":  "devplan/06-M05-Rig编辑与审批.md",
+                          "revision":  "1.0",
+                          "size":  "33147",
+                          "sha256":  "fa90a9d92922c338a4952fb3496970709998cbd4d04e78e0ddaa3c0dc9999247"
+                      },
+                      {
+                          "docId":  "F2S-DOC-DEVPLAN-M06-001",
+                          "path":  "devplan/07-M06-动作内容与提示词.md",
+                          "revision":  "1.0",
+                          "size":  "35405",
+                          "sha256":  "b51653a826e712d53e73c0e941f5298cd718006cdc161d39ea3caee7db4c57f5"
+                      },
+                      {
+                          "docId":  "F2S-DOC-DEVPLAN-M07-001",
+                          "path":  "devplan/08-M07-动画编辑预览与玩法标记.md",
+                          "revision":  "1.0",
+                          "size":  "42158",
+                          "sha256":  "95d48da399523648baf45f3e40f23557485a3b1e843162fc12681919e0f4a8d0"
+                      },
+                      {
+                          "docId":  "F2S-DOC-DEVPLAN-M08-001",
+                          "path":  "devplan/09-M08-导出与Spine42适配.md",
+                          "revision":  "1.0",
+                          "size":  "37017",
+                          "sha256":  "30fdfa085664f6962d6f6419b235f378abee01ea81aab1c2d4cfa29bc5f59678"
+                      },
+                      {
+                          "docId":  "F2S-DOC-DEVPLAN-M09-001",
+                          "path":  "devplan/10-M09-安全AI远程GPU与质量.md",
+                          "revision":  "1.0",
+                          "size":  "35769",
+                          "sha256":  "7fa60839b80a90799c17d2774e6e99a6d9c41028282c1a00378db8be7a4cda7f"
+                      },
+                      {
+                          "docId":  "F2S-DOC-DEVPLAN-M10-001",
+                          "path":  "devplan/11-M10-Windows打包入口更新.md",
+                          "revision":  "1.0",
+                          "size":  "28972",
+                          "sha256":  "9e28ef0267ee8b315ca3b9148bad348f7900233abf6ffc38dd49c3cece4ed3cb"
+                      },
+                      {
+                          "docId":  "F2S-DOC-DEVPLAN-M11-001",
+                          "path":  "devplan/12-M11-验收封账与发布候选.md",
+                          "revision":  "1.0",
+                          "size":  "27858",
+                          "sha256":  "52797af282484fc6ee80f2f31f8bf90d898d5403d547917087687cf8f6ae26e5"
+                      },
+                      {
+                          "docId":  "F2S-DOC-DEVPLAN-TRACE-001",
+                          "path":  "devplan/13-原子任务DAG与追踪矩阵.md",
+                          "revision":  "1.0",
+                          "size":  "99510",
+                          "sha256":  "5a8e8bd834f92121d231eec362af5f135e32d2493665fa333535dc305fdf7cc8"
+                      },
+                      {
+                          "docId":  "F2S-DOC-DEVPLAN-SCORE-001",
+                          "path":  "devplan/14-逐文件评分与整改记录.md",
+                          "revision":  "1.0",
+                          "size":  "7503",
+                          "sha256":  "4fe8e500bdb88444f14af5cb3a7199dd8d9c2bf8e3c500407c4777284abc3f29"
+                      },
+                      {
+                          "docId":  "F2S-DOC-DEVPLAN-COMPLIANCE-001",
+                          "path":  "devplan/15-最终原子计划合规审查.md",
+                          "revision":  "1.0",
+                          "size":  "6623",
+                          "sha256":  "7dbdda6bce10ca157ba239d595691c1e8ec609970cf41ad0cb16ebb12d70cefa"
+                      }
+                  ]
+}

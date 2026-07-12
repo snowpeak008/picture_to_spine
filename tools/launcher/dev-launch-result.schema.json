@@ -1,0 +1,13 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "F2S-DEV-LAUNCH-RESULT-001",
+  "type": "object",
+  "required": ["schemaVersion", "status", "diagnosticCode", "executablePath", "message"],
+  "properties": {
+    "schemaVersion": { "const": "1.0.0" },
+    "status": { "enum": ["STARTED", "NOT_BUILT", "FAILED"] },
+    "diagnosticCode": { "type": "string" },
+    "executablePath": { "type": ["string", "null"] },
+    "message": { "type": "string" }
+  }
+}

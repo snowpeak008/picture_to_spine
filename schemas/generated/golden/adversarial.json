@@ -1,0 +1,24 @@
+{
+  "vectors": [
+    {
+      "id": "unknown-top-level-evidence",
+      "expected": "FAIL"
+    },
+    {
+      "id": "attack-alias-attack_1",
+      "expected": "FAIL"
+    },
+    {
+      "id": "nan-number",
+      "expected": "FAIL"
+    },
+    {
+      "id": "negative-revision",
+      "expected": "FAIL"
+    },
+    {
+      "id": "external-without-blocker",
+      "expected": "FAIL"
+    }
+  ]
+}

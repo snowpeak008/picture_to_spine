@@ -1,0 +1,42 @@
+{
+  "schemaVersion": "1.0.0",
+  "evidenceId": "F2S-EVD-M02-008",
+  "taskId": "F2S-DEV-M02-008",
+  "status": "PASS",
+  "command": "cargo test --workspace",
+  "exitCode": 0,
+  "startedAtUtc": "2026-07-11T07:47:17.290Z",
+  "endedAtUtc": "2026-07-11T07:47:17.290Z",
+  "runner": {
+    "kind": "local-development",
+    "os": "win32 10.0.22631",
+    "architecture": "x64",
+    "hostnameHash": "f3da3e8c48fbc119008475bba247ec014ab39af1f7e5d05bd1609c4951e6d3d5"
+  },
+  "toolVersions": {
+    "node": "v24.15.0"
+  },
+  "inputHashes": {},
+  "outputHashes": {
+    "crates/domain/src/errors/error_registry.rs": "f9cca2f3aaa993ec8f7e5c867aca94c4e08a249e9d172b9df4bc0c93dce968f8",
+    "crates/domain/src/errors/mod.rs": "e905095043aae8b030330431ebeaae450f4da608678d4afb3776d735f16f3928",
+    "crates/domain/src/observability/audit_event.rs": "77b216d940828615694ad0e3cf950a8a5e140cc819a984344ff665f8edb3e3fa",
+    "crates/domain/src/observability/mod.rs": "e5122ef6de91eb74315abe85f0892892bc36560bf08ca0916aaf3b9bdfbe8c79",
+    "crates/domain/src/observability/observable_event.rs": "efe39f48ce7f26400c31354974b91405fcd40a6d5c899905b494974fa8e0bfb1",
+    "crates/application/src/observability/emit.rs": "4372eedf40b2b28a3708cc8c3e5c528b26c771e3bc19a895f9aac0bc89fe0ba3",
+    "crates/application/src/observability/mod.rs": "a797c36316e00a63b30a2ab57d18f80f5698a1f02459f1570a5420df5f76febd",
+    "crates/adapters/src/observability/jsonl_audit.rs": "c30409b85e94e95650f26a3bf6201867533e37844fa987a98b6f2832699e206f",
+    "crates/adapters/src/observability/local_event_sink.rs": "3b334ff71d82cdb5817e51d7246717d7fa5156abe84bfe6932befd777a20bde2",
+    "crates/adapters/src/observability/mod.rs": "8d757c21d9d87729aafa5c3936f80617b01e90352161b4aa48dee2d27cd2340c"
+  },
+  "logRefs": [],
+  "reportRefs": [],
+  "capabilityState": "VERIFIED",
+  "externalBlockers": [],
+  "previousEvidenceRef": null,
+  "notRunReason": null,
+  "payload": {
+    "summary": "Stable errors, audit and local event ports implemented.",
+    "generatedBy": "tools/evidence/create-envelope.mjs"
+  }
+}

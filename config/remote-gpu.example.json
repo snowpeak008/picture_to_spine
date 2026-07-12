@@ -1,0 +1,29 @@
+{
+  "schemaVersion": "1.0.0",
+  "enabled": false,
+  "profileId": "studio-private-gpu",
+  "ownership": "USER_CONTROLLED_PRIVATE",
+  "origin": "https://gpu.internal.example",
+  "allowedPorts": [443],
+  "certificateSpkiSha256": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+  "organizationIdentitySha256": "cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc",
+  "credentialManagerTarget": "FlashToSpine/RemoteGpu/studio-private-gpu",
+  "allowedMethods": [
+    "LAYER_SEGMENTATION_CANDIDATE",
+    "RIG_PROPOSAL_CANDIDATE",
+    "MOTION_CURVE_CANDIDATE"
+  ],
+  "allowedInputMediaTypes": [
+    "IMAGE_PNG",
+    "IMAGE_JPEG",
+    "IMAGE_WEBP",
+    "APPLICATION_JSON",
+    "APPLICATION_RIG_IR_JSON"
+  ],
+  "allowedModelManifestSha256": [
+    "dddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd"
+  ],
+  "maxUploadBytes": 268435456,
+  "maxResponseBytes": 268435456,
+  "requestTimeoutSeconds": 120
+}

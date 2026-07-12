@@ -1,0 +1,25 @@
+{
+    "schemaVersion":  "1.0.0",
+    "evidenceId":  "F2S-AUD-DEVPLAN-D0-003",
+    "snapshotId":  "D0-20260711-144500-R2",
+    "phase":  "D0",
+    "checkId":  "NO-SHORTHAND-TRACE-IDS",
+    "status":  "FAIL",
+    "metric":  {
+                   "patterns":  {
+                                    "compactIdSlash":  "F2S-(?:FR|NFR|TST)-[A-Z0-9-]+/[0-9]",
+                                    "compactIdRange":  "F2S-(?:FR|NFR|TST|DEV|WU|EVD)-[A-Z0-9-]+\\.\\.[A-Z0-9]",
+                                    "bareWuAlias":  "\\bWU-(?:[A-Z]|[0-9]{1,2})\\b",
+                                    "bareMilestoneRange":  "\\bM[0-9]{2}\\.\\.M[0-9]{2}\\b",
+                                    "bareMilestoneSlash":  "\\bM[0-9]{2}/M[0-9]{2}\\b"
+                                },
+                   "issueCount":  2
+               },
+    "details":  [
+                    "F2S-DEV-M05-001 contains bareMilestoneSlash: M07/M09",
+                    "F2S-DEV-M05-006 contains bareMilestoneSlash: M01/M02"
+                ],
+    "command":  "powershell -NoProfile -ExecutionPolicy Bypass -File plan/devplan/reviews/tools/Invoke-DevPlanAudit.ps1 -Phase D0 -SnapshotId D0-20260711-144500-R2 -EvidenceId F2S-AUD-DEVPLAN-D0-003",
+    "toolPath":  "plan/devplan/reviews/tools/Invoke-DevPlanAudit.ps1",
+    "toolSha256":  "bc94e387781662a5846f2306eaf6b2ebde0bd1bdc4de22a9ee079e1f3bfc8322"
+}

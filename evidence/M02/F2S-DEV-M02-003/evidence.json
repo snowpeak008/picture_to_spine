@@ -1,0 +1,39 @@
+{
+  "schemaVersion": "1.0.0",
+  "evidenceId": "F2S-EVD-M02-003",
+  "taskId": "F2S-DEV-M02-003",
+  "status": "PASS",
+  "command": "cargo test -p f2s-application",
+  "exitCode": 0,
+  "startedAtUtc": "2026-07-11T07:47:17.060Z",
+  "endedAtUtc": "2026-07-11T07:47:17.060Z",
+  "runner": {
+    "kind": "local-development",
+    "os": "win32 10.0.22631",
+    "architecture": "x64",
+    "hostnameHash": "f3da3e8c48fbc119008475bba247ec014ab39af1f7e5d05bd1609c4951e6d3d5"
+  },
+  "toolVersions": {
+    "node": "v24.15.0"
+  },
+  "inputHashes": {},
+  "outputHashes": {
+    "crates/domain/src/commands/command.rs": "b8e540edee89241b7e468de60bc9d68974e179ddf403bee0650981a2db7ddc84",
+    "crates/domain/src/commands/history.rs": "f667aeb82fbdddc6275168ef5e488fc3eda54513dfc7181ad2745ebc6ac2824d",
+    "crates/domain/src/commands/mod.rs": "18a9efee8827744de9823e772de2dafea3175b20cc0427b23bd07233e5fbf041",
+    "crates/application/src/commands/execute.rs": "4790805a6132ae7934bf1d4ecaddd3fe406e345cdf2086f2df34f4748ed7c7ee",
+    "crates/application/src/commands/idempotency.rs": "cb1bccd2842bf56d117a0a0ed28407ab19c207c7be10daac6fb13adddc6b8ded",
+    "crates/application/src/commands/mod.rs": "5c37f391b2b65aaa363a1add1d13a6ecccc10a5ac725fae5f6ef4028fd01973c",
+    "crates/application/src/commands/undo_redo.rs": "a14a61c0fdfaf34979c1c749649fb5403b3c6d304e0cb26a9d58d121554d71cc"
+  },
+  "logRefs": [],
+  "reportRefs": [],
+  "capabilityState": "VERIFIED",
+  "externalBlockers": [],
+  "previousEvidenceRef": null,
+  "notRunReason": null,
+  "payload": {
+    "summary": "Idempotent command and undo/redo history implemented.",
+    "generatedBy": "tools/evidence/create-envelope.mjs"
+  }
+}

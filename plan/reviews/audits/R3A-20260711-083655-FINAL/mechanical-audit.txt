@@ -1,0 +1,240 @@
+Flash to Spine plan mechanical audit
+SnapshotId: R3A-20260711-083655-FINAL
+Phase: R3A
+Status: FAIL
+GeneratedAtAsiaShanghai: 2026-07-11T08:37:12.6898609+08:00
+ManifestSha256: 81419144c843b142f9cfa77fd01d92fc2213be094c27676dc51a3e7f6964c62d
+Checks: 29; PASS=26; FAIL=2; ERROR=1
+
+[PASS] SNAPSHOT-MANIFEST-ARCHIVE
+  exitCode: 0
+  startedAtAsiaShanghai: 2026-07-11T08:37:11.6834544+08:00
+  endedAtAsiaShanghai: 2026-07-11T08:37:11.7734578+08:00
+  command: powershell -NoProfile -ExecutionPolicy Bypass -File plan/reviews/tools/Invoke-PlanAudit.ps1 -SnapshotId R3A-20260711-083655-FINAL
+  tool: PowerShell 5.1.22621.4391; Invoke-PlanAudit.ps1/1.0.2
+  rawPath: plan/reviews/audits/R3A-20260711-083655-FINAL/raw/snapshot-manifest-archive.json
+  rawSha256: 0c5e1689d511467979ce2e082a16498895410b47e4c40dfee702d3213be4693b
+[PASS] SNAPSHOT-DOCUMENT-HASHES
+  exitCode: 0
+  startedAtAsiaShanghai: 2026-07-11T08:37:11.7946498+08:00
+  endedAtAsiaShanghai: 2026-07-11T08:37:11.8603018+08:00
+  command: powershell -NoProfile -ExecutionPolicy Bypass -File plan/reviews/tools/Invoke-PlanAudit.ps1 -SnapshotId R3A-20260711-083655-FINAL
+  tool: PowerShell 5.1.22621.4391; Invoke-PlanAudit.ps1/1.0.2; .NET SHA256
+  rawPath: plan/reviews/audits/R3A-20260711-083655-FINAL/raw/snapshot-document-hashes.json
+  rawSha256: 06a20e5f8e8ee5e2b747ec57318a7dc7c7c10ac3b542768614eedb2b5d24d1ec
+[PASS] SNAPSHOT-ARCHIVE-ENTRIES
+  exitCode: 0
+  startedAtAsiaShanghai: 2026-07-11T08:37:11.8663149+08:00
+  endedAtAsiaShanghai: 2026-07-11T08:37:11.9393647+08:00
+  command: powershell -NoProfile -ExecutionPolicy Bypass -File plan/reviews/tools/Invoke-PlanAudit.ps1 -SnapshotId R3A-20260711-083655-FINAL
+  tool: PowerShell 5.1.22621.4391; Invoke-PlanAudit.ps1/1.0.2; ZipArchive; .NET SHA256
+  rawPath: plan/reviews/audits/R3A-20260711-083655-FINAL/raw/snapshot-archive-entries.json
+  rawSha256: e6db29c86b8483f8db7da9ea30a2f012dbc7cfee133e6da453fbc3fb108c76f5
+[PASS] DOCUMENT-SET-00-24
+  exitCode: 0
+  startedAtAsiaShanghai: 2026-07-11T08:37:11.9485152+08:00
+  endedAtAsiaShanghai: 2026-07-11T08:37:12.0122009+08:00
+  command: powershell -NoProfile -ExecutionPolicy Bypass -File plan/reviews/tools/Invoke-PlanAudit.ps1 -SnapshotId R3A-20260711-083655-FINAL
+  tool: PowerShell 5.1.22621.4391; Invoke-PlanAudit.ps1/1.0.2; UTF-8 strict decoder
+  rawPath: plan/reviews/audits/R3A-20260711-083655-FINAL/raw/document-set-00-24.json
+  rawSha256: 574d90dd7714fa78ae5c9c583764ed90168070ae6467cccf604d787c7c2cd2d3
+[FAIL] FRONTMATTER-PHASE-CONTRACT
+  exitCode: 1
+  startedAtAsiaShanghai: 2026-07-11T08:37:12.0182002+08:00
+  endedAtAsiaShanghai: 2026-07-11T08:37:12.0741631+08:00
+  command: powershell -NoProfile -ExecutionPolicy Bypass -File plan/reviews/tools/Invoke-PlanAudit.ps1 -SnapshotId R3A-20260711-083655-FINAL
+  tool: PowerShell 5.1.22621.4391; Invoke-PlanAudit.ps1/1.0.2; deterministic frontmatter parser
+  rawPath: plan/reviews/audits/R3A-20260711-083655-FINAL/raw/frontmatter-phase-contract.json
+  rawSha256: ce912a629bdaab0592509b6cb31af6c13898ad75eab60003a8e49d9fda564245
+[PASS] MARKDOWN-FENCE-BALANCE
+  exitCode: 0
+  startedAtAsiaShanghai: 2026-07-11T08:37:12.0828651+08:00
+  endedAtAsiaShanghai: 2026-07-11T08:37:12.1043025+08:00
+  command: powershell -NoProfile -ExecutionPolicy Bypass -File plan/reviews/tools/Invoke-PlanAudit.ps1 -SnapshotId R3A-20260711-083655-FINAL
+  tool: PowerShell 5.1.22621.4391; Invoke-PlanAudit.ps1/1.0.2; regex
+  rawPath: plan/reviews/audits/R3A-20260711-083655-FINAL/raw/markdown-fence-balance.json
+  rawSha256: 779cb35b35100f42b8e703a2bef26d020a0b8ad02e27d3445219b23f5bbc7fa1
+[PASS] MERGE-CONFLICT-MARKERS
+  exitCode: 0
+  startedAtAsiaShanghai: 2026-07-11T08:37:12.1130216+08:00
+  endedAtAsiaShanghai: 2026-07-11T08:37:12.1249943+08:00
+  command: powershell -NoProfile -ExecutionPolicy Bypass -File plan/reviews/tools/Invoke-PlanAudit.ps1 -SnapshotId R3A-20260711-083655-FINAL
+  tool: PowerShell 5.1.22621.4391; Invoke-PlanAudit.ps1/1.0.2; regex
+  rawPath: plan/reviews/audits/R3A-20260711-083655-FINAL/raw/merge-conflict-markers.json
+  rawSha256: 40cf146bedf1628f98392d3e4366226fdeaa1b89c1e112b1d80846fa788e405d
+[FAIL] CANONICAL-FOR-REGISTRY
+  exitCode: 1
+  startedAtAsiaShanghai: 2026-07-11T08:37:12.1338791+08:00
+  endedAtAsiaShanghai: 2026-07-11T08:37:12.1510872+08:00
+  command: powershell -NoProfile -ExecutionPolicy Bypass -File plan/reviews/tools/Invoke-PlanAudit.ps1 -SnapshotId R3A-20260711-083655-FINAL
+  tool: PowerShell 5.1.22621.4391; Invoke-PlanAudit.ps1/1.0.2; frontmatter registry reducer
+  rawPath: plan/reviews/audits/R3A-20260711-083655-FINAL/raw/canonical-for-registry.json
+  rawSha256: 346824f425d0bf88dbfdae024f1d64aa77eadc3277c9907f7f7e897bd68f27ed
+[PASS] DEPENDS-ON-GRAPH
+  exitCode: 0
+  startedAtAsiaShanghai: 2026-07-11T08:37:12.1570675+08:00
+  endedAtAsiaShanghai: 2026-07-11T08:37:12.1821189+08:00
+  command: powershell -NoProfile -ExecutionPolicy Bypass -File plan/reviews/tools/Invoke-PlanAudit.ps1 -SnapshotId R3A-20260711-083655-FINAL
+  tool: PowerShell 5.1.22621.4391; Invoke-PlanAudit.ps1/1.0.2; deterministic graph reduction
+  rawPath: plan/reviews/audits/R3A-20260711-083655-FINAL/raw/depends-on-graph.json
+  rawSha256: b08fdc9398223c6ef4355a63a3d299d397cba6e5ea434f35fe27aa69670eec5c
+[PASS] REQUIREMENTS-02-21-PARITY
+  exitCode: 0
+  startedAtAsiaShanghai: 2026-07-11T08:37:12.1901408+08:00
+  endedAtAsiaShanghai: 2026-07-11T08:37:12.2573082+08:00
+  command: powershell -NoProfile -ExecutionPolicy Bypass -File plan/reviews/tools/Invoke-PlanAudit.ps1 -SnapshotId R3A-20260711-083655-FINAL
+  tool: PowerShell 5.1.22621.4391; Invoke-PlanAudit.ps1/1.0.2; markdown table reducer
+  rawPath: plan/reviews/audits/R3A-20260711-083655-FINAL/raw/requirements-02-21-parity.json
+  rawSha256: 2b4faaf656774f863957405b4369f9fa0fa6668dc304565b7fe2b5ec2cacbfe0
+[PASS] EXACT-TESTS-OWNER-TRACE-PARITY
+  exitCode: 0
+  startedAtAsiaShanghai: 2026-07-11T08:37:12.2628329+08:00
+  endedAtAsiaShanghai: 2026-07-11T08:37:12.3027636+08:00
+  command: powershell -NoProfile -ExecutionPolicy Bypass -File plan/reviews/tools/Invoke-PlanAudit.ps1 -SnapshotId R3A-20260711-083655-FINAL
+  tool: PowerShell 5.1.22621.4391; Invoke-PlanAudit.ps1/1.0.2; exact-ID registry reducer
+  rawPath: plan/reviews/audits/R3A-20260711-083655-FINAL/raw/exact-tests-owner-trace-parity.json
+  rawSha256: 7c7ff98db41458249e688e2ae894e2d1c362c817bc78b3df80d7690f2331eff5
+[PASS] DEV-EVD-21-SUFFIX-PARITY
+  exitCode: 0
+  startedAtAsiaShanghai: 2026-07-11T08:37:12.3083401+08:00
+  endedAtAsiaShanghai: 2026-07-11T08:37:12.3506131+08:00
+  command: powershell -NoProfile -ExecutionPolicy Bypass -File plan/reviews/tools/Invoke-PlanAudit.ps1 -SnapshotId R3A-20260711-083655-FINAL
+  tool: PowerShell 5.1.22621.4391; Invoke-PlanAudit.ps1/1.0.2; exact-ID registry reducer
+  rawPath: plan/reviews/audits/R3A-20260711-083655-FINAL/raw/dev-evd-21-suffix-parity.json
+  rawSha256: db1faf98ef1239d793efa6bb8779535e1142f55b4a15c312baa24a21bffd8172
+[PASS] HASH-01-WIRE-ARTIFACT
+  exitCode: 0
+  startedAtAsiaShanghai: 2026-07-11T08:37:12.3566373+08:00
+  endedAtAsiaShanghai: 2026-07-11T08:37:12.3947991+08:00
+  command: powershell -NoProfile -ExecutionPolicy Bypass -File plan/reviews/tools/Invoke-PlanAudit.ps1 -SnapshotId R3A-20260711-083655-FINAL
+  tool: PowerShell 5.1.22621.4391; Invoke-PlanAudit.ps1/1.0.2; UTF-8 bytes; .NET SHA256
+  rawPath: plan/reviews/audits/R3A-20260711-083655-FINAL/raw/hash-01-wire-artifact.json
+  rawSha256: 2145614c06ed8bd3857f0a2b40d340cb45ab8215e78d2a858ead3241d3b28ddd
+[PASS] HASH-02-DECISION-ARTIFACT
+  exitCode: 0
+  startedAtAsiaShanghai: 2026-07-11T08:37:12.4011252+08:00
+  endedAtAsiaShanghai: 2026-07-11T08:37:12.4113645+08:00
+  command: powershell -NoProfile -ExecutionPolicy Bypass -File plan/reviews/tools/Invoke-PlanAudit.ps1 -SnapshotId R3A-20260711-083655-FINAL
+  tool: PowerShell 5.1.22621.4391; Invoke-PlanAudit.ps1/1.0.2; UTF-8 bytes; .NET SHA256
+  rawPath: plan/reviews/audits/R3A-20260711-083655-FINAL/raw/hash-02-decision-artifact.json
+  rawSha256: 09a91a4bed3ee674ef69e85d4af3f549a4f0a78f92c1874346d9c6650ed6b2a9
+[PASS] HASH-03-DECISION-DOMAIN
+  exitCode: 0
+  startedAtAsiaShanghai: 2026-07-11T08:37:12.4174497+08:00
+  endedAtAsiaShanghai: 2026-07-11T08:37:12.4429761+08:00
+  command: powershell -NoProfile -ExecutionPolicy Bypass -File plan/reviews/tools/Invoke-PlanAudit.ps1 -SnapshotId R3A-20260711-083655-FINAL
+  tool: PowerShell 5.1.22621.4391; Invoke-PlanAudit.ps1/1.0.2; UTF-8 bytes; .NET SHA256
+  rawPath: plan/reviews/audits/R3A-20260711-083655-FINAL/raw/hash-03-decision-domain.json
+  rawSha256: ba01286aa3a885257fe5523b09645338232bf53b6aca6e38a155671e769376b3
+[PASS] HASH-04-RELEASE-WAIVER-ARTIFACT
+  exitCode: 0
+  startedAtAsiaShanghai: 2026-07-11T08:37:12.4488790+08:00
+  endedAtAsiaShanghai: 2026-07-11T08:37:12.4558589+08:00
+  command: powershell -NoProfile -ExecutionPolicy Bypass -File plan/reviews/tools/Invoke-PlanAudit.ps1 -SnapshotId R3A-20260711-083655-FINAL
+  tool: PowerShell 5.1.22621.4391; Invoke-PlanAudit.ps1/1.0.2; UTF-8 bytes; .NET SHA256
+  rawPath: plan/reviews/audits/R3A-20260711-083655-FINAL/raw/hash-04-release-waiver-artifact.json
+  rawSha256: c7a1a19b814a6fe643a1fb48cbe137e53bf6b7eb313956c6ac80078f32a22433
+[PASS] HASH-05-RELEASE-WAIVER-DOMAIN
+  exitCode: 0
+  startedAtAsiaShanghai: 2026-07-11T08:37:12.4621512+08:00
+  endedAtAsiaShanghai: 2026-07-11T08:37:12.4688869+08:00
+  command: powershell -NoProfile -ExecutionPolicy Bypass -File plan/reviews/tools/Invoke-PlanAudit.ps1 -SnapshotId R3A-20260711-083655-FINAL
+  tool: PowerShell 5.1.22621.4391; Invoke-PlanAudit.ps1/1.0.2; UTF-8 bytes; .NET SHA256
+  rawPath: plan/reviews/audits/R3A-20260711-083655-FINAL/raw/hash-05-release-waiver-domain.json
+  rawSha256: 31028011a7c49711171a977655a72f1b65ce2232d29d236715d86e57b8d12596
+[PASS] HASH-06-ACTOR-POLICY-ARTIFACT
+  exitCode: 0
+  startedAtAsiaShanghai: 2026-07-11T08:37:12.4749431+08:00
+  endedAtAsiaShanghai: 2026-07-11T08:37:12.4821928+08:00
+  command: powershell -NoProfile -ExecutionPolicy Bypass -File plan/reviews/tools/Invoke-PlanAudit.ps1 -SnapshotId R3A-20260711-083655-FINAL
+  tool: PowerShell 5.1.22621.4391; Invoke-PlanAudit.ps1/1.0.2; UTF-8 bytes; .NET SHA256
+  rawPath: plan/reviews/audits/R3A-20260711-083655-FINAL/raw/hash-06-actor-policy-artifact.json
+  rawSha256: 0d16d773d4449e9aa784d9495de1037e3f6eb4b8db071467b835dc66ac7dc53a
+[PASS] HASH-07-ACTOR-POLICY-DOMAIN
+  exitCode: 0
+  startedAtAsiaShanghai: 2026-07-11T08:37:12.4883639+08:00
+  endedAtAsiaShanghai: 2026-07-11T08:37:12.4943442+08:00
+  command: powershell -NoProfile -ExecutionPolicy Bypass -File plan/reviews/tools/Invoke-PlanAudit.ps1 -SnapshotId R3A-20260711-083655-FINAL
+  tool: PowerShell 5.1.22621.4391; Invoke-PlanAudit.ps1/1.0.2; UTF-8 bytes; .NET SHA256
+  rawPath: plan/reviews/audits/R3A-20260711-083655-FINAL/raw/hash-07-actor-policy-domain.json
+  rawSha256: 57aed3c18fcbc890cca0570b7fb7326866b62760325cc4bb4de045bf1fdc4301
+[PASS] HASH-08-SIGNATURE-REGISTRY-ARTIFACT
+  exitCode: 0
+  startedAtAsiaShanghai: 2026-07-11T08:37:12.5025993+08:00
+  endedAtAsiaShanghai: 2026-07-11T08:37:12.5095760+08:00
+  command: powershell -NoProfile -ExecutionPolicy Bypass -File plan/reviews/tools/Invoke-PlanAudit.ps1 -SnapshotId R3A-20260711-083655-FINAL
+  tool: PowerShell 5.1.22621.4391; Invoke-PlanAudit.ps1/1.0.2; UTF-8 bytes; .NET SHA256
+  rawPath: plan/reviews/audits/R3A-20260711-083655-FINAL/raw/hash-08-signature-registry-artifact.json
+  rawSha256: bba1cafb3d6fb198eef9185ebde8630b9e32a28669e6a2bb028bb1897fb51cf2
+[PASS] HASH-09-SIGNATURE-REGISTRY-DOMAIN
+  exitCode: 0
+  startedAtAsiaShanghai: 2026-07-11T08:37:12.5160220+08:00
+  endedAtAsiaShanghai: 2026-07-11T08:37:12.5287898+08:00
+  command: powershell -NoProfile -ExecutionPolicy Bypass -File plan/reviews/tools/Invoke-PlanAudit.ps1 -SnapshotId R3A-20260711-083655-FINAL
+  tool: PowerShell 5.1.22621.4391; Invoke-PlanAudit.ps1/1.0.2; UTF-8 bytes; .NET SHA256
+  rawPath: plan/reviews/audits/R3A-20260711-083655-FINAL/raw/hash-09-signature-registry-domain.json
+  rawSha256: 04cb7d3167acfba461f8c4784ed749a022b5a9c4048898db9c8dec217b15ca71
+[PASS] POLICY-LICENSE-ALLOWLIST
+  exitCode: 0
+  startedAtAsiaShanghai: 2026-07-11T08:37:12.5354892+08:00
+  endedAtAsiaShanghai: 2026-07-11T08:37:12.5665009+08:00
+  command: powershell -NoProfile -ExecutionPolicy Bypass -File plan/reviews/tools/Invoke-PlanAudit.ps1 -SnapshotId R3A-20260711-083655-FINAL
+  tool: PowerShell 5.1.22621.4391; Invoke-PlanAudit.ps1/1.0.2; canonical fenced-block parser
+  rawPath: plan/reviews/audits/R3A-20260711-083655-FINAL/raw/policy-license-allowlist.json
+  rawSha256: e238347eabe7cc54d3e31102c4faf94446c9d091d0f6a45fbcd2fbe4fa77eb88
+[PASS] POLICY-TLS-FAIL-CLOSED
+  exitCode: 0
+  startedAtAsiaShanghai: 2026-07-11T08:37:12.5719879+08:00
+  endedAtAsiaShanghai: 2026-07-11T08:37:12.5820208+08:00
+  command: powershell -NoProfile -ExecutionPolicy Bypass -File plan/reviews/tools/Invoke-PlanAudit.ps1 -SnapshotId R3A-20260711-083655-FINAL
+  tool: PowerShell 5.1.22621.4391; Invoke-PlanAudit.ps1/1.0.2; requirement-row assertion
+  rawPath: plan/reviews/audits/R3A-20260711-083655-FINAL/raw/policy-tls-fail-closed.json
+  rawSha256: 3c138de0c25ef16b1da62ebc93e876794c02e6db8c2c3de8ea7d43b6d5d8181d
+[PASS] POLICY-WINDOWS-APPCONTAINER
+  exitCode: 0
+  startedAtAsiaShanghai: 2026-07-11T08:37:12.5877324+08:00
+  endedAtAsiaShanghai: 2026-07-11T08:37:12.6027301+08:00
+  command: powershell -NoProfile -ExecutionPolicy Bypass -File plan/reviews/tools/Invoke-PlanAudit.ps1 -SnapshotId R3A-20260711-083655-FINAL
+  tool: PowerShell 5.1.22621.4391; Invoke-PlanAudit.ps1/1.0.2; requirement/profile assertion
+  rawPath: plan/reviews/audits/R3A-20260711-083655-FINAL/raw/policy-windows-appcontainer.json
+  rawSha256: 61941e7089bb60b377af1b775aef51141c835527214e15639cf7f62265d830b1
+[PASS] POLICY-P0-P1-NO-WAIVER
+  exitCode: 0
+  startedAtAsiaShanghai: 2026-07-11T08:37:12.6078772+08:00
+  endedAtAsiaShanghai: 2026-07-11T08:37:12.6156176+08:00
+  command: powershell -NoProfile -ExecutionPolicy Bypass -File plan/reviews/tools/Invoke-PlanAudit.ps1 -SnapshotId R3A-20260711-083655-FINAL
+  tool: PowerShell 5.1.22621.4391; Invoke-PlanAudit.ps1/1.0.2; policy-byte and prose assertion
+  rawPath: plan/reviews/audits/R3A-20260711-083655-FINAL/raw/policy-p0-p1-no-waiver.json
+  rawSha256: 5b04702c5db13a81aaab3c21d1e4c01d7084bd86249353efb08d0b1c0cc393be
+[PASS] POLICY-SPINE-4-2-43
+  exitCode: 0
+  startedAtAsiaShanghai: 2026-07-11T08:37:12.6241429+08:00
+  endedAtAsiaShanghai: 2026-07-11T08:37:12.6321174+08:00
+  command: powershell -NoProfile -ExecutionPolicy Bypass -File plan/reviews/tools/Invoke-PlanAudit.ps1 -SnapshotId R3A-20260711-083655-FINAL
+  tool: PowerShell 5.1.22621.4391; Invoke-PlanAudit.ps1/1.0.2; exact-version assertion
+  rawPath: plan/reviews/audits/R3A-20260711-083655-FINAL/raw/policy-spine-4-2-43.json
+  rawSha256: ead81c4c1f5842df249ada8d8d46a1ebd764db123ed35c77320d8aae72515ca6
+[PASS] POLICY-BUILTIN-WRITER-FORBIDDEN
+  exitCode: 0
+  startedAtAsiaShanghai: 2026-07-11T08:37:12.6392946+08:00
+  endedAtAsiaShanghai: 2026-07-11T08:37:12.6477176+08:00
+  command: powershell -NoProfile -ExecutionPolicy Bypass -File plan/reviews/tools/Invoke-PlanAudit.ps1 -SnapshotId R3A-20260711-083655-FINAL
+  tool: PowerShell 5.1.22621.4391; Invoke-PlanAudit.ps1/1.0.2; export-boundary assertion
+  rawPath: plan/reviews/audits/R3A-20260711-083655-FINAL/raw/policy-builtin-writer-forbidden.json
+  rawSha256: 85c81fc5a2aa61ee645e610c04d76c43127ee3834fd3b3b793a37ea5bf8cb6ff
+[PASS] POLICY-STRICT-ULID
+  exitCode: 0
+  startedAtAsiaShanghai: 2026-07-11T08:37:12.6525832+08:00
+  endedAtAsiaShanghai: 2026-07-11T08:37:12.6618655+08:00
+  command: powershell -NoProfile -ExecutionPolicy Bypass -File plan/reviews/tools/Invoke-PlanAudit.ps1 -SnapshotId R3A-20260711-083655-FINAL
+  tool: PowerShell 5.1.22621.4391; Invoke-PlanAudit.ps1/1.0.2; literal grammar assertion
+  rawPath: plan/reviews/audits/R3A-20260711-083655-FINAL/raw/policy-strict-ulid.json
+  rawSha256: d83f8bf9bdc23df958573b3204c46dac0dc5d49aa6d01891473d27e79a9ed480
+[ERROR] POLICY-COMMANDKIND-HASH-DOMAIN
+  exitCode: 2
+  startedAtAsiaShanghai: 2026-07-11T08:37:12.6670857+08:00
+  endedAtAsiaShanghai: 2026-07-11T08:37:12.6838794+08:00
+  command: powershell -NoProfile -ExecutionPolicy Bypass -File plan/reviews/tools/Invoke-PlanAudit.ps1 -SnapshotId R3A-20260711-083655-FINAL
+  tool: PowerShell 5.1.22621.4391; Invoke-PlanAudit.ps1/1.0.2; canonical hash-domain assertion
+  rawPath: plan/reviews/audits/R3A-20260711-083655-FINAL/raw/policy-commandkind-hash-domain.json
+  rawSha256: 3517e2a41fa0be4e2209315e1013d5a2d1417466bc323f14658f9058aa139aa1

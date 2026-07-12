@@ -1,0 +1,59 @@
+{
+    "schemaVersion":  "1.0.0",
+    "probeId":  "F2S-GPU-PROFILE-PROBE-001",
+    "status":  "NOT_RUN",
+    "capabilityState":  "UNVERIFIED",
+    "observedAtUtc":  "2026-07-11T07:17:25.3922805+00:00",
+    "controls":  [
+                     {
+                         "id":  "gpu-identity",
+                         "state":  "OBSERVED"
+                     },
+                     {
+                         "id":  "8gb-budget",
+                         "state":  "OBSERVED"
+                     },
+                     {
+                         "id":  "oom-cancel-cleanup",
+                         "state":  "NOT_RUN"
+                     }
+                 ],
+    "gpu":  [
+                {
+                    "name":  "NVIDIA GeForce RTX 3060 Ti",
+                    "memoryMiB":  8192,
+                    "driverVersion":  "595.79"
+                }
+            ],
+    "driverVersion":  "595.79",
+    "pythonVersion":  "Python 3.12.4",
+    "cudaWorkloadBundled":  false,
+    "profiles":  [
+                     {
+                         "resolution":  512,
+                         "status":  "NOT_RUN",
+                         "peakVramMiB":  null,
+                         "peakRamMiB":  null,
+                         "latencyMs":  null,
+                         "reason":  "No model or CUDA workload is bundled by Core."
+                     },
+                     {
+                         "resolution":  1024,
+                         "status":  "NOT_RUN",
+                         "peakVramMiB":  null,
+                         "peakRamMiB":  null,
+                         "latencyMs":  null,
+                         "reason":  "No model or CUDA workload is bundled by Core."
+                     },
+                     {
+                         "resolution":  2048,
+                         "status":  "NOT_RUN",
+                         "peakVramMiB":  null,
+                         "peakRamMiB":  null,
+                         "latencyMs":  null,
+                         "reason":  "No model or CUDA workload is bundled by Core."
+                     }
+                 ],
+    "fallback":  "Core manual workflow remains enabled; Worker disabled until M09 verification.",
+    "notRunReason":  "Read-only identity probe only; Python/CUDA/model installation and GPU load were not authorized or bundled."
+}

@@ -1,0 +1,40 @@
+# Dependencies
+node_modules/
+**/node_modules/
+
+# Rust build output
+target/
+
+# Frontend and packaged build output
+dist/
+**/dist/
+build/
+coverage/
+*.tsbuildinfo
+
+# Packaged binaries and debug symbols
+*.exe
+*.dll
+*.pdb
+
+# Local editor and OS files
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+
+# Environment and secret-bearing local files
+.env
+.env.*
+*.pem
+*.key
+*.pfx
+*.p12
+*.zip
+
+# Runtime/local product data must stay outside source control
+.local/
+tmp/
+temp/
+logs/
+*.log

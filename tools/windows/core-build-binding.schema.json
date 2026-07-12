@@ -1,0 +1,27 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "F2S-WINDOWS-CORE-BUILD-BINDING-001",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schemaVersion", "target", "profile", "cargoLocked", "cargoOffline",
+    "executableSha256", "buildInputSha256", "toolchainFingerprintSha256", "sourceTreeSha256", "sourceFileCount",
+    "cargoLockSha256", "nodeLockSha256", "uiBundleSha256", "uiBundleFileCount"
+  ],
+  "properties": {
+    "schemaVersion": { "const": "f2s-core-build-binding/1.0.0" },
+    "target": { "const": "x86_64-pc-windows-msvc" },
+    "profile": { "const": "release" },
+    "cargoLocked": { "const": true },
+    "cargoOffline": { "const": true },
+    "executableSha256": { "type": "string", "pattern": "^[0-9a-f]{64}$" },
+    "buildInputSha256": { "type": "string", "pattern": "^[0-9a-f]{64}$" },
+    "toolchainFingerprintSha256": { "type": "string", "pattern": "^[0-9a-f]{64}$" },
+    "sourceTreeSha256": { "type": "string", "pattern": "^[0-9a-f]{64}$" },
+    "sourceFileCount": { "type": "integer", "minimum": 1 },
+    "cargoLockSha256": { "type": "string", "pattern": "^[0-9a-f]{64}$" },
+    "nodeLockSha256": { "type": "string", "pattern": "^[0-9a-f]{64}$" },
+    "uiBundleSha256": { "type": "string", "pattern": "^[0-9a-f]{64}$" },
+    "uiBundleFileCount": { "type": "integer", "minimum": 3 }
+  }
+}

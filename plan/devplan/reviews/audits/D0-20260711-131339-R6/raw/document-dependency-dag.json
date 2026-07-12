@@ -1,0 +1,20 @@
+{
+    "schemaVersion":  "1.0.0",
+    "evidenceId":  "F2S-AUD-DEVPLAN-D0-007",
+    "snapshotId":  "D0-20260711-131339-R6",
+    "phase":  "D0",
+    "checkId":  "DOCUMENT-DEPENDENCY-DAG",
+    "status":  "PASS",
+    "metric":  {
+                   "nodes":  16,
+                   "cycleNodes":  [
+
+                                  ]
+               },
+    "details":  [
+
+                ],
+    "command":  "powershell -NoProfile -ExecutionPolicy Bypass -File plan/devplan/reviews/tools/Invoke-DevPlanAudit.ps1 -Phase D0 -SnapshotId D0-20260711-131339-R6 -EvidenceId F2S-AUD-DEVPLAN-D0-007",
+    "toolPath":  "plan/devplan/reviews/tools/Invoke-DevPlanAudit.ps1",
+    "toolSha256":  "206e808b72b3f22d87b576d58901118da28ae34ca81038d74f46ff2933267ab0"
+}

@@ -1,0 +1,845 @@
+{
+    "schemaVersion":  "1.0.0",
+    "evidenceId":  "F2S-AUD-DEVPLAN-D0-007",
+    "phase":  "D0",
+    "snapshotId":  "D0-20260711-131339-R6",
+    "overallVerdict":  "PASS",
+    "implementationAuthorized":  false,
+    "releaseAuthorized":  false,
+    "checkCount":  12,
+    "passCount":  12,
+    "failCount":  0,
+    "manifestPath":  "plan/devplan/reviews/snapshots/D0-20260711-131339-R6/manifest.json",
+    "manifestSha256":  "942dd5141670b44b2efc5e3360534a90dc44ee89fb367e2b262eafb19413604f",
+    "command":  "powershell -NoProfile -ExecutionPolicy Bypass -File plan/devplan/reviews/tools/Invoke-DevPlanAudit.ps1 -Phase D0 -SnapshotId D0-20260711-131339-R6 -EvidenceId F2S-AUD-DEVPLAN-D0-007",
+    "toolPath":  "plan/devplan/reviews/tools/Invoke-DevPlanAudit.ps1",
+    "toolSha256":  "206e808b72b3f22d87b576d58901118da28ae34ca81038d74f46ff2933267ab0",
+    "checks":  [
+                   {
+                       "checkId":  "SNAPSHOT-INTEGRITY",
+                       "status":  "PASS",
+                       "metric":  {
+                                      "manifestSha256":  "942dd5141670b44b2efc5e3360534a90dc44ee89fb367e2b262eafb19413604f",
+                                      "archiveSha256":  "761b368eb7e022dd55ec5da8736bb9178d7bc69511a1c797c0b3fc778e95688a",
+                                      "documentCount":  16
+                                  },
+                       "details":  [
+
+                                   ],
+                       "rawPath":  "plan/devplan/reviews/audits/D0-20260711-131339-R6/raw/snapshot-integrity.json",
+                       "rawSha256":  "db1df89f1d258c74c0146f673cb439875c0c4e2997554d5edb64ef0e8678e4de"
+                   },
+                   {
+                       "checkId":  "DOCUMENT-REGISTRY-FRONTMATTER",
+                       "status":  "PASS",
+                       "metric":  {
+                                      "actual":  16,
+                                      "expected":  16,
+                                      "missing":  [
+
+                                                  ],
+                                      "extra":  [
+
+                                                ],
+                                      "duplicateDocIds":  [
+
+                                                          ],
+                                      "expectedStatus":  "draft"
+                                  },
+                       "details":  [
+
+                                   ],
+                       "rawPath":  "plan/devplan/reviews/audits/D0-20260711-131339-R6/raw/document-registry-frontmatter.json",
+                       "rawSha256":  "dab8b4d1b2e4d1b43e42e9ba462fd7e9cc7322945088925076464cc7850d81b9"
+                   },
+                   {
+                       "checkId":  "DOCUMENT-DEPENDENCY-DAG",
+                       "status":  "PASS",
+                       "metric":  {
+                                      "nodes":  16,
+                                      "cycleNodes":  [
+
+                                                     ]
+                                  },
+                       "details":  [
+
+                                   ],
+                       "rawPath":  "plan/devplan/reviews/audits/D0-20260711-131339-R6/raw/document-dependency-dag.json",
+                       "rawSha256":  "747c9948a13d1cdc4a0183a81b23a6b3c2f805502ab9447235c3329cb68ca0d3"
+                   },
+                   {
+                       "checkId":  "UPSTREAM-R3B-BINDING",
+                       "status":  "PASS",
+                       "metric":  {
+                                      "manifestSha256":  "7763d20d4f46c5d62b249bc8a080a761cfbe8390cab7d0a55748743af0cc46ae",
+                                      "reviewSha256":  "4d6d7b7699be3b02577b464f8030ae5ad32aafa0b9dcbcb48c56a6a8c9fd53fd",
+                                      "baselineSha256":  "cd1652bb62b462f16e184a027a380dd71a69626fafa764da4843f72cca6f00b2"
+                                  },
+                       "details":  [
+
+                                   ],
+                       "rawPath":  "plan/devplan/reviews/audits/D0-20260711-131339-R6/raw/upstream-r3b-binding.json",
+                       "rawSha256":  "f96e9e07d8c7d319b5cf189eec96075c5e8247f1579d208a9fb4c02ed788a9d7"
+                   },
+                   {
+                       "checkId":  "DEV-REGISTRY-PARITY",
+                       "status":  "PASS",
+                       "metric":  {
+                                      "baselineDev":  80,
+                                      "baselineEvd":  80,
+                                      "taskHeadings":  80,
+                                      "missing":  [
+
+                                                  ],
+                                      "extra":  [
+
+                                                ],
+                                      "duplicates":  [
+
+                                                     ]
+                                  },
+                       "details":  [
+
+                                   ],
+                       "rawPath":  "plan/devplan/reviews/audits/D0-20260711-131339-R6/raw/dev-registry-parity.json",
+                       "rawSha256":  "9512ffe8e90f0bae22c473cdc75525bed11a13c8315db905f16d253bbfb78c80"
+                   },
+                   {
+                       "checkId":  "TASK-CARD-STRUCTURE",
+                       "status":  "PASS",
+                       "metric":  {
+                                      "tasks":  80,
+                                      "requiredFields":  [
+                                                             1,
+                                                             2,
+                                                             3,
+                                                             4,
+                                                             5,
+                                                             6,
+                                                             7,
+                                                             8,
+                                                             9,
+                                                             10,
+                                                             11,
+                                                             12
+                                                         ],
+                                      "taskMetrics":  [
+                                                          {
+                                                              "taskId":  "F2S-DEV-M00-001",
+                                                              "file":  "01-M00-决策与可行性Spike.md",
+                                                              "wuCount":  3,
+                                                              "evdId":  "F2S-EVD-M00-001"
+                                                          },
+                                                          {
+                                                              "taskId":  "F2S-DEV-M00-002",
+                                                              "file":  "01-M00-决策与可行性Spike.md",
+                                                              "wuCount":  3,
+                                                              "evdId":  "F2S-EVD-M00-002"
+                                                          },
+                                                          {
+                                                              "taskId":  "F2S-DEV-M00-003",
+                                                              "file":  "01-M00-决策与可行性Spike.md",
+                                                              "wuCount":  2,
+                                                              "evdId":  "F2S-EVD-M00-003"
+                                                          },
+                                                          {
+                                                              "taskId":  "F2S-DEV-M00-004",
+                                                              "file":  "01-M00-决策与可行性Spike.md",
+                                                              "wuCount":  3,
+                                                              "evdId":  "F2S-EVD-M00-004"
+                                                          },
+                                                          {
+                                                              "taskId":  "F2S-DEV-M00-005",
+                                                              "file":  "01-M00-决策与可行性Spike.md",
+                                                              "wuCount":  3,
+                                                              "evdId":  "F2S-EVD-M00-005"
+                                                          },
+                                                          {
+                                                              "taskId":  "F2S-DEV-M01-001",
+                                                              "file":  "02-M01-工程骨架与工具链.md",
+                                                              "wuCount":  2,
+                                                              "evdId":  "F2S-EVD-M01-001"
+                                                          },
+                                                          {
+                                                              "taskId":  "F2S-DEV-M01-002",
+                                                              "file":  "02-M01-工程骨架与工具链.md",
+                                                              "wuCount":  3,
+                                                              "evdId":  "F2S-EVD-M01-002"
+                                                          },
+                                                          {
+                                                              "taskId":  "F2S-DEV-M01-003",
+                                                              "file":  "02-M01-工程骨架与工具链.md",
+                                                              "wuCount":  2,
+                                                              "evdId":  "F2S-EVD-M01-003"
+                                                          },
+                                                          {
+                                                              "taskId":  "F2S-DEV-M01-004",
+                                                              "file":  "02-M01-工程骨架与工具链.md",
+                                                              "wuCount":  2,
+                                                              "evdId":  "F2S-EVD-M01-004"
+                                                          },
+                                                          {
+                                                              "taskId":  "F2S-DEV-M01-005",
+                                                              "file":  "02-M01-工程骨架与工具链.md",
+                                                              "wuCount":  3,
+                                                              "evdId":  "F2S-EVD-M01-005"
+                                                          },
+                                                          {
+                                                              "taskId":  "F2S-DEV-M02-001",
+                                                              "file":  "03-M02-领域存储与协议基线.md",
+                                                              "wuCount":  2,
+                                                              "evdId":  "F2S-EVD-M02-001"
+                                                          },
+                                                          {
+                                                              "taskId":  "F2S-DEV-M02-002",
+                                                              "file":  "03-M02-领域存储与协议基线.md",
+                                                              "wuCount":  3,
+                                                              "evdId":  "F2S-EVD-M02-002"
+                                                          },
+                                                          {
+                                                              "taskId":  "F2S-DEV-M02-003",
+                                                              "file":  "03-M02-领域存储与协议基线.md",
+                                                              "wuCount":  2,
+                                                              "evdId":  "F2S-EVD-M02-003"
+                                                          },
+                                                          {
+                                                              "taskId":  "F2S-DEV-M02-004",
+                                                              "file":  "03-M02-领域存储与协议基线.md",
+                                                              "wuCount":  2,
+                                                              "evdId":  "F2S-EVD-M02-004"
+                                                          },
+                                                          {
+                                                              "taskId":  "F2S-DEV-M02-005",
+                                                              "file":  "03-M02-领域存储与协议基线.md",
+                                                              "wuCount":  2,
+                                                              "evdId":  "F2S-EVD-M02-005"
+                                                          },
+                                                          {
+                                                              "taskId":  "F2S-DEV-M02-006",
+                                                              "file":  "03-M02-领域存储与协议基线.md",
+                                                              "wuCount":  4,
+                                                              "evdId":  "F2S-EVD-M02-006"
+                                                          },
+                                                          {
+                                                              "taskId":  "F2S-DEV-M02-007",
+                                                              "file":  "03-M02-领域存储与协议基线.md",
+                                                              "wuCount":  3,
+                                                              "evdId":  "F2S-EVD-M02-007"
+                                                          },
+                                                          {
+                                                              "taskId":  "F2S-DEV-M02-008",
+                                                              "file":  "03-M02-领域存储与协议基线.md",
+                                                              "wuCount":  3,
+                                                              "evdId":  "F2S-EVD-M02-008"
+                                                          },
+                                                          {
+                                                              "taskId":  "F2S-DEV-M03-001",
+                                                              "file":  "04-M03-项目导入母版与审批.md",
+                                                              "wuCount":  2,
+                                                              "evdId":  "F2S-EVD-M03-001"
+                                                          },
+                                                          {
+                                                              "taskId":  "F2S-DEV-M03-002",
+                                                              "file":  "04-M03-项目导入母版与审批.md",
+                                                              "wuCount":  2,
+                                                              "evdId":  "F2S-EVD-M03-002"
+                                                          },
+                                                          {
+                                                              "taskId":  "F2S-DEV-M03-003",
+                                                              "file":  "04-M03-项目导入母版与审批.md",
+                                                              "wuCount":  2,
+                                                              "evdId":  "F2S-EVD-M03-003"
+                                                          },
+                                                          {
+                                                              "taskId":  "F2S-DEV-M03-004",
+                                                              "file":  "04-M03-项目导入母版与审批.md",
+                                                              "wuCount":  2,
+                                                              "evdId":  "F2S-EVD-M03-004"
+                                                          },
+                                                          {
+                                                              "taskId":  "F2S-DEV-M03-005",
+                                                              "file":  "04-M03-项目导入母版与审批.md",
+                                                              "wuCount":  4,
+                                                              "evdId":  "F2S-EVD-M03-005"
+                                                          },
+                                                          {
+                                                              "taskId":  "F2S-DEV-M03-006",
+                                                              "file":  "04-M03-项目导入母版与审批.md",
+                                                              "wuCount":  3,
+                                                              "evdId":  "F2S-EVD-M03-006"
+                                                          },
+                                                          {
+                                                              "taskId":  "F2S-DEV-M04-001",
+                                                              "file":  "05-M04-分层与素材修复.md",
+                                                              "wuCount":  2,
+                                                              "evdId":  "F2S-EVD-M04-001"
+                                                          },
+                                                          {
+                                                              "taskId":  "F2S-DEV-M04-002",
+                                                              "file":  "05-M04-分层与素材修复.md",
+                                                              "wuCount":  2,
+                                                              "evdId":  "F2S-EVD-M04-002"
+                                                          },
+                                                          {
+                                                              "taskId":  "F2S-DEV-M04-003",
+                                                              "file":  "05-M04-分层与素材修复.md",
+                                                              "wuCount":  2,
+                                                              "evdId":  "F2S-EVD-M04-003"
+                                                          },
+                                                          {
+                                                              "taskId":  "F2S-DEV-M04-004",
+                                                              "file":  "05-M04-分层与素材修复.md",
+                                                              "wuCount":  3,
+                                                              "evdId":  "F2S-EVD-M04-004"
+                                                          },
+                                                          {
+                                                              "taskId":  "F2S-DEV-M04-005",
+                                                              "file":  "05-M04-分层与素材修复.md",
+                                                              "wuCount":  2,
+                                                              "evdId":  "F2S-EVD-M04-005"
+                                                          },
+                                                          {
+                                                              "taskId":  "F2S-DEV-M04-006",
+                                                              "file":  "05-M04-分层与素材修复.md",
+                                                              "wuCount":  2,
+                                                              "evdId":  "F2S-EVD-M04-006"
+                                                          },
+                                                          {
+                                                              "taskId":  "F2S-DEV-M04-007",
+                                                              "file":  "05-M04-分层与素材修复.md",
+                                                              "wuCount":  2,
+                                                              "evdId":  "F2S-EVD-M04-007"
+                                                          },
+                                                          {
+                                                              "taskId":  "F2S-DEV-M05-001",
+                                                              "file":  "06-M05-Rig编辑与审批.md",
+                                                              "wuCount":  2,
+                                                              "evdId":  "F2S-EVD-M05-001"
+                                                          },
+                                                          {
+                                                              "taskId":  "F2S-DEV-M05-002",
+                                                              "file":  "06-M05-Rig编辑与审批.md",
+                                                              "wuCount":  2,
+                                                              "evdId":  "F2S-EVD-M05-002"
+                                                          },
+                                                          {
+                                                              "taskId":  "F2S-DEV-M05-003",
+                                                              "file":  "06-M05-Rig编辑与审批.md",
+                                                              "wuCount":  2,
+                                                              "evdId":  "F2S-EVD-M05-003"
+                                                          },
+                                                          {
+                                                              "taskId":  "F2S-DEV-M05-004",
+                                                              "file":  "06-M05-Rig编辑与审批.md",
+                                                              "wuCount":  2,
+                                                              "evdId":  "F2S-EVD-M05-004"
+                                                          },
+                                                          {
+                                                              "taskId":  "F2S-DEV-M05-005",
+                                                              "file":  "06-M05-Rig编辑与审批.md",
+                                                              "wuCount":  2,
+                                                              "evdId":  "F2S-EVD-M05-005"
+                                                          },
+                                                          {
+                                                              "taskId":  "F2S-DEV-M05-006",
+                                                              "file":  "06-M05-Rig编辑与审批.md",
+                                                              "wuCount":  2,
+                                                              "evdId":  "F2S-EVD-M05-006"
+                                                          },
+                                                          {
+                                                              "taskId":  "F2S-DEV-M05-007",
+                                                              "file":  "06-M05-Rig编辑与审批.md",
+                                                              "wuCount":  2,
+                                                              "evdId":  "F2S-EVD-M05-007"
+                                                          },
+                                                          {
+                                                              "taskId":  "F2S-DEV-M05-008",
+                                                              "file":  "06-M05-Rig编辑与审批.md",
+                                                              "wuCount":  2,
+                                                              "evdId":  "F2S-EVD-M05-008"
+                                                          },
+                                                          {
+                                                              "taskId":  "F2S-DEV-M06-001",
+                                                              "file":  "07-M06-动作内容与提示词.md",
+                                                              "wuCount":  2,
+                                                              "evdId":  "F2S-EVD-M06-001"
+                                                          },
+                                                          {
+                                                              "taskId":  "F2S-DEV-M06-002",
+                                                              "file":  "07-M06-动作内容与提示词.md",
+                                                              "wuCount":  2,
+                                                              "evdId":  "F2S-EVD-M06-002"
+                                                          },
+                                                          {
+                                                              "taskId":  "F2S-DEV-M06-003",
+                                                              "file":  "07-M06-动作内容与提示词.md",
+                                                              "wuCount":  2,
+                                                              "evdId":  "F2S-EVD-M06-003"
+                                                          },
+                                                          {
+                                                              "taskId":  "F2S-DEV-M06-004",
+                                                              "file":  "07-M06-动作内容与提示词.md",
+                                                              "wuCount":  2,
+                                                              "evdId":  "F2S-EVD-M06-004"
+                                                          },
+                                                          {
+                                                              "taskId":  "F2S-DEV-M06-005",
+                                                              "file":  "07-M06-动作内容与提示词.md",
+                                                              "wuCount":  2,
+                                                              "evdId":  "F2S-EVD-M06-005"
+                                                          },
+                                                          {
+                                                              "taskId":  "F2S-DEV-M06-006",
+                                                              "file":  "07-M06-动作内容与提示词.md",
+                                                              "wuCount":  2,
+                                                              "evdId":  "F2S-EVD-M06-006"
+                                                          },
+                                                          {
+                                                              "taskId":  "F2S-DEV-M06-007",
+                                                              "file":  "07-M06-动作内容与提示词.md",
+                                                              "wuCount":  2,
+                                                              "evdId":  "F2S-EVD-M06-007"
+                                                          },
+                                                          {
+                                                              "taskId":  "F2S-DEV-M06-008",
+                                                              "file":  "07-M06-动作内容与提示词.md",
+                                                              "wuCount":  2,
+                                                              "evdId":  "F2S-EVD-M06-008"
+                                                          },
+                                                          {
+                                                              "taskId":  "F2S-DEV-M07-001",
+                                                              "file":  "08-M07-动画编辑预览与玩法标记.md",
+                                                              "wuCount":  2,
+                                                              "evdId":  "F2S-EVD-M07-001"
+                                                          },
+                                                          {
+                                                              "taskId":  "F2S-DEV-M07-002",
+                                                              "file":  "08-M07-动画编辑预览与玩法标记.md",
+                                                              "wuCount":  2,
+                                                              "evdId":  "F2S-EVD-M07-002"
+                                                          },
+                                                          {
+                                                              "taskId":  "F2S-DEV-M07-003",
+                                                              "file":  "08-M07-动画编辑预览与玩法标记.md",
+                                                              "wuCount":  3,
+                                                              "evdId":  "F2S-EVD-M07-003"
+                                                          },
+                                                          {
+                                                              "taskId":  "F2S-DEV-M07-004",
+                                                              "file":  "08-M07-动画编辑预览与玩法标记.md",
+                                                              "wuCount":  2,
+                                                              "evdId":  "F2S-EVD-M07-004"
+                                                          },
+                                                          {
+                                                              "taskId":  "F2S-DEV-M07-005",
+                                                              "file":  "08-M07-动画编辑预览与玩法标记.md",
+                                                              "wuCount":  2,
+                                                              "evdId":  "F2S-EVD-M07-005"
+                                                          },
+                                                          {
+                                                              "taskId":  "F2S-DEV-M07-006",
+                                                              "file":  "08-M07-动画编辑预览与玩法标记.md",
+                                                              "wuCount":  3,
+                                                              "evdId":  "F2S-EVD-M07-006"
+                                                          },
+                                                          {
+                                                              "taskId":  "F2S-DEV-M07-007",
+                                                              "file":  "08-M07-动画编辑预览与玩法标记.md",
+                                                              "wuCount":  2,
+                                                              "evdId":  "F2S-EVD-M07-007"
+                                                          },
+                                                          {
+                                                              "taskId":  "F2S-DEV-M07-008",
+                                                              "file":  "08-M07-动画编辑预览与玩法标记.md",
+                                                              "wuCount":  2,
+                                                              "evdId":  "F2S-EVD-M07-008"
+                                                          },
+                                                          {
+                                                              "taskId":  "F2S-DEV-M08-001",
+                                                              "file":  "09-M08-导出与Spine42适配.md",
+                                                              "wuCount":  2,
+                                                              "evdId":  "F2S-EVD-M08-001"
+                                                          },
+                                                          {
+                                                              "taskId":  "F2S-DEV-M08-002",
+                                                              "file":  "09-M08-导出与Spine42适配.md",
+                                                              "wuCount":  2,
+                                                              "evdId":  "F2S-EVD-M08-002"
+                                                          },
+                                                          {
+                                                              "taskId":  "F2S-DEV-M08-003",
+                                                              "file":  "09-M08-导出与Spine42适配.md",
+                                                              "wuCount":  2,
+                                                              "evdId":  "F2S-EVD-M08-003"
+                                                          },
+                                                          {
+                                                              "taskId":  "F2S-DEV-M08-004",
+                                                              "file":  "09-M08-导出与Spine42适配.md",
+                                                              "wuCount":  2,
+                                                              "evdId":  "F2S-EVD-M08-004"
+                                                          },
+                                                          {
+                                                              "taskId":  "F2S-DEV-M08-005",
+                                                              "file":  "09-M08-导出与Spine42适配.md",
+                                                              "wuCount":  2,
+                                                              "evdId":  "F2S-EVD-M08-005"
+                                                          },
+                                                          {
+                                                              "taskId":  "F2S-DEV-M08-006",
+                                                              "file":  "09-M08-导出与Spine42适配.md",
+                                                              "wuCount":  2,
+                                                              "evdId":  "F2S-EVD-M08-006"
+                                                          },
+                                                          {
+                                                              "taskId":  "F2S-DEV-M08-007",
+                                                              "file":  "09-M08-导出与Spine42适配.md",
+                                                              "wuCount":  3,
+                                                              "evdId":  "F2S-EVD-M08-007"
+                                                          },
+                                                          {
+                                                              "taskId":  "F2S-DEV-M08-008",
+                                                              "file":  "09-M08-导出与Spine42适配.md",
+                                                              "wuCount":  2,
+                                                              "evdId":  "F2S-EVD-M08-008"
+                                                          },
+                                                          {
+                                                              "taskId":  "F2S-DEV-M09-001",
+                                                              "file":  "10-M09-安全AI远程GPU与质量.md",
+                                                              "wuCount":  3,
+                                                              "evdId":  "F2S-EVD-M09-001"
+                                                          },
+                                                          {
+                                                              "taskId":  "F2S-DEV-M09-002",
+                                                              "file":  "10-M09-安全AI远程GPU与质量.md",
+                                                              "wuCount":  2,
+                                                              "evdId":  "F2S-EVD-M09-002"
+                                                          },
+                                                          {
+                                                              "taskId":  "F2S-DEV-M09-003",
+                                                              "file":  "10-M09-安全AI远程GPU与质量.md",
+                                                              "wuCount":  3,
+                                                              "evdId":  "F2S-EVD-M09-003"
+                                                          },
+                                                          {
+                                                              "taskId":  "F2S-DEV-M09-004",
+                                                              "file":  "10-M09-安全AI远程GPU与质量.md",
+                                                              "wuCount":  2,
+                                                              "evdId":  "F2S-EVD-M09-004"
+                                                          },
+                                                          {
+                                                              "taskId":  "F2S-DEV-M09-005",
+                                                              "file":  "10-M09-安全AI远程GPU与质量.md",
+                                                              "wuCount":  2,
+                                                              "evdId":  "F2S-EVD-M09-005"
+                                                          },
+                                                          {
+                                                              "taskId":  "F2S-DEV-M09-006",
+                                                              "file":  "10-M09-安全AI远程GPU与质量.md",
+                                                              "wuCount":  3,
+                                                              "evdId":  "F2S-EVD-M09-006"
+                                                          },
+                                                          {
+                                                              "taskId":  "F2S-DEV-M09-007",
+                                                              "file":  "10-M09-安全AI远程GPU与质量.md",
+                                                              "wuCount":  2,
+                                                              "evdId":  "F2S-EVD-M09-007"
+                                                          },
+                                                          {
+                                                              "taskId":  "F2S-DEV-M10-001",
+                                                              "file":  "11-M10-Windows打包入口更新.md",
+                                                              "wuCount":  2,
+                                                              "evdId":  "F2S-EVD-M10-001"
+                                                          },
+                                                          {
+                                                              "taskId":  "F2S-DEV-M10-002",
+                                                              "file":  "11-M10-Windows打包入口更新.md",
+                                                              "wuCount":  3,
+                                                              "evdId":  "F2S-EVD-M10-002"
+                                                          },
+                                                          {
+                                                              "taskId":  "F2S-DEV-M10-003",
+                                                              "file":  "11-M10-Windows打包入口更新.md",
+                                                              "wuCount":  2,
+                                                              "evdId":  "F2S-EVD-M10-003"
+                                                          },
+                                                          {
+                                                              "taskId":  "F2S-DEV-M10-004",
+                                                              "file":  "11-M10-Windows打包入口更新.md",
+                                                              "wuCount":  2,
+                                                              "evdId":  "F2S-EVD-M10-004"
+                                                          },
+                                                          {
+                                                              "taskId":  "F2S-DEV-M10-005",
+                                                              "file":  "11-M10-Windows打包入口更新.md",
+                                                              "wuCount":  3,
+                                                              "evdId":  "F2S-EVD-M10-005"
+                                                          },
+                                                          {
+                                                              "taskId":  "F2S-DEV-M10-006",
+                                                              "file":  "11-M10-Windows打包入口更新.md",
+                                                              "wuCount":  2,
+                                                              "evdId":  "F2S-EVD-M10-006"
+                                                          },
+                                                          {
+                                                              "taskId":  "F2S-DEV-M11-001",
+                                                              "file":  "12-M11-验收封账与发布候选.md",
+                                                              "wuCount":  3,
+                                                              "evdId":  "F2S-EVD-M11-001"
+                                                          },
+                                                          {
+                                                              "taskId":  "F2S-DEV-M11-002",
+                                                              "file":  "12-M11-验收封账与发布候选.md",
+                                                              "wuCount":  2,
+                                                              "evdId":  "F2S-EVD-M11-002"
+                                                          },
+                                                          {
+                                                              "taskId":  "F2S-DEV-M11-003",
+                                                              "file":  "12-M11-验收封账与发布候选.md",
+                                                              "wuCount":  2,
+                                                              "evdId":  "F2S-EVD-M11-003"
+                                                          },
+                                                          {
+                                                              "taskId":  "F2S-DEV-M11-004",
+                                                              "file":  "12-M11-验收封账与发布候选.md",
+                                                              "wuCount":  5,
+                                                              "evdId":  "F2S-EVD-M11-004"
+                                                          }
+                                                      ]
+                                  },
+                       "details":  [
+
+                                   ],
+                       "rawPath":  "plan/devplan/reviews/audits/D0-20260711-131339-R6/raw/task-card-structure.json",
+                       "rawSha256":  "f8b9abf1a76535f892d4d080db0e17cb69e341784d2101aa774d59c18c1e17ed"
+                   },
+                   {
+                       "checkId":  "WU-DAG-FIELDS-PATH-OWNERS",
+                       "status":  "PASS",
+                       "metric":  {
+                                      "wuCount":  187,
+                                      "duplicateWus":  [
+
+                                                       ],
+                                      "wuCycleNodes":  [
+
+                                                       ],
+                                      "devCycleNodes":  [
+
+                                                        ],
+                                      "exactWritePathCount":  433,
+                                      "pathConflicts":  [
+
+                                                        ],
+                                      "danglingDevMentions":  [
+
+                                                              ],
+                                      "danglingEvdMentions":  [
+
+                                                              ]
+                                  },
+                       "details":  [
+
+                                   ],
+                       "rawPath":  "plan/devplan/reviews/audits/D0-20260711-131339-R6/raw/wu-dag-fields-path-owners.json",
+                       "rawSha256":  "ddcaaff4717b1acda1275ef6030b3d51159e247aadf893b442d394f667791f90"
+                   },
+                   {
+                       "checkId":  "NO-SHORTHAND-TRACE-IDS",
+                       "status":  "PASS",
+                       "metric":  {
+                                      "patterns":  {
+                                                       "compactIdSlash":  "F2S-(?:FR|NFR|TST)-[A-Z0-9-]+/[0-9]",
+                                                       "compactIdRange":  "F2S-(?:FR|NFR|TST|DEV|WU|EVD)-[A-Z0-9-]+\\.\\.[A-Z0-9]",
+                                                       "bareWuAlias":  "\\bWU-(?:[A-Z]|[0-9]{1,2})\\b",
+                                                       "bareMilestoneRange":  "\\bM[0-9]{2}\\.\\.M[0-9]{2}\\b",
+                                                       "bareMilestoneSlash":  "\\bM[0-9]{2}/M[0-9]{2}\\b"
+                                                   },
+                                      "issueCount":  0
+                                  },
+                       "details":  [
+
+                                   ],
+                       "rawPath":  "plan/devplan/reviews/audits/D0-20260711-131339-R6/raw/no-shorthand-trace-ids.json",
+                       "rawSha256":  "a7e14d1d4890471e6fddd88845bd61ca7fc50906f2f394b336c0fb0019efd12d"
+                   },
+                   {
+                       "checkId":  "REQUIREMENT-TEST-COVERAGE",
+                       "status":  "PASS",
+                       "metric":  {
+                                      "baselineRequirements":  102,
+                                      "snapshotRequirements":  102,
+                                      "baselineTests":  133,
+                                      "snapshotTests":  133,
+                                      "missingRequirements":  [
+
+                                                              ],
+                                      "extraRequirements":  [
+
+                                                            ],
+                                      "missingTests":  [
+
+                                                       ],
+                                      "extraTests":  [
+
+                                                     ]
+                                  },
+                       "details":  [
+
+                                   ],
+                       "rawPath":  "plan/devplan/reviews/audits/D0-20260711-131339-R6/raw/requirement-test-coverage.json",
+                       "rawSha256":  "063558b80c8f803d7c8c54be8b9984e98dd73ca867188b22413fc144e5c0eb33"
+                   },
+                   {
+                       "checkId":  "R3B-P2-CARRYOVER",
+                       "status":  "PASS",
+                       "metric":  {
+                                      "p2Count":  8,
+                                      "mappings":  [
+                                                       {
+                                                           "p2":  "F2S-R3A-B06-P2-001",
+                                                           "primaryTask":  "F2S-DEV-M01-001",
+                                                           "present":  true,
+                                                           "evd":  "F2S-EVD-M01-001"
+                                                       },
+                                                       {
+                                                           "p2":  "F2S-R3A-B06-P2-001",
+                                                           "primaryTask":  "F2S-DEV-M02-001",
+                                                           "present":  true,
+                                                           "evd":  "F2S-EVD-M02-001"
+                                                       },
+                                                       {
+                                                           "p2":  "F2S-R3A-B07-P2-001",
+                                                           "primaryTask":  "F2S-DEV-M00-001",
+                                                           "present":  true,
+                                                           "evd":  "F2S-EVD-M00-001"
+                                                       },
+                                                       {
+                                                           "p2":  "F2S-R3A-B07-P2-001",
+                                                           "primaryTask":  "F2S-DEV-M01-002",
+                                                           "present":  true,
+                                                           "evd":  "F2S-EVD-M01-002"
+                                                       },
+                                                       {
+                                                           "p2":  "F2S-R3A-B08-P2-001",
+                                                           "primaryTask":  "F2S-DEV-M07-003",
+                                                           "present":  true,
+                                                           "evd":  "F2S-EVD-M07-003"
+                                                       },
+                                                       {
+                                                           "p2":  "F2S-R3A-B08-P2-001",
+                                                           "primaryTask":  "F2S-DEV-M09-005",
+                                                           "present":  true,
+                                                           "evd":  "F2S-EVD-M09-005"
+                                                       },
+                                                       {
+                                                           "p2":  "F2S-R3A-B09-P2-001",
+                                                           "primaryTask":  "F2S-DEV-M02-001",
+                                                           "present":  true,
+                                                           "evd":  "F2S-EVD-M02-001"
+                                                       },
+                                                       {
+                                                           "p2":  "F2S-R3A-B09-P2-001",
+                                                           "primaryTask":  "F2S-DEV-M02-002",
+                                                           "present":  true,
+                                                           "evd":  "F2S-EVD-M02-002"
+                                                       },
+                                                       {
+                                                           "p2":  "F2S-R3A-B10-P2-001",
+                                                           "primaryTask":  "F2S-DEV-M03-002",
+                                                           "present":  true,
+                                                           "evd":  "F2S-EVD-M03-002"
+                                                       },
+                                                       {
+                                                           "p2":  "F2S-R3A-B10-P2-001",
+                                                           "primaryTask":  "F2S-DEV-M03-003",
+                                                           "present":  true,
+                                                           "evd":  "F2S-EVD-M03-003"
+                                                       },
+                                                       {
+                                                           "p2":  "F2S-R3A-B11-P2-001",
+                                                           "primaryTask":  "F2S-DEV-M02-006",
+                                                           "present":  true,
+                                                           "evd":  "F2S-EVD-M02-006"
+                                                       },
+                                                       {
+                                                           "p2":  "F2S-R3A-B11-P2-001",
+                                                           "primaryTask":  "F2S-DEV-M02-007",
+                                                           "present":  true,
+                                                           "evd":  "F2S-EVD-M02-007"
+                                                       },
+                                                       {
+                                                           "p2":  "F2S-R3A-B11-P2-001",
+                                                           "primaryTask":  "F2S-DEV-M09-006",
+                                                           "present":  true,
+                                                           "evd":  "F2S-EVD-M09-006"
+                                                       },
+                                                       {
+                                                           "p2":  "F2S-R3A-B12-P2-001",
+                                                           "primaryTask":  "F2S-DEV-M00-004",
+                                                           "present":  true,
+                                                           "evd":  "F2S-EVD-M00-004"
+                                                       },
+                                                       {
+                                                           "p2":  "F2S-R3A-B12-P2-001",
+                                                           "primaryTask":  "F2S-DEV-M09-001",
+                                                           "present":  true,
+                                                           "evd":  "F2S-EVD-M09-001"
+                                                       },
+                                                       {
+                                                           "p2":  "F2S-R3A-SPINE-13-P2-001",
+                                                           "primaryTask":  "F2S-DEV-M08-007",
+                                                           "present":  true,
+                                                           "evd":  "F2S-EVD-M08-007"
+                                                       }
+                                                   ]
+                                  },
+                       "details":  [
+
+                                   ],
+                       "rawPath":  "plan/devplan/reviews/audits/D0-20260711-131339-R6/raw/r3b-p2-carryover.json",
+                       "rawSha256":  "c7c9d1bc90011918cc8822f71e75d4a423e5082324a5be63fcb8788db975dcf4"
+                   },
+                   {
+                       "checkId":  "PRODUCT-SPINE-SECURITY-RELEASE-BOUNDARIES",
+                       "status":  "PASS",
+                       "metric":  {
+                                      "markerGroups":  [
+                                                           "spinePatch",
+                                                           "openOutputs",
+                                                           "proprietaryBoundary",
+                                                           "humanGates",
+                                                           "actionSet",
+                                                           "commercialBoundary",
+                                                           "privacy",
+                                                           "license",
+                                                           "externalState",
+                                                           "launcher"
+                                                       ],
+                                      "forbiddenClaims":  [
+                                                              "releaseAuthorized=true"
+                                                          ]
+                                  },
+                       "details":  [
+
+                                   ],
+                       "rawPath":  "plan/devplan/reviews/audits/D0-20260711-131339-R6/raw/product-spine-security-release-boundaries.json",
+                       "rawSha256":  "57a275f732b0703c9d746f112aa94e1fc1f3409d56699a49c234c0010ffb1532"
+                   },
+                   {
+                       "checkId":  "TRACE-MATRIX-REVERSE-COVERAGE",
+                       "status":  "PASS",
+                       "metric":  {
+                                      "dev":  80,
+                                      "evd":  80,
+                                      "wu":  187,
+                                      "requirements":  102,
+                                      "tests":  133
+                                  },
+                       "details":  [
+
+                                   ],
+                       "rawPath":  "plan/devplan/reviews/audits/D0-20260711-131339-R6/raw/trace-matrix-reverse-coverage.json",
+                       "rawSha256":  "eddba00c0f8794155738eb89a1bf0526d3a68a2c53160cc740de282c5a532e5c"
+                   }
+               ]
+}

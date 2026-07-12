@@ -1,0 +1,39 @@
+{
+  "schemaVersion": "1.0.0",
+  "evidenceId": "F2S-EVD-M02-004",
+  "taskId": "F2S-DEV-M02-004",
+  "status": "PASS",
+  "command": "cargo test -p f2s-application",
+  "exitCode": 0,
+  "startedAtUtc": "2026-07-11T07:47:17.106Z",
+  "endedAtUtc": "2026-07-11T07:47:17.106Z",
+  "runner": {
+    "kind": "local-development",
+    "os": "win32 10.0.22631",
+    "architecture": "x64",
+    "hostnameHash": "f3da3e8c48fbc119008475bba247ec014ab39af1f7e5d05bd1609c4951e6d3d5"
+  },
+  "toolVersions": {
+    "node": "v24.15.0"
+  },
+  "inputHashes": {},
+  "outputHashes": {
+    "crates/domain/src/jobs/job.rs": "5920da4acd5c331a15abc1093a343c77da0febf2a51120b26b425dfa1a9b1a1f",
+    "crates/domain/src/jobs/job_output.rs": "c1693821e79b9d1501fde8a3dc7282473e5c98a4683984d2404eee8ecdf3ac90",
+    "crates/domain/src/jobs/mod.rs": "ceec998d0a9f5d9433b9435b7fc47fa7dc39bc150d6f0cf67a19f4b9ceb8b239",
+    "crates/application/src/jobs/mod.rs": "f803b0fa5dfbe9d0bb02741f73613413394c9670a493aed1937c809e77e87b56",
+    "crates/application/src/jobs/register_candidate.rs": "418f1a9f8c0dbfdde16bbca09854c24516d9d25fd06071f90147cc0e1bb5f4ff",
+    "crates/application/src/jobs/scheduler.rs": "93ca5ed6d619b62cd41e3723b3dad6602317176142c530b0ea18f15aed70c895",
+    "crates/application/src/jobs/terminal_arbiter.rs": "44ddc65837bf1473944d41e479d58ebfcdc860fd43ce6005047e13986445f8a7"
+  },
+  "logRefs": [],
+  "reportRefs": [],
+  "capabilityState": "VERIFIED",
+  "externalBlockers": [],
+  "previousEvidenceRef": null,
+  "notRunReason": null,
+  "payload": {
+    "summary": "Job state and single terminal arbiter implemented.",
+    "generatedBy": "tools/evidence/create-envelope.mjs"
+  }
+}

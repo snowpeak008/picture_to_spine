@@ -1,0 +1,19 @@
+name: locked-quality-gates
+on: [push, pull_request]
+jobs:
+  core-windows:
+    runs-on: windows-2022
+    permissions: { contents: read }
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: { node-version-file: .node-version, cache: npm }
+      - uses: dtolnay/rust-toolchain@stable
+        with: { toolchain: 1.96.0, components: rustfmt,clippy }
+      - run: npm ci
+      - run: npm run format:check
+      - run: npm run lint
+      - run: npm run typecheck
+      - run: npm test
+      - run: npm run build:core
+      - run: npm run release:verify

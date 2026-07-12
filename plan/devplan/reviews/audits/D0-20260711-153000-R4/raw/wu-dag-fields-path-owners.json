@@ -1,0 +1,36 @@
+{
+    "schemaVersion":  "1.0.0",
+    "evidenceId":  "F2S-AUD-DEVPLAN-D0-005",
+    "snapshotId":  "D0-20260711-153000-R4",
+    "phase":  "D0",
+    "checkId":  "WU-DAG-FIELDS-PATH-OWNERS",
+    "status":  "PASS",
+    "metric":  {
+                   "wuCount":  187,
+                   "duplicateWus":  [
+
+                                    ],
+                   "wuCycleNodes":  [
+
+                                    ],
+                   "devCycleNodes":  [
+
+                                     ],
+                   "exactWritePathCount":  432,
+                   "pathConflicts":  [
+
+                                     ],
+                   "danglingDevMentions":  [
+
+                                           ],
+                   "danglingEvdMentions":  [
+
+                                           ]
+               },
+    "details":  [
+
+                ],
+    "command":  "powershell -NoProfile -ExecutionPolicy Bypass -File plan/devplan/reviews/tools/Invoke-DevPlanAudit.ps1 -Phase D0 -SnapshotId D0-20260711-153000-R4 -EvidenceId F2S-AUD-DEVPLAN-D0-005",
+    "toolPath":  "plan/devplan/reviews/tools/Invoke-DevPlanAudit.ps1",
+    "toolSha256":  "f441d1e26f0aca5ab916b8747e669c17aa68e1273295033f9e33a2a4fd23f9f8"
+}

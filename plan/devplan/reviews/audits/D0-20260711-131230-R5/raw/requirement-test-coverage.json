@@ -1,0 +1,32 @@
+{
+    "schemaVersion":  "1.0.0",
+    "evidenceId":  "F2S-AUD-DEVPLAN-D0-006",
+    "snapshotId":  "D0-20260711-131230-R5",
+    "phase":  "D0",
+    "checkId":  "REQUIREMENT-TEST-COVERAGE",
+    "status":  "PASS",
+    "metric":  {
+                   "baselineRequirements":  102,
+                   "snapshotRequirements":  102,
+                   "baselineTests":  133,
+                   "snapshotTests":  133,
+                   "missingRequirements":  [
+
+                                           ],
+                   "extraRequirements":  [
+
+                                         ],
+                   "missingTests":  [
+
+                                    ],
+                   "extraTests":  [
+
+                                  ]
+               },
+    "details":  [
+
+                ],
+    "command":  "powershell -NoProfile -ExecutionPolicy Bypass -File plan/devplan/reviews/tools/Invoke-DevPlanAudit.ps1 -Phase D0 -SnapshotId D0-20260711-131230-R5 -EvidenceId F2S-AUD-DEVPLAN-D0-006",
+    "toolPath":  "plan/devplan/reviews/tools/Invoke-DevPlanAudit.ps1",
+    "toolSha256":  "b7d7f724ed08c24a27683b9532c6f959548139ebaff99cf7a1ab19e3605a6132"
+}

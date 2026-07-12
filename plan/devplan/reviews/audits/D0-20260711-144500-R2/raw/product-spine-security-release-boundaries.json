@@ -1,0 +1,31 @@
+{
+    "schemaVersion":  "1.0.0",
+    "evidenceId":  "F2S-AUD-DEVPLAN-D0-003",
+    "snapshotId":  "D0-20260711-144500-R2",
+    "phase":  "D0",
+    "checkId":  "PRODUCT-SPINE-SECURITY-RELEASE-BOUNDARIES",
+    "status":  "PASS",
+    "metric":  {
+                   "markerGroups":  [
+                                        "spinePatch",
+                                        "openOutputs",
+                                        "proprietaryBoundary",
+                                        "humanGates",
+                                        "actionSet",
+                                        "commercialBoundary",
+                                        "privacy",
+                                        "license",
+                                        "externalState",
+                                        "launcher"
+                                    ],
+                   "forbiddenClaims":  [
+                                           "releaseAuthorized=true"
+                                       ]
+               },
+    "details":  [
+
+                ],
+    "command":  "powershell -NoProfile -ExecutionPolicy Bypass -File plan/devplan/reviews/tools/Invoke-DevPlanAudit.ps1 -Phase D0 -SnapshotId D0-20260711-144500-R2 -EvidenceId F2S-AUD-DEVPLAN-D0-003",
+    "toolPath":  "plan/devplan/reviews/tools/Invoke-DevPlanAudit.ps1",
+    "toolSha256":  "bc94e387781662a5846f2306eaf6b2ebde0bd1bdc4de22a9ee079e1f3bfc8322"
+}

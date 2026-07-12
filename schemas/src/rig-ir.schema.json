@@ -1,0 +1,70 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "F2S-SCHEMA-RIG-IR-001",
+  "title": "FlashToSpine Rig IR 1.1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schemaVersion", "exportId", "rigId", "projectRevision", "capabilityId", "spinePatch", "timeBase", "approvalClosure", "bones", "slots", "pivots", "sockets", "meshes", "weights", "constraints", "constraintCapability", "attachments", "animations", "gameplayMarkers"],
+  "properties": {
+    "schemaVersion": { "const": "1.1.0" },
+    "exportId": { "$ref": "common.schema.json#/$defs/StableId" },
+    "rigId": { "$ref": "common.schema.json#/$defs/StableId" },
+    "projectRevision": { "type": "integer", "minimum": 0 },
+    "capabilityId": { "const": "F2S-SPINE-CAP-4.2.43-001" },
+    "spinePatch": { "const": "4.2.43" },
+    "timeBase": { "$ref": "common.schema.json#/$defs/TimeBase" },
+    "approvalClosure": { "$ref": "#/$defs/ApprovalClosure" },
+    "bones": { "type": "array", "minItems": 1, "items": { "$ref": "#/$defs/Bone" } },
+    "slots": { "type": "array", "minItems": 1, "items": { "$ref": "#/$defs/Slot" } },
+    "pivots": { "type": "array", "items": { "$ref": "#/$defs/Pivot" } },
+    "sockets": { "type": "array", "items": { "$ref": "#/$defs/Socket" } },
+    "meshes": { "type": "array", "items": { "$ref": "#/$defs/Mesh" } },
+    "weights": { "type": "array", "items": { "$ref": "#/$defs/WeightSet" } },
+    "constraints": { "type": "array", "items": { "$ref": "#/$defs/Constraint" } },
+    "constraintCapability": { "$ref": "#/$defs/ConstraintCapability" },
+    "attachments": { "type": "array", "minItems": 1, "items": { "$ref": "#/$defs/Attachment" } },
+    "animations": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["idle", "run", "jump", "fall", "dash", "attack_01", "attack_02", "attack_03", "hit", "death"],
+      "properties": {
+        "idle": { "$ref": "#/$defs/Clip" }, "run": { "$ref": "#/$defs/Clip" }, "jump": { "$ref": "#/$defs/Clip" }, "fall": { "$ref": "#/$defs/Clip" }, "dash": { "$ref": "#/$defs/Clip" },
+        "attack_01": { "$ref": "#/$defs/Clip" }, "attack_02": { "$ref": "#/$defs/Clip" }, "attack_03": { "$ref": "#/$defs/Clip" }, "hit": { "$ref": "#/$defs/Clip" }, "death": { "$ref": "#/$defs/Clip" }
+      }
+    },
+    "gameplayMarkers": { "type": "array", "items": { "$ref": "#/$defs/Marker" } }
+  },
+  "$defs": {
+    "Hash": { "$ref": "common.schema.json#/$defs/Sha256" },
+    "ApprovalClosure": {
+      "type": "object", "additionalProperties": false, "required": ["layerSetSha256", "rigSha256", "actions"],
+      "properties": { "layerSetSha256": { "$ref": "#/$defs/Hash" }, "rigSha256": { "$ref": "#/$defs/Hash" }, "actions": { "type": "array", "minItems": 10, "maxItems": 10, "items": { "$ref": "#/$defs/ActionApproval" } } }
+    },
+    "ActionApproval": {
+      "type": "object", "additionalProperties": false, "required": ["actionKey", "clipSha256", "poseApprovalSha256", "hitApprovalSha256"],
+      "properties": { "actionKey": { "$ref": "common.schema.json#/$defs/ActionKey" }, "clipSha256": { "$ref": "#/$defs/Hash" }, "poseApprovalSha256": { "$ref": "#/$defs/Hash" }, "hitApprovalSha256": { "oneOf": [{ "$ref": "#/$defs/Hash" }, { "type": "null" }] } }
+    },
+    "Bone": {
+      "type": "object", "additionalProperties": false, "required": ["id", "parent", "xMilliPx", "yMilliPx", "rotationMilliDegrees", "scaleXPpm", "scaleYPpm"],
+      "properties": { "id": { "$ref": "common.schema.json#/$defs/StableId" }, "parent": { "oneOf": [{ "$ref": "common.schema.json#/$defs/StableId" }, { "type": "null" }] }, "xMilliPx": { "type": "integer", "minimum": -100000000, "maximum": 100000000 }, "yMilliPx": { "type": "integer", "minimum": -100000000, "maximum": 100000000 }, "rotationMilliDegrees": { "type": "integer", "minimum": -2147483648, "maximum": 2147483647 }, "scaleXPpm": { "type": "integer", "minimum": -2147483648, "maximum": 2147483647, "not": { "const": 0 } }, "scaleYPpm": { "type": "integer", "minimum": -2147483648, "maximum": 2147483647, "not": { "const": 0 } } }
+    },
+    "Slot": {
+      "type": "object", "additionalProperties": false, "required": ["id", "layerId", "boneId", "drawKey"],
+      "properties": { "id": { "$ref": "common.schema.json#/$defs/StableId" }, "layerId": { "$ref": "common.schema.json#/$defs/StableId" }, "boneId": { "$ref": "common.schema.json#/$defs/StableId" }, "drawKey": { "type": "integer" } }
+    },
+    "Point": { "type": "object", "additionalProperties": false, "required": ["xMilliPx", "yMilliPx"], "properties": { "xMilliPx": { "type": "integer" }, "yMilliPx": { "type": "integer" } } },
+    "Pivot": { "type": "object", "additionalProperties": false, "required": ["layerId", "point"], "properties": { "layerId": { "$ref": "common.schema.json#/$defs/StableId" }, "point": { "$ref": "#/$defs/Point" } } },
+    "Socket": { "type": "object", "additionalProperties": false, "required": ["socketId", "boneId", "kind", "point", "semantic"], "properties": { "socketId": { "$ref": "common.schema.json#/$defs/StableId" }, "boneId": { "$ref": "common.schema.json#/$defs/StableId" }, "kind": { "enum": ["primary-weapon", "gameplay-origin", "custom"] }, "point": { "$ref": "#/$defs/Point" }, "semantic": { "type": "string", "minLength": 1 } } },
+    "Vertex": { "type": "object", "additionalProperties": false, "required": ["vertexId", "xMilliPx", "yMilliPx", "uPpm", "vPpm"], "properties": { "vertexId": { "type": "integer", "minimum": 0 }, "xMilliPx": { "type": "integer" }, "yMilliPx": { "type": "integer" }, "uPpm": { "type": "integer", "minimum": 0, "maximum": 1000000 }, "vPpm": { "type": "integer", "minimum": 0, "maximum": 1000000 } } },
+    "Mesh": { "type": "object", "additionalProperties": false, "required": ["meshId", "layerId", "topologyRevision", "vertices", "triangles"], "properties": { "meshId": { "$ref": "common.schema.json#/$defs/StableId" }, "layerId": { "$ref": "common.schema.json#/$defs/StableId" }, "topologyRevision": { "type": "integer", "minimum": 0 }, "vertices": { "type": "array", "maxItems": 10000, "items": { "$ref": "#/$defs/Vertex" } }, "triangles": { "type": "array", "items": { "type": "array", "minItems": 3, "maxItems": 3, "items": { "type": "integer", "minimum": 0 } } } } },
+    "BoneWeight": { "type": "object", "additionalProperties": false, "required": ["boneId", "weightPpm"], "properties": { "boneId": { "$ref": "common.schema.json#/$defs/StableId" }, "weightPpm": { "type": "integer", "minimum": 0, "maximum": 1000000 } } },
+    "WeightSet": { "type": "object", "additionalProperties": false, "required": ["meshId", "topologyRevision", "byVertex"], "properties": { "meshId": { "$ref": "common.schema.json#/$defs/StableId" }, "topologyRevision": { "type": "integer", "minimum": 0 }, "byVertex": { "type": "object", "additionalProperties": { "type": "array", "minItems": 1, "maxItems": 4, "items": { "$ref": "#/$defs/BoneWeight" } } } } },
+    "Constraint": { "type": "object", "additionalProperties": false, "required": ["constraintId", "kind", "constrainedBoneId", "targetBoneId", "mixPpm", "order"], "properties": { "constraintId": { "$ref": "common.schema.json#/$defs/StableId" }, "kind": { "const": "transform" }, "constrainedBoneId": { "$ref": "common.schema.json#/$defs/StableId" }, "targetBoneId": { "$ref": "common.schema.json#/$defs/StableId" }, "mixPpm": { "type": "integer", "minimum": 0, "maximum": 1000000 }, "order": { "type": "integer", "minimum": 0 } } },
+    "ConstraintCapability": { "type": "object", "additionalProperties": false, "required": ["capabilityId", "spinePatch", "transformConstraints", "manifestSha256", "sourceHashesVerified"], "properties": { "capabilityId": { "const": "F2S-SPINE-CAP-4.2.43-001" }, "spinePatch": { "const": "4.2.43" }, "transformConstraints": { "const": true }, "manifestSha256": { "$ref": "#/$defs/Hash" }, "sourceHashesVerified": { "const": true } } },
+    "Attachment": { "type": "object", "additionalProperties": false, "required": ["attachmentId", "slotId", "logicalPngPath", "sourceSha256", "width", "height"], "properties": { "attachmentId": { "$ref": "common.schema.json#/$defs/StableId" }, "slotId": { "$ref": "common.schema.json#/$defs/StableId" }, "logicalPngPath": { "type": "string", "pattern": "^images/[A-Za-z0-9._/-]+\\.png$" }, "sourceSha256": { "$ref": "#/$defs/Hash" }, "width": { "type": "integer", "minimum": 1 }, "height": { "type": "integer", "minimum": 1 } } },
+    "Keyframe": { "type": "object", "additionalProperties": false, "required": ["keyframeId", "tick", "valuesMilli", "curve", "bezierMilli"], "properties": { "keyframeId": { "$ref": "common.schema.json#/$defs/StableId" }, "tick": { "type": "integer", "minimum": 0 }, "valuesMilli": { "type": "array", "items": { "type": "integer" } }, "curve": { "enum": ["stepped", "linear", "bezier"] }, "bezierMilli": { "oneOf": [{ "type": "array", "minItems": 4, "maxItems": 4, "items": { "type": "integer" } }, { "type": "null" }] } } },
+    "Track": { "type": "object", "additionalProperties": false, "required": ["trackId", "targetId", "channel", "keyframes"], "properties": { "trackId": { "$ref": "common.schema.json#/$defs/StableId" }, "targetId": { "$ref": "common.schema.json#/$defs/StableId" }, "channel": { "enum": ["bone-translate", "bone-rotate", "bone-scale", "slot-color", "draw-order", "deform", "event"] }, "keyframes": { "type": "array", "items": { "$ref": "#/$defs/Keyframe" } } } },
+    "Clip": { "type": "object", "additionalProperties": false, "required": ["clipId", "actionKey", "revision", "durationTicks", "timeBase", "tracks"], "properties": { "clipId": { "$ref": "common.schema.json#/$defs/StableId" }, "actionKey": { "$ref": "common.schema.json#/$defs/ActionKey" }, "revision": { "type": "integer", "minimum": 0 }, "durationTicks": { "type": "integer", "minimum": 1 }, "timeBase": { "$ref": "common.schema.json#/$defs/TimeBase" }, "tracks": { "type": "array", "items": { "$ref": "#/$defs/Track" } } } },
+    "Marker": { "type": "object", "additionalProperties": false, "required": ["markerId", "actionKey", "kind", "startTick", "endTick", "socketId"], "properties": { "markerId": { "$ref": "common.schema.json#/$defs/StableId" }, "actionKey": { "$ref": "common.schema.json#/$defs/ActionKey" }, "kind": { "enum": ["hit-frame", "hit-window", "footstep"] }, "startTick": { "type": "integer", "minimum": 0 }, "endTick": { "type": "integer", "minimum": 0 }, "socketId": { "oneOf": [{ "$ref": "common.schema.json#/$defs/StableId" }, { "type": "null" }] } } }
+  }
+}

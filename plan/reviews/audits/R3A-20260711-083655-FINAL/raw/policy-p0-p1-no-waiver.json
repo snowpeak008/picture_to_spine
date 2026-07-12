@@ -1,0 +1,20 @@
+{
+    "schemaVersion":  "1.0.0",
+    "snapshotId":  "R3A-20260711-083655-FINAL",
+    "checkId":  "POLICY-P0-P1-NO-WAIVER",
+    "status":  "PASS",
+    "metric":  {
+                   "p0WaiverRuleFound":  true,
+                   "p1WaiverRuleFound":  true,
+                   "allowedPrioritiesExactlyP2":  true,
+                   "forbiddenCategoriesFound":  true
+               },
+    "command":  "powershell -NoProfile -ExecutionPolicy Bypass -File plan/reviews/tools/Invoke-PlanAudit.ps1 -SnapshotId R3A-20260711-083655-FINAL",
+    "tool":  "PowerShell 5.1.22621.4391; Invoke-PlanAudit.ps1/1.0.2; policy-byte and prose assertion",
+    "exitCode":  0,
+    "startedAtAsiaShanghai":  "2026-07-11T08:37:12.6078772+08:00",
+    "endedAtAsiaShanghai":  "2026-07-11T08:37:12.6156176+08:00",
+    "details":  [
+
+                ]
+}

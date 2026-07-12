@@ -1,0 +1,38 @@
+{
+  "schemaVersion": "1.0.0",
+  "evidenceId": "F2S-EVD-M01-005",
+  "taskId": "F2S-DEV-M01-005",
+  "status": "PASS",
+  "command": "npm run release:verify",
+  "exitCode": 0,
+  "startedAtUtc": "2026-07-11T07:47:16.926Z",
+  "endedAtUtc": "2026-07-11T07:47:16.926Z",
+  "runner": {
+    "kind": "local-development",
+    "os": "win32 10.0.22631",
+    "architecture": "x64",
+    "hostnameHash": "f3da3e8c48fbc119008475bba247ec014ab39af1f7e5d05bd1609c4951e6d3d5"
+  },
+  "toolVersions": {
+    "node": "v24.15.0"
+  },
+  "inputHashes": {},
+  "outputHashes": {
+    "tools/diagnostics/diagnostics.schema.json": "fa0f910f6edcb6ae7633c15d5593449d6f866b8fffa3a8076e09687ed98111e9",
+    "tools/diagnostics/environment-diagnostics.mjs": "9a9f55425ff007a1b5c38fdc5bf557c3d6e06c754c375c223036532d0ae33631",
+    "apps/desktop-ui/src/features/diagnostics/BootstrapErrorBoundary.tsx": "b000a48f8d2588e6803a8898564a3f3eb641778c9299971a9c8e35dd4bf04215",
+    "apps/desktop-ui/src/features/diagnostics/DiagnosticsPage.tsx": "0e22919f1e98271ec62a4f06dff6f9846ed2d1c439690bad427fd59119817f77",
+    ".github/workflows/ci.yml": "1a67aa312f978bbd4858b4e6d30ce3c138912f2b3f8b75c256e43da154e8093d",
+    "tools/ci/verify-ci-contract.mjs": "f831455c2483ca6d9814f0f7c08033abad605eb9dc7c9680f53c4b11fffe8561"
+  },
+  "logRefs": [],
+  "reportRefs": [],
+  "capabilityState": "UNVERIFIED",
+  "externalBlockers": [],
+  "previousEvidenceRef": null,
+  "notRunReason": null,
+  "payload": {
+    "summary": "Offline diagnostics and CI contract implemented.",
+    "generatedBy": "tools/evidence/create-envelope.mjs"
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "schemaVersion": "1.0.0",
+  "policyId": "F2S-LIC-POLICY-001",
+  "status": "PASS",
+  "inventorySha256": "b831ca546177b1c6a1a8e2b291e34a12072806114a6025f8d0404205ef7f49e8",
+  "checkedItems": 16,
+  "npmClosureCount": 67,
+  "cargoClosureCount": 73,
+  "findings": []
+}

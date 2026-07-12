@@ -1,0 +1,892 @@
+{
+    "schemaVersion":  "1.0.0",
+    "auditType":  "mechanical-plan-audit",
+    "auditVersion":  "1.0.3",
+    "snapshotId":  "R3A-20260711-083804-FINAL2",
+    "phase":  "R3A",
+    "status":  "PASS",
+    "generatedAtAsiaShanghai":  "2026-07-11T08:38:10.5873687+08:00",
+    "input":  {
+                  "manifestPath":  "plan/reviews/snapshots/R3A-20260711-083804-FINAL2/manifest.json",
+                  "manifestSha256":  "3d04d361f1f19485006a21e8f7cb4b8378c87f55847329a5c20edbc3c623088d",
+                  "snapshotPath":  "plan/reviews/snapshots/R3A-20260711-083804-FINAL2"
+              },
+    "generator":  {
+                      "scriptPath":  "plan/reviews/tools/Invoke-PlanAudit.ps1",
+                      "scriptSha256":  "77fbc95cc70593a9805f5129c4808e977b117dbb7ce6520b51e82cf559096dff",
+                      "runtimePath":  "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+                      "runtimeVersion":  "5.1.22621.4391",
+                      "runtimeSha256":  "3247bcfd60f6dd25f34cb74b5889ab10ef1b3ec72b4d4b3d95b5b25b534560b8",
+                      "exactCommand":  "powershell -NoProfile -ExecutionPolicy Bypass -File plan/reviews/tools/Invoke-PlanAudit.ps1 -SnapshotId R3A-20260711-083804-FINAL2"
+                  },
+    "summary":  {
+                    "checkCount":  29,
+                    "passCount":  29,
+                    "failCount":  0,
+                    "errorCount":  0
+                },
+    "checks":  [
+                   {
+                       "checkId":  "SNAPSHOT-MANIFEST-ARCHIVE",
+                       "status":  "PASS",
+                       "metric":  {
+                                      "phase":  "R3A",
+                                      "manifestSha256":  "3d04d361f1f19485006a21e8f7cb4b8378c87f55847329a5c20edbc3c623088d",
+                                      "manifestReadOnly":  true,
+                                      "archivePath":  "plan/reviews/snapshots/R3A-20260711-083804-FINAL2.zip",
+                                      "expectedArchiveSha256":  "db5aa31f72415edb163adb43c00ef95832790b96ed363d853ef32857f40b70d3",
+                                      "actualArchiveSha256":  "db5aa31f72415edb163adb43c00ef95832790b96ed363d853ef32857f40b70d3",
+                                      "archiveReadOnly":  true,
+                                      "issueCount":  0
+                                  },
+                       "command":  "powershell -NoProfile -ExecutionPolicy Bypass -File plan/reviews/tools/Invoke-PlanAudit.ps1 -SnapshotId R3A-20260711-083804-FINAL2",
+                       "tool":  "PowerShell 5.1.22621.4391; Invoke-PlanAudit.ps1/1.0.3",
+                       "exitCode":  0,
+                       "startedAtAsiaShanghai":  "2026-07-11T08:38:09.8453770+08:00",
+                       "endedAtAsiaShanghai":  "2026-07-11T08:38:09.9288353+08:00",
+                       "rawPath":  "plan/reviews/audits/R3A-20260711-083804-FINAL2/raw/snapshot-manifest-archive.json",
+                       "rawSha256":  "45cc35dbc5e73a7f7be99ddd7b0dc7959734a439534711886e623f972439a74c"
+                   },
+                   {
+                       "checkId":  "SNAPSHOT-DOCUMENT-HASHES",
+                       "status":  "PASS",
+                       "metric":  {
+                                      "manifestDocumentCount":  25,
+                                      "directSnapshotDocumentCount":  25,
+                                      "verifiedRecordCount":  25,
+                                      "readOnlyCount":  25,
+                                      "sizeMatchCount":  25,
+                                      "sha256MatchCount":  25,
+                                      "duplicatePathCount":  0,
+                                      "duplicateDocIdCount":  0,
+                                      "missingCount":  0,
+                                      "extraCount":  0,
+                                      "issueCount":  0
+                                  },
+                       "command":  "powershell -NoProfile -ExecutionPolicy Bypass -File plan/reviews/tools/Invoke-PlanAudit.ps1 -SnapshotId R3A-20260711-083804-FINAL2",
+                       "tool":  "PowerShell 5.1.22621.4391; Invoke-PlanAudit.ps1/1.0.3; .NET SHA256",
+                       "exitCode":  0,
+                       "startedAtAsiaShanghai":  "2026-07-11T08:38:09.9501152+08:00",
+                       "endedAtAsiaShanghai":  "2026-07-11T08:38:09.9885151+08:00",
+                       "rawPath":  "plan/reviews/audits/R3A-20260711-083804-FINAL2/raw/snapshot-document-hashes.json",
+                       "rawSha256":  "0791e371eaf0cf08d18c414889b49968ead615213ae939d0035bff7f0ef91e6f"
+                   },
+                   {
+                       "checkId":  "SNAPSHOT-ARCHIVE-ENTRIES",
+                       "status":  "PASS",
+                       "metric":  {
+                                      "archiveEntryCount":  25,
+                                      "expectedEntryCount":  25,
+                                      "entries":  [
+                                                      {
+                                                          "path":  "plan/00-项目索引与计划治理.md",
+                                                          "length":  "18548",
+                                                          "sha256":  "c21d23ef387ecddc10369e47c0c32c10eb6352f97df70628329f5cb6ea37a510"
+                                                      },
+                                                      {
+                                                          "path":  "plan/01-产品章程范围与边界.md",
+                                                          "length":  "23328",
+                                                          "sha256":  "c4e9de003f44fb587201fd8eb6682c0a0cbd013099dcb32926a3fe481ff2f8e0"
+                                                      },
+                                                      {
+                                                          "path":  "plan/02-需求规格与验收标准.md",
+                                                          "length":  "41381",
+                                                          "sha256":  "6f22905985824321fc9ab8418bd19d0045bf424782fd1222ba29ff21cb1349df"
+                                                      },
+                                                      {
+                                                          "path":  "plan/03-内容动作素材与AI提示词设计.md",
+                                                          "length":  "38962",
+                                                          "sha256":  "6689e14a36c1880a7cbde3ae5bff986c5bd95c375d4a1903c4919eda2fca32ff"
+                                                      },
+                                                      {
+                                                          "path":  "plan/04-用户流程与信息架构.md",
+                                                          "length":  "36590",
+                                                          "sha256":  "443e33c7648aee0ebe59c53f89605c0abe63ca061d6e5288111ea0eb3ef61c4f"
+                                                      },
+                                                      {
+                                                          "path":  "plan/05-UI设计系统与页面规格.md",
+                                                          "length":  "42735",
+                                                          "sha256":  "b42b965f485dd00acde42000e7a3d6c579f0df00f407159adabac8a0d54418ca"
+                                                      },
+                                                      {
+                                                          "path":  "plan/06-系统架构与设计模式.md",
+                                                          "length":  "18204",
+                                                          "sha256":  "650323e9c2af08407a4b8840766acd9ba3b5b736836f68dc94011f47452d49f1"
+                                                      },
+                                                      {
+                                                          "path":  "plan/07-Windows环境配置与工具链.md",
+                                                          "length":  "16752",
+                                                          "sha256":  "fc9f0e3f796c393b6d347a7feebe58b75d1b22ce54e54f2806d8f1e7c39a96d5"
+                                                      },
+                                                      {
+                                                          "path":  "plan/08-前端渲染与编辑器内核.md",
+                                                          "length":  "21430",
+                                                          "sha256":  "5d8280faecaa2610b817bdae808d4a27502bee1abc9be691c128a33d85851114"
+                                                      },
+                                                      {
+                                                          "path":  "plan/09-领域逻辑与工作流编排.md",
+                                                          "length":  "103500",
+                                                          "sha256":  "717e15026ebf6656984bbcbe3b8a4c4666833e42282889ab5bbc1d83d808b7ff"
+                                                      },
+                                                      {
+                                                          "path":  "plan/10-本地图像处理与素材规划管线.md",
+                                                          "length":  "25629",
+                                                          "sha256":  "fadb5637fe8cefaccc52cc1e2fead928ddc650dc72254410272c8f9794b6a2e5"
+                                                      },
+                                                      {
+                                                          "path":  "plan/11-数据模型项目存储与迁移.md",
+                                                          "length":  "50631",
+                                                          "sha256":  "adde33882c2a30a6a67e783ca44f6b1309608c6d9d6b95aa135b33a5c911fc7a"
+                                                      },
+                                                      {
+                                                          "path":  "plan/12-IPC协议后台Worker与远程GPU.md",
+                                                          "length":  "20561",
+                                                          "sha256":  "06c8ffba3df992a3b345988330a4547531da08a8080d62a17676617206605e82"
+                                                      },
+                                                      {
+                                                          "path":  "plan/13-RigIR-PSD-PNG-Spine42导出.md",
+                                                          "length":  "34865",
+                                                          "sha256":  "1a06a0c9587b71a713a4d3f1b5351bdd84e229fbc844868c664d1a91fe2385a0"
+                                                      },
+                                                      {
+                                                          "path":  "plan/14-安全隐私许可证与供应链.md",
+                                                          "length":  "31974",
+                                                          "sha256":  "a06bbfdd243524628607523ae94e2e7bab7cfdee4d6bf17db5a38e5576f1790d"
+                                                      },
+                                                      {
+                                                          "path":  "plan/15-测试质量性能与可观测性.md",
+                                                          "length":  "30378",
+                                                          "sha256":  "e0c0f065c786ac98d113f39a25a1d9df9359a7b9afd44b09b8477433119bcbe9"
+                                                      },
+                                                      {
+                                                          "path":  "plan/16-工程规范代码组织与协作.md",
+                                                          "length":  "20843",
+                                                          "sha256":  "2405d4d85522fab1739b5fa6b254cda85787d013ae20e2d3efb3fefbb5a744f4"
+                                                      },
+                                                      {
+                                                          "path":  "plan/17-异常恢复兼容与项目升级.md",
+                                                          "length":  "36357",
+                                                          "sha256":  "ed50bc019952e14d3a3133005061101224cf314cac75af2782e17568df2a75e0"
+                                                      },
+                                                      {
+                                                          "path":  "plan/18-交付发布安装更新与双击入口.md",
+                                                          "length":  "73824",
+                                                          "sha256":  "827003fde0281276d39988570da4ef8497cdd28ce82dd90516ae007bf52740b5"
+                                                      },
+                                                      {
+                                                          "path":  "plan/19-风险登记与应对.md",
+                                                          "length":  "18198",
+                                                          "sha256":  "321dcb33a1c5f7cbe4ac1100b889d3ab5a690c18a2ae561bf70bf488770e98ca"
+                                                      },
+                                                      {
+                                                          "path":  "plan/20-路线图里程碑依赖与估算.md",
+                                                          "length":  "14751",
+                                                          "sha256":  "0fe72ea7a7b55e26a4d47785ea1b0c05f8bd33116e0ad70cacb4005ddf8fe156"
+                                                      },
+                                                      {
+                                                          "path":  "plan/21-需求设计任务测试追踪矩阵.md",
+                                                          "length":  "61999",
+                                                          "sha256":  "ef76bad891360b4c7c1b325e8d20a233408afaf9b6984e1f62c5c78f34c88764"
+                                                      },
+                                                      {
+                                                          "path":  "plan/22-逐文件评分与统筹整改记录.md",
+                                                          "length":  "23450",
+                                                          "sha256":  "12807aa64ecb7f1c1d04d5e1e2a3a57219e42ae06e03496bc6e14a595494a99c"
+                                                      },
+                                                      {
+                                                          "path":  "plan/23-最终统筹合规审查.md",
+                                                          "length":  "17005",
+                                                          "sha256":  "e5c03e07eac5647796731f18209a7d0bd6cf3931ecf70f44d269c324c8fe0d57"
+                                                      },
+                                                      {
+                                                          "path":  "plan/24-架构决策ADR与未决事项.md",
+                                                          "length":  "41271",
+                                                          "sha256":  "bf14542ab33fd5f147cc582fda9bba39ae36c20712ee26973df41a92844c4700"
+                                                      }
+                                                  ],
+                                      "issueCount":  0
+                                  },
+                       "command":  "powershell -NoProfile -ExecutionPolicy Bypass -File plan/reviews/tools/Invoke-PlanAudit.ps1 -SnapshotId R3A-20260711-083804-FINAL2",
+                       "tool":  "PowerShell 5.1.22621.4391; Invoke-PlanAudit.ps1/1.0.3; ZipArchive; .NET SHA256",
+                       "exitCode":  0,
+                       "startedAtAsiaShanghai":  "2026-07-11T08:38:09.9950789+08:00",
+                       "endedAtAsiaShanghai":  "2026-07-11T08:38:10.0356177+08:00",
+                       "rawPath":  "plan/reviews/audits/R3A-20260711-083804-FINAL2/raw/snapshot-archive-entries.json",
+                       "rawSha256":  "9d3a5153a3101cb9926920758c1049f856862c21e2bb095065b1c37c0fb4c726"
+                   },
+                   {
+                       "checkId":  "DOCUMENT-SET-00-24",
+                       "status":  "PASS",
+                       "metric":  {
+                                      "documentCount":  25,
+                                      "decodedDocumentCount":  25,
+                                      "uniquePrefixCount":  25,
+                                      "missingPrefixes":  [
+
+                                                          ],
+                                      "extraPrefixes":  [
+
+                                                        ],
+                                      "duplicatePrefixes":  [
+
+                                                            ],
+                                      "issueCount":  0
+                                  },
+                       "command":  "powershell -NoProfile -ExecutionPolicy Bypass -File plan/reviews/tools/Invoke-PlanAudit.ps1 -SnapshotId R3A-20260711-083804-FINAL2",
+                       "tool":  "PowerShell 5.1.22621.4391; Invoke-PlanAudit.ps1/1.0.3; UTF-8 strict decoder",
+                       "exitCode":  0,
+                       "startedAtAsiaShanghai":  "2026-07-11T08:38:10.0439421+08:00",
+                       "endedAtAsiaShanghai":  "2026-07-11T08:38:10.0868359+08:00",
+                       "rawPath":  "plan/reviews/audits/R3A-20260711-083804-FINAL2/raw/document-set-00-24.json",
+                       "rawSha256":  "0d39a1f1177e1bd7432fa47c330414630ddbc4ea428b18027d74526169f41274"
+                   },
+                   {
+                       "checkId":  "FRONTMATTER-PHASE-CONTRACT",
+                       "status":  "PASS",
+                       "metric":  {
+                                      "phase":  "R3A",
+                                      "expectedStatus":  "draft",
+                                      "expectedScoreSuffix":  "R2",
+                                      "parsedDocumentCount":  25,
+                                      "uniqueDocIdCount":  25,
+                                      "duplicateDocIds":  [
+
+                                                          ],
+                                      "issueCount":  0
+                                  },
+                       "command":  "powershell -NoProfile -ExecutionPolicy Bypass -File plan/reviews/tools/Invoke-PlanAudit.ps1 -SnapshotId R3A-20260711-083804-FINAL2",
+                       "tool":  "PowerShell 5.1.22621.4391; Invoke-PlanAudit.ps1/1.0.3; deterministic frontmatter parser",
+                       "exitCode":  0,
+                       "startedAtAsiaShanghai":  "2026-07-11T08:38:10.0952634+08:00",
+                       "endedAtAsiaShanghai":  "2026-07-11T08:38:10.1421782+08:00",
+                       "rawPath":  "plan/reviews/audits/R3A-20260711-083804-FINAL2/raw/frontmatter-phase-contract.json",
+                       "rawSha256":  "d8114151a5ec45f3209ae03dd07888af59b4ff177606f8f1446e4c3c9399270a"
+                   },
+                   {
+                       "checkId":  "MARKDOWN-FENCE-BALANCE",
+                       "status":  "PASS",
+                       "metric":  {
+                                      "documents":  [
+                                                        {
+                                                            "prefix":  "00",
+                                                            "fenceLineCount":  0
+                                                        },
+                                                        {
+                                                            "prefix":  "01",
+                                                            "fenceLineCount":  0
+                                                        },
+                                                        {
+                                                            "prefix":  "02",
+                                                            "fenceLineCount":  0
+                                                        },
+                                                        {
+                                                            "prefix":  "03",
+                                                            "fenceLineCount":  4
+                                                        },
+                                                        {
+                                                            "prefix":  "04",
+                                                            "fenceLineCount":  2
+                                                        },
+                                                        {
+                                                            "prefix":  "05",
+                                                            "fenceLineCount":  2
+                                                        },
+                                                        {
+                                                            "prefix":  "06",
+                                                            "fenceLineCount":  12
+                                                        },
+                                                        {
+                                                            "prefix":  "07",
+                                                            "fenceLineCount":  6
+                                                        },
+                                                        {
+                                                            "prefix":  "08",
+                                                            "fenceLineCount":  12
+                                                        },
+                                                        {
+                                                            "prefix":  "09",
+                                                            "fenceLineCount":  24
+                                                        },
+                                                        {
+                                                            "prefix":  "10",
+                                                            "fenceLineCount":  14
+                                                        },
+                                                        {
+                                                            "prefix":  "11",
+                                                            "fenceLineCount":  24
+                                                        },
+                                                        {
+                                                            "prefix":  "12",
+                                                            "fenceLineCount":  12
+                                                        },
+                                                        {
+                                                            "prefix":  "13",
+                                                            "fenceLineCount":  30
+                                                        },
+                                                        {
+                                                            "prefix":  "14",
+                                                            "fenceLineCount":  12
+                                                        },
+                                                        {
+                                                            "prefix":  "15",
+                                                            "fenceLineCount":  0
+                                                        },
+                                                        {
+                                                            "prefix":  "16",
+                                                            "fenceLineCount":  8
+                                                        },
+                                                        {
+                                                            "prefix":  "17",
+                                                            "fenceLineCount":  2
+                                                        },
+                                                        {
+                                                            "prefix":  "18",
+                                                            "fenceLineCount":  30
+                                                        },
+                                                        {
+                                                            "prefix":  "19",
+                                                            "fenceLineCount":  0
+                                                        },
+                                                        {
+                                                            "prefix":  "20",
+                                                            "fenceLineCount":  4
+                                                        },
+                                                        {
+                                                            "prefix":  "21",
+                                                            "fenceLineCount":  2
+                                                        },
+                                                        {
+                                                            "prefix":  "22",
+                                                            "fenceLineCount":  2
+                                                        },
+                                                        {
+                                                            "prefix":  "23",
+                                                            "fenceLineCount":  0
+                                                        },
+                                                        {
+                                                            "prefix":  "24",
+                                                            "fenceLineCount":  0
+                                                        }
+                                                    ],
+                                      "issueCount":  0
+                                  },
+                       "command":  "powershell -NoProfile -ExecutionPolicy Bypass -File plan/reviews/tools/Invoke-PlanAudit.ps1 -SnapshotId R3A-20260711-083804-FINAL2",
+                       "tool":  "PowerShell 5.1.22621.4391; Invoke-PlanAudit.ps1/1.0.3; regex",
+                       "exitCode":  0,
+                       "startedAtAsiaShanghai":  "2026-07-11T08:38:10.1491639+08:00",
+                       "endedAtAsiaShanghai":  "2026-07-11T08:38:10.1619559+08:00",
+                       "rawPath":  "plan/reviews/audits/R3A-20260711-083804-FINAL2/raw/markdown-fence-balance.json",
+                       "rawSha256":  "acd5a6d417c8838b0c10e3952bd1b90451b298257032d3dbcde1acb20c6d6be8"
+                   },
+                   {
+                       "checkId":  "MERGE-CONFLICT-MARKERS",
+                       "status":  "PASS",
+                       "metric":  {
+                                      "conflictMarkerCount":  0,
+                                      "hits":  [
+
+                                               ]
+                                  },
+                       "command":  "powershell -NoProfile -ExecutionPolicy Bypass -File plan/reviews/tools/Invoke-PlanAudit.ps1 -SnapshotId R3A-20260711-083804-FINAL2",
+                       "tool":  "PowerShell 5.1.22621.4391; Invoke-PlanAudit.ps1/1.0.3; regex",
+                       "exitCode":  0,
+                       "startedAtAsiaShanghai":  "2026-07-11T08:38:10.1693708+08:00",
+                       "endedAtAsiaShanghai":  "2026-07-11T08:38:10.1758563+08:00",
+                       "rawPath":  "plan/reviews/audits/R3A-20260711-083804-FINAL2/raw/merge-conflict-markers.json",
+                       "rawSha256":  "7e621b561498a2d1df222bdc2ff086a7a46ae0d6eb8221bea1b5780f9b107254"
+                   },
+                   {
+                       "checkId":  "CANONICAL-FOR-REGISTRY",
+                       "status":  "PASS",
+                       "metric":  {
+                                      "tokenCount":  384,
+                                      "expectedTokenCount":  384,
+                                      "uniqueTokenCount":  384,
+                                      "duplicateCount":  0,
+                                      "duplicates":  [
+
+                                                     ],
+                                      "invalidCount":  0,
+                                      "invalid":  [
+
+                                                  ]
+                                  },
+                       "command":  "powershell -NoProfile -ExecutionPolicy Bypass -File plan/reviews/tools/Invoke-PlanAudit.ps1 -SnapshotId R3A-20260711-083804-FINAL2",
+                       "tool":  "PowerShell 5.1.22621.4391; Invoke-PlanAudit.ps1/1.0.3; frontmatter registry reducer",
+                       "exitCode":  0,
+                       "startedAtAsiaShanghai":  "2026-07-11T08:38:10.1818363+08:00",
+                       "endedAtAsiaShanghai":  "2026-07-11T08:38:10.2015149+08:00",
+                       "rawPath":  "plan/reviews/audits/R3A-20260711-083804-FINAL2/raw/canonical-for-registry.json",
+                       "rawSha256":  "b573ede7552ea5c42cb966d483bb0a045cc3442f7769eed10511dec1120874b1"
+                   },
+                   {
+                       "checkId":  "DEPENDS-ON-GRAPH",
+                       "status":  "PASS",
+                       "metric":  {
+                                      "nodeCount":  25,
+                                      "danglingEdgeCount":  0,
+                                      "danglingEdges":  [
+
+                                                        ],
+                                      "duplicateEdgeCount":  0,
+                                      "duplicateEdges":  [
+
+                                                         ],
+                                      "cycleNodeCount":  0,
+                                      "cycleNodes":  [
+
+                                                     ]
+                                  },
+                       "command":  "powershell -NoProfile -ExecutionPolicy Bypass -File plan/reviews/tools/Invoke-PlanAudit.ps1 -SnapshotId R3A-20260711-083804-FINAL2",
+                       "tool":  "PowerShell 5.1.22621.4391; Invoke-PlanAudit.ps1/1.0.3; deterministic graph reduction",
+                       "exitCode":  0,
+                       "startedAtAsiaShanghai":  "2026-07-11T08:38:10.2080033+08:00",
+                       "endedAtAsiaShanghai":  "2026-07-11T08:38:10.2341699+08:00",
+                       "rawPath":  "plan/reviews/audits/R3A-20260711-083804-FINAL2/raw/depends-on-graph.json",
+                       "rawSha256":  "3e9716e7b614481d11f165c162aaab5d706058e136c15d7e686638588abf7e70"
+                   },
+                   {
+                       "checkId":  "REQUIREMENTS-02-21-PARITY",
+                       "status":  "PASS",
+                       "metric":  {
+                                      "sourceTotal":  102,
+                                      "traceTotal":  102,
+                                      "fr":  69,
+                                      "nfr":  33,
+                                      "p0":  96,
+                                      "p1":  6,
+                                      "p2":  0,
+                                      "sourceDuplicateCount":  0,
+                                      "traceDuplicateCount":  0,
+                                      "missingCount":  0,
+                                      "extraCount":  0,
+                                      "priorityDifferenceCount":  0,
+                                      "missing":  [
+
+                                                  ],
+                                      "extra":  [
+
+                                                ],
+                                      "priorityDifferences":  [
+
+                                                              ]
+                                  },
+                       "command":  "powershell -NoProfile -ExecutionPolicy Bypass -File plan/reviews/tools/Invoke-PlanAudit.ps1 -SnapshotId R3A-20260711-083804-FINAL2",
+                       "tool":  "PowerShell 5.1.22621.4391; Invoke-PlanAudit.ps1/1.0.3; markdown table reducer",
+                       "exitCode":  0,
+                       "startedAtAsiaShanghai":  "2026-07-11T08:38:10.2411466+08:00",
+                       "endedAtAsiaShanghai":  "2026-07-11T08:38:10.2634022+08:00",
+                       "rawPath":  "plan/reviews/audits/R3A-20260711-083804-FINAL2/raw/requirements-02-21-parity.json",
+                       "rawSha256":  "44a64903bcf369002b6080fdba1e132a82f17eae777dd8b3f9a0ffff8ba66c12"
+                   },
+                   {
+                       "checkId":  "EXACT-TESTS-OWNER-TRACE-PARITY",
+                       "status":  "PASS",
+                       "metric":  {
+                                      "ownerPrefixes":  [
+                                                            "06",
+                                                            "07",
+                                                            "08",
+                                                            "09",
+                                                            "10",
+                                                            "11",
+                                                            "12",
+                                                            "15"
+                                                        ],
+                                      "ownerExactTestCount":  133,
+                                      "traceExactTestCount":  133,
+                                      "missingCount":  0,
+                                      "extraCount":  0,
+                                      "missing":  [
+
+                                                  ],
+                                      "extra":  [
+
+                                                ]
+                                  },
+                       "command":  "powershell -NoProfile -ExecutionPolicy Bypass -File plan/reviews/tools/Invoke-PlanAudit.ps1 -SnapshotId R3A-20260711-083804-FINAL2",
+                       "tool":  "PowerShell 5.1.22621.4391; Invoke-PlanAudit.ps1/1.0.3; exact-ID registry reducer",
+                       "exitCode":  0,
+                       "startedAtAsiaShanghai":  "2026-07-11T08:38:10.2700255+08:00",
+                       "endedAtAsiaShanghai":  "2026-07-11T08:38:10.2882064+08:00",
+                       "rawPath":  "plan/reviews/audits/R3A-20260711-083804-FINAL2/raw/exact-tests-owner-trace-parity.json",
+                       "rawSha256":  "9e133bb3d7a2c761b3bc500ca07e296a15921214dfb39244b1436a16fc5ff56e"
+                   },
+                   {
+                       "checkId":  "DEV-EVD-21-SUFFIX-PARITY",
+                       "status":  "PASS",
+                       "metric":  {
+                                      "devCount":  80,
+                                      "evdCount":  80,
+                                      "missingEvdSuffixCount":  0,
+                                      "extraEvdSuffixCount":  0,
+                                      "missingEvdSuffixes":  [
+
+                                                             ],
+                                      "extraEvdSuffixes":  [
+
+                                                           ]
+                                  },
+                       "command":  "powershell -NoProfile -ExecutionPolicy Bypass -File plan/reviews/tools/Invoke-PlanAudit.ps1 -SnapshotId R3A-20260711-083804-FINAL2",
+                       "tool":  "PowerShell 5.1.22621.4391; Invoke-PlanAudit.ps1/1.0.3; exact-ID registry reducer",
+                       "exitCode":  0,
+                       "startedAtAsiaShanghai":  "2026-07-11T08:38:10.2947669+08:00",
+                       "endedAtAsiaShanghai":  "2026-07-11T08:38:10.3080942+08:00",
+                       "rawPath":  "plan/reviews/audits/R3A-20260711-083804-FINAL2/raw/dev-evd-21-suffix-parity.json",
+                       "rawSha256":  "65127fc668e6b1436a69287681d62190f212e5d20e92c907fea2f59abdb69743"
+                   },
+                   {
+                       "checkId":  "HASH-01-WIRE-ARTIFACT",
+                       "status":  "PASS",
+                       "metric":  {
+                                      "sourceDocumentPrefix":  "09",
+                                      "mode":  "artifact",
+                                      "domainSeparator":  null,
+                                      "candidateLineCount":  1,
+                                      "byteLength":  1437,
+                                      "expectedSha256":  "57bab593f62917d35b7eba88148f0c95b037a40b2a6be1962f8068f4e0bf8d55",
+                                      "actualSha256":  "57bab593f62917d35b7eba88148f0c95b037a40b2a6be1962f8068f4e0bf8d55"
+                                  },
+                       "command":  "powershell -NoProfile -ExecutionPolicy Bypass -File plan/reviews/tools/Invoke-PlanAudit.ps1 -SnapshotId R3A-20260711-083804-FINAL2",
+                       "tool":  "PowerShell 5.1.22621.4391; Invoke-PlanAudit.ps1/1.0.3; UTF-8 bytes; .NET SHA256",
+                       "exitCode":  0,
+                       "startedAtAsiaShanghai":  "2026-07-11T08:38:10.3159531+08:00",
+                       "endedAtAsiaShanghai":  "2026-07-11T08:38:10.3397354+08:00",
+                       "rawPath":  "plan/reviews/audits/R3A-20260711-083804-FINAL2/raw/hash-01-wire-artifact.json",
+                       "rawSha256":  "daf46589e91594412c717b6db8d6e1541203271e5d3fbf95c02c98a8236fa126"
+                   },
+                   {
+                       "checkId":  "HASH-02-DECISION-ARTIFACT",
+                       "status":  "PASS",
+                       "metric":  {
+                                      "sourceDocumentPrefix":  "09",
+                                      "mode":  "artifact",
+                                      "domainSeparator":  null,
+                                      "candidateLineCount":  1,
+                                      "byteLength":  678,
+                                      "expectedSha256":  "56ae4052b605dae307b091c8133fb896835bba573c0555377f67d615060d6dad",
+                                      "actualSha256":  "56ae4052b605dae307b091c8133fb896835bba573c0555377f67d615060d6dad"
+                                  },
+                       "command":  "powershell -NoProfile -ExecutionPolicy Bypass -File plan/reviews/tools/Invoke-PlanAudit.ps1 -SnapshotId R3A-20260711-083804-FINAL2",
+                       "tool":  "PowerShell 5.1.22621.4391; Invoke-PlanAudit.ps1/1.0.3; UTF-8 bytes; .NET SHA256",
+                       "exitCode":  0,
+                       "startedAtAsiaShanghai":  "2026-07-11T08:38:10.3457207+08:00",
+                       "endedAtAsiaShanghai":  "2026-07-11T08:38:10.3556158+08:00",
+                       "rawPath":  "plan/reviews/audits/R3A-20260711-083804-FINAL2/raw/hash-02-decision-artifact.json",
+                       "rawSha256":  "2127251284e200214faaa10286e6b5fca031c23ecab2d041fb4de4327d7cd8e6"
+                   },
+                   {
+                       "checkId":  "HASH-03-DECISION-DOMAIN",
+                       "status":  "PASS",
+                       "metric":  {
+                                      "sourceDocumentPrefix":  "09",
+                                      "mode":  "domain",
+                                      "domainSeparator":  "f2s-decision-policy-v1",
+                                      "candidateLineCount":  1,
+                                      "byteLength":  678,
+                                      "expectedSha256":  "48b5f0f91046ec69494794fad06154aa6aeada1c82e638607b06370e576ba4e9",
+                                      "actualSha256":  "48b5f0f91046ec69494794fad06154aa6aeada1c82e638607b06370e576ba4e9"
+                                  },
+                       "command":  "powershell -NoProfile -ExecutionPolicy Bypass -File plan/reviews/tools/Invoke-PlanAudit.ps1 -SnapshotId R3A-20260711-083804-FINAL2",
+                       "tool":  "PowerShell 5.1.22621.4391; Invoke-PlanAudit.ps1/1.0.3; UTF-8 bytes; .NET SHA256",
+                       "exitCode":  0,
+                       "startedAtAsiaShanghai":  "2026-07-11T08:38:10.3618976+08:00",
+                       "endedAtAsiaShanghai":  "2026-07-11T08:38:10.3837826+08:00",
+                       "rawPath":  "plan/reviews/audits/R3A-20260711-083804-FINAL2/raw/hash-03-decision-domain.json",
+                       "rawSha256":  "e1ed8f24d94791934d3a81ee1370de3b8f47cbfac88f8ff0737a4613b9968e06"
+                   },
+                   {
+                       "checkId":  "HASH-04-RELEASE-WAIVER-ARTIFACT",
+                       "status":  "PASS",
+                       "metric":  {
+                                      "sourceDocumentPrefix":  "18",
+                                      "mode":  "artifact",
+                                      "domainSeparator":  null,
+                                      "candidateLineCount":  1,
+                                      "byteLength":  584,
+                                      "expectedSha256":  "bb224e3c46e9b73e34ffc562dc62a7167fc4764e592e4fde75152b178d7863c7",
+                                      "actualSha256":  "bb224e3c46e9b73e34ffc562dc62a7167fc4764e592e4fde75152b178d7863c7"
+                                  },
+                       "command":  "powershell -NoProfile -ExecutionPolicy Bypass -File plan/reviews/tools/Invoke-PlanAudit.ps1 -SnapshotId R3A-20260711-083804-FINAL2",
+                       "tool":  "PowerShell 5.1.22621.4391; Invoke-PlanAudit.ps1/1.0.3; UTF-8 bytes; .NET SHA256",
+                       "exitCode":  0,
+                       "startedAtAsiaShanghai":  "2026-07-11T08:38:10.3940661+08:00",
+                       "endedAtAsiaShanghai":  "2026-07-11T08:38:10.4007383+08:00",
+                       "rawPath":  "plan/reviews/audits/R3A-20260711-083804-FINAL2/raw/hash-04-release-waiver-artifact.json",
+                       "rawSha256":  "952f7d974862a58637169feca9fbb3e78ac5eeecd1b736d5b1a38f397dc90f97"
+                   },
+                   {
+                       "checkId":  "HASH-05-RELEASE-WAIVER-DOMAIN",
+                       "status":  "PASS",
+                       "metric":  {
+                                      "sourceDocumentPrefix":  "18",
+                                      "mode":  "domain",
+                                      "domainSeparator":  "f2s-release-waiver-policy-v1",
+                                      "candidateLineCount":  1,
+                                      "byteLength":  584,
+                                      "expectedSha256":  "830c2a9ff364db19686ac34ec0800fda89599a74e567fd8cfdc5568e1332c60d",
+                                      "actualSha256":  "830c2a9ff364db19686ac34ec0800fda89599a74e567fd8cfdc5568e1332c60d"
+                                  },
+                       "command":  "powershell -NoProfile -ExecutionPolicy Bypass -File plan/reviews/tools/Invoke-PlanAudit.ps1 -SnapshotId R3A-20260711-083804-FINAL2",
+                       "tool":  "PowerShell 5.1.22621.4391; Invoke-PlanAudit.ps1/1.0.3; UTF-8 bytes; .NET SHA256",
+                       "exitCode":  0,
+                       "startedAtAsiaShanghai":  "2026-07-11T08:38:10.4067608+08:00",
+                       "endedAtAsiaShanghai":  "2026-07-11T08:38:10.4205026+08:00",
+                       "rawPath":  "plan/reviews/audits/R3A-20260711-083804-FINAL2/raw/hash-05-release-waiver-domain.json",
+                       "rawSha256":  "d62add439b4f277947a2967da704fec1d4ae30f1a604cf2f40d6134993b93265"
+                   },
+                   {
+                       "checkId":  "HASH-06-ACTOR-POLICY-ARTIFACT",
+                       "status":  "PASS",
+                       "metric":  {
+                                      "sourceDocumentPrefix":  "18",
+                                      "mode":  "artifact",
+                                      "domainSeparator":  null,
+                                      "candidateLineCount":  1,
+                                      "byteLength":  471,
+                                      "expectedSha256":  "561d25223c507fe89f680ac5a1327c2c9500a85524e6929c90ae8d79eeef9cad",
+                                      "actualSha256":  "561d25223c507fe89f680ac5a1327c2c9500a85524e6929c90ae8d79eeef9cad"
+                                  },
+                       "command":  "powershell -NoProfile -ExecutionPolicy Bypass -File plan/reviews/tools/Invoke-PlanAudit.ps1 -SnapshotId R3A-20260711-083804-FINAL2",
+                       "tool":  "PowerShell 5.1.22621.4391; Invoke-PlanAudit.ps1/1.0.3; UTF-8 bytes; .NET SHA256",
+                       "exitCode":  0,
+                       "startedAtAsiaShanghai":  "2026-07-11T08:38:10.4288382+08:00",
+                       "endedAtAsiaShanghai":  "2026-07-11T08:38:10.4339140+08:00",
+                       "rawPath":  "plan/reviews/audits/R3A-20260711-083804-FINAL2/raw/hash-06-actor-policy-artifact.json",
+                       "rawSha256":  "19d9d7f728645dbf09cd2873b80772ebae7e9c13d5dfa644c13d0fe7654cb135"
+                   },
+                   {
+                       "checkId":  "HASH-07-ACTOR-POLICY-DOMAIN",
+                       "status":  "PASS",
+                       "metric":  {
+                                      "sourceDocumentPrefix":  "18",
+                                      "mode":  "domain",
+                                      "domainSeparator":  "f2s-actor-attestation-policy-v1",
+                                      "candidateLineCount":  1,
+                                      "byteLength":  471,
+                                      "expectedSha256":  "b370ab9a28a68c010297e706e71d62c063bc97167494a051439fc1b3328c0d90",
+                                      "actualSha256":  "b370ab9a28a68c010297e706e71d62c063bc97167494a051439fc1b3328c0d90"
+                                  },
+                       "command":  "powershell -NoProfile -ExecutionPolicy Bypass -File plan/reviews/tools/Invoke-PlanAudit.ps1 -SnapshotId R3A-20260711-083804-FINAL2",
+                       "tool":  "PowerShell 5.1.22621.4391; Invoke-PlanAudit.ps1/1.0.3; UTF-8 bytes; .NET SHA256",
+                       "exitCode":  0,
+                       "startedAtAsiaShanghai":  "2026-07-11T08:38:10.4396452+08:00",
+                       "endedAtAsiaShanghai":  "2026-07-11T08:38:10.4455998+08:00",
+                       "rawPath":  "plan/reviews/audits/R3A-20260711-083804-FINAL2/raw/hash-07-actor-policy-domain.json",
+                       "rawSha256":  "82059b4a79a81887f1e23a226e007a35a07ad18b0782f712e45f1e560f7ad785"
+                   },
+                   {
+                       "checkId":  "HASH-08-SIGNATURE-REGISTRY-ARTIFACT",
+                       "status":  "PASS",
+                       "metric":  {
+                                      "sourceDocumentPrefix":  "18",
+                                      "mode":  "artifact",
+                                      "domainSeparator":  null,
+                                      "candidateLineCount":  1,
+                                      "byteLength":  483,
+                                      "expectedSha256":  "43185e9a1a5bdf5a5ee4b6e3ce13a7c27852d1c8487ea9ec4125094cd54b5ac8",
+                                      "actualSha256":  "43185e9a1a5bdf5a5ee4b6e3ce13a7c27852d1c8487ea9ec4125094cd54b5ac8"
+                                  },
+                       "command":  "powershell -NoProfile -ExecutionPolicy Bypass -File plan/reviews/tools/Invoke-PlanAudit.ps1 -SnapshotId R3A-20260711-083804-FINAL2",
+                       "tool":  "PowerShell 5.1.22621.4391; Invoke-PlanAudit.ps1/1.0.3; UTF-8 bytes; .NET SHA256",
+                       "exitCode":  0,
+                       "startedAtAsiaShanghai":  "2026-07-11T08:38:10.4538479+08:00",
+                       "endedAtAsiaShanghai":  "2026-07-11T08:38:10.4589298+08:00",
+                       "rawPath":  "plan/reviews/audits/R3A-20260711-083804-FINAL2/raw/hash-08-signature-registry-artifact.json",
+                       "rawSha256":  "6f5aab2dca7923d1ec1dd46e29998a97814c30aa748b5ed3c576d2278fc0cb2a"
+                   },
+                   {
+                       "checkId":  "HASH-09-SIGNATURE-REGISTRY-DOMAIN",
+                       "status":  "PASS",
+                       "metric":  {
+                                      "sourceDocumentPrefix":  "18",
+                                      "mode":  "domain",
+                                      "domainSeparator":  "f2s-signature-algorithm-registry-v1",
+                                      "candidateLineCount":  1,
+                                      "byteLength":  483,
+                                      "expectedSha256":  "1419106463bf0193c2885c90ef68520914ea426d3c3ffe1848fce6b7acd77c40",
+                                      "actualSha256":  "1419106463bf0193c2885c90ef68520914ea426d3c3ffe1848fce6b7acd77c40"
+                                  },
+                       "command":  "powershell -NoProfile -ExecutionPolicy Bypass -File plan/reviews/tools/Invoke-PlanAudit.ps1 -SnapshotId R3A-20260711-083804-FINAL2",
+                       "tool":  "PowerShell 5.1.22621.4391; Invoke-PlanAudit.ps1/1.0.3; UTF-8 bytes; .NET SHA256",
+                       "exitCode":  0,
+                       "startedAtAsiaShanghai":  "2026-07-11T08:38:10.4669334+08:00",
+                       "endedAtAsiaShanghai":  "2026-07-11T08:38:10.4722878+08:00",
+                       "rawPath":  "plan/reviews/audits/R3A-20260711-083804-FINAL2/raw/hash-09-signature-registry-domain.json",
+                       "rawSha256":  "3f1329556c45c5bc150e4bd49e6e9306cf629d1bc521de2aff3303a51d154ffa"
+                   },
+                   {
+                       "checkId":  "POLICY-LICENSE-ALLOWLIST",
+                       "status":  "PASS",
+                       "metric":  {
+                                      "expected":  [
+                                                       "MIT",
+                                                       "Apache-2.0",
+                                                       "BSD-2-Clause",
+                                                       "BSD-3-Clause",
+                                                       "ISC",
+                                                       "Zlib",
+                                                       "0BSD",
+                                                       "PSF-2.0",
+                                                       "CC0-1.0",
+                                                       "LicenseRef-Public-Domain"
+                                                   ],
+                                      "actual":  [
+                                                     "MIT",
+                                                     "Apache-2.0",
+                                                     "BSD-2-Clause",
+                                                     "BSD-3-Clause",
+                                                     "ISC",
+                                                     "Zlib",
+                                                     "0BSD",
+                                                     "PSF-2.0",
+                                                     "CC0-1.0",
+                                                     "LicenseRef-Public-Domain"
+                                                 ],
+                                      "exactOrderedMatch":  true,
+                                      "forbiddenPolicyTokenCount":  7,
+                                      "issueCount":  0
+                                  },
+                       "command":  "powershell -NoProfile -ExecutionPolicy Bypass -File plan/reviews/tools/Invoke-PlanAudit.ps1 -SnapshotId R3A-20260711-083804-FINAL2",
+                       "tool":  "PowerShell 5.1.22621.4391; Invoke-PlanAudit.ps1/1.0.3; canonical fenced-block parser",
+                       "exitCode":  0,
+                       "startedAtAsiaShanghai":  "2026-07-11T08:38:10.4784747+08:00",
+                       "endedAtAsiaShanghai":  "2026-07-11T08:38:10.4859645+08:00",
+                       "rawPath":  "plan/reviews/audits/R3A-20260711-083804-FINAL2/raw/policy-license-allowlist.json",
+                       "rawSha256":  "7ad403a48b31fcabfa3565c43eff7275b34e6cbbdb1ea26c44269725f51177d9"
+                   },
+                   {
+                       "checkId":  "POLICY-TLS-FAIL-CLOSED",
+                       "status":  "PASS",
+                       "metric":  {
+                                      "requirementRowFound":  true,
+                                      "requirementPriorityP0":  true,
+                                      "requirementBindsTls":  true,
+                                      "securityTlsFloorFound":  true,
+                                      "mTlsOptionFound":  true
+                                  },
+                       "command":  "powershell -NoProfile -ExecutionPolicy Bypass -File plan/reviews/tools/Invoke-PlanAudit.ps1 -SnapshotId R3A-20260711-083804-FINAL2",
+                       "tool":  "PowerShell 5.1.22621.4391; Invoke-PlanAudit.ps1/1.0.3; requirement-row assertion",
+                       "exitCode":  0,
+                       "startedAtAsiaShanghai":  "2026-07-11T08:38:10.4913149+08:00",
+                       "endedAtAsiaShanghai":  "2026-07-11T08:38:10.4961053+08:00",
+                       "rawPath":  "plan/reviews/audits/R3A-20260711-083804-FINAL2/raw/policy-tls-fail-closed.json",
+                       "rawSha256":  "27a62dfffb37bd341393affe5b4ea44d6a4ce6624f66f23b808b254a895cb309"
+                   },
+                   {
+                       "checkId":  "POLICY-WINDOWS-APPCONTAINER",
+                       "status":  "PASS",
+                       "metric":  {
+                                      "requirementRowFound":  true,
+                                      "requirementPriorityP0":  true,
+                                      "requiredTokens":  [
+                                                             "windows-appcontainer-v1",
+                                                             "AppContainer",
+                                                             "Job Object",
+                                                             "network capability"
+                                                         ],
+                                      "foundTokens":  [
+                                                          "windows-appcontainer-v1",
+                                                          "AppContainer",
+                                                          "Job Object",
+                                                          "network capability"
+                                                      ],
+                                      "canonicalProfileReferenceCount":  4
+                                  },
+                       "command":  "powershell -NoProfile -ExecutionPolicy Bypass -File plan/reviews/tools/Invoke-PlanAudit.ps1 -SnapshotId R3A-20260711-083804-FINAL2",
+                       "tool":  "PowerShell 5.1.22621.4391; Invoke-PlanAudit.ps1/1.0.3; requirement/profile assertion",
+                       "exitCode":  0,
+                       "startedAtAsiaShanghai":  "2026-07-11T08:38:10.5038003+08:00",
+                       "endedAtAsiaShanghai":  "2026-07-11T08:38:10.5286551+08:00",
+                       "rawPath":  "plan/reviews/audits/R3A-20260711-083804-FINAL2/raw/policy-windows-appcontainer.json",
+                       "rawSha256":  "946d431540096364b62bb908a82846c3ceb29020814eb136b3f5af7412a5583b"
+                   },
+                   {
+                       "checkId":  "POLICY-P0-P1-NO-WAIVER",
+                       "status":  "PASS",
+                       "metric":  {
+                                      "p0WaiverRuleFound":  true,
+                                      "p1WaiverRuleFound":  true,
+                                      "allowedPrioritiesExactlyP2":  true,
+                                      "forbiddenCategoriesFound":  true
+                                  },
+                       "command":  "powershell -NoProfile -ExecutionPolicy Bypass -File plan/reviews/tools/Invoke-PlanAudit.ps1 -SnapshotId R3A-20260711-083804-FINAL2",
+                       "tool":  "PowerShell 5.1.22621.4391; Invoke-PlanAudit.ps1/1.0.3; policy-byte and prose assertion",
+                       "exitCode":  0,
+                       "startedAtAsiaShanghai":  "2026-07-11T08:38:10.5347078+08:00",
+                       "endedAtAsiaShanghai":  "2026-07-11T08:38:10.5367032+08:00",
+                       "rawPath":  "plan/reviews/audits/R3A-20260711-083804-FINAL2/raw/policy-p0-p1-no-waiver.json",
+                       "rawSha256":  "c1915f4052526027a8d87ba50180d26202d54f5beef1c97f72f725eceb7eb91d"
+                   },
+                   {
+                       "checkId":  "POLICY-SPINE-4-2-43",
+                       "status":  "PASS",
+                       "metric":  {
+                                      "requirementsReferenceCount":  12,
+                                      "exportPlanReferenceCount":  49,
+                                      "exp003Found":  true,
+                                      "exp005Found":  true,
+                                      "fixedPatch":  "4.2.43"
+                                  },
+                       "command":  "powershell -NoProfile -ExecutionPolicy Bypass -File plan/reviews/tools/Invoke-PlanAudit.ps1 -SnapshotId R3A-20260711-083804-FINAL2",
+                       "tool":  "PowerShell 5.1.22621.4391; Invoke-PlanAudit.ps1/1.0.3; exact-version assertion",
+                       "exitCode":  0,
+                       "startedAtAsiaShanghai":  "2026-07-11T08:38:10.5462124+08:00",
+                       "endedAtAsiaShanghai":  "2026-07-11T08:38:10.5482048+08:00",
+                       "rawPath":  "plan/reviews/audits/R3A-20260711-083804-FINAL2/raw/policy-spine-4-2-43.json",
+                       "rawSha256":  "2fb58ee8c33fb264ece81541f27db6034a9ecbb5b0e4fbaa15d1c1d129f84ff4"
+                   },
+                   {
+                       "checkId":  "POLICY-BUILTIN-WRITER-FORBIDDEN",
+                       "status":  "PASS",
+                       "metric":  {
+                                      "writerArtifactProhibitionFound":  true,
+                                      "fallbackWriterProhibitionFound":  true,
+                                      "professionalCliBoundaryFound":  true
+                                  },
+                       "command":  "powershell -NoProfile -ExecutionPolicy Bypass -File plan/reviews/tools/Invoke-PlanAudit.ps1 -SnapshotId R3A-20260711-083804-FINAL2",
+                       "tool":  "PowerShell 5.1.22621.4391; Invoke-PlanAudit.ps1/1.0.3; export-boundary assertion",
+                       "exitCode":  0,
+                       "startedAtAsiaShanghai":  "2026-07-11T08:38:10.5541748+08:00",
+                       "endedAtAsiaShanghai":  "2026-07-11T08:38:10.5562828+08:00",
+                       "rawPath":  "plan/reviews/audits/R3A-20260711-083804-FINAL2/raw/policy-builtin-writer-forbidden.json",
+                       "rawSha256":  "241bc45cd46ab0db54330c3f7c2ff65899cc93191ab61fb95691f5adbb0ffc44"
+                   },
+                   {
+                       "checkId":  "POLICY-STRICT-ULID",
+                       "status":  "PASS",
+                       "metric":  {
+                                      "grammar":  "^[0-7][0-9A-HJKMNP-TV-Z]{25}$",
+                                      "grammarFound":  true,
+                                      "forbiddenAliasRuleFound":  true,
+                                      "monotonicRuleFound":  true,
+                                      "roundTripRuleFound":  true
+                                  },
+                       "command":  "powershell -NoProfile -ExecutionPolicy Bypass -File plan/reviews/tools/Invoke-PlanAudit.ps1 -SnapshotId R3A-20260711-083804-FINAL2",
+                       "tool":  "PowerShell 5.1.22621.4391; Invoke-PlanAudit.ps1/1.0.3; literal grammar assertion",
+                       "exitCode":  0,
+                       "startedAtAsiaShanghai":  "2026-07-11T08:38:10.5623731+08:00",
+                       "endedAtAsiaShanghai":  "2026-07-11T08:38:10.5647037+08:00",
+                       "rawPath":  "plan/reviews/audits/R3A-20260711-083804-FINAL2/raw/policy-strict-ulid.json",
+                       "rawSha256":  "7899d6b7cb6d59b1e19dd5e15335b41c20d810ee9c6e05920c74dadc5149c28f"
+                   },
+                   {
+                       "checkId":  "POLICY-COMMANDKIND-HASH-DOMAIN",
+                       "status":  "PASS",
+                       "metric":  {
+                                      "payloadFormulaIncludesCommandKind":  true,
+                                      "domainSeparatorFound":  true,
+                                      "commandKindReferenceCount":  46,
+                                      "canonicalPayloadHashReferenceCount":  18,
+                                      "crossKindConflictRuleFound":  true
+                                  },
+                       "command":  "powershell -NoProfile -ExecutionPolicy Bypass -File plan/reviews/tools/Invoke-PlanAudit.ps1 -SnapshotId R3A-20260711-083804-FINAL2",
+                       "tool":  "PowerShell 5.1.22621.4391; Invoke-PlanAudit.ps1/1.0.3; canonical hash-domain assertion",
+                       "exitCode":  0,
+                       "startedAtAsiaShanghai":  "2026-07-11T08:38:10.5706838+08:00",
+                       "endedAtAsiaShanghai":  "2026-07-11T08:38:10.5813143+08:00",
+                       "rawPath":  "plan/reviews/audits/R3A-20260711-083804-FINAL2/raw/policy-commandkind-hash-domain.json",
+                       "rawSha256":  "34ef88a788e67c44e01f44ef229379a2d97e9dc20beecf9a7ac307145b0943c0"
+                   }
+               ]
+}

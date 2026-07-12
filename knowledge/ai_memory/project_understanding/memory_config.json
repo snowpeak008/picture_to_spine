@@ -1,0 +1,24 @@
+{
+  "description": "FlashToSpine AI memory freshness configuration for authoritative project facts and critical contracts.",
+  "key_files": [
+    "AI_README.md",
+    "AGENTS.md",
+    "knowledge/ai_memory/project_understanding/memory_config.json",
+    "README.md",
+    "PROJECT_MEMORY.md",
+    "package.json",
+    "Cargo.toml",
+    "Cargo.lock",
+    "apps/desktop/src-tauri/src/main.rs",
+    "apps/desktop-ui/src/app/AppShell.tsx",
+    "crates/domain/src/lib.rs",
+    "crates/application/src/lib.rs",
+    "crates/adapters/src/lib.rs",
+    "docs/limits/known-limitations.md",
+    "docs/maintenance/operations.md",
+    "evidence/implementation/implementation-status.md",
+    "evidence/implementation/final-validation.json",
+    "dist/FlashToSpine-Core/package-manifest.json"
+  ],
+  "ignore_missing": true
+}

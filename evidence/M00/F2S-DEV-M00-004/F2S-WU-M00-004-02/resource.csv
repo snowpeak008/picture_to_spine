@@ -1,0 +1,4 @@
+resolution,status,peakVramMiB,peakRamMiB,latencyMs
+512,NOT_RUN,,,
+1024,NOT_RUN,,,
+2048,NOT_RUN,,,

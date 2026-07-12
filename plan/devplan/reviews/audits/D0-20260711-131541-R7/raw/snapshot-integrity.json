@@ -1,0 +1,19 @@
+{
+    "schemaVersion":  "1.0.0",
+    "evidenceId":  "F2S-AUD-DEVPLAN-D0-008",
+    "snapshotId":  "D0-20260711-131541-R7",
+    "phase":  "D0",
+    "checkId":  "SNAPSHOT-INTEGRITY",
+    "status":  "PASS",
+    "metric":  {
+                   "manifestSha256":  "4a31ed564a0831b8d3431f4a5e75dc14c4e5707a42aaa35788ff8898af627052",
+                   "archiveSha256":  "2ec628b2a51bfae1d184ea1eda0cfae8a874e7d59bb671ef2ea9eb889f77ec7e",
+                   "documentCount":  16
+               },
+    "details":  [
+
+                ],
+    "command":  "powershell -NoProfile -ExecutionPolicy Bypass -File plan/devplan/reviews/tools/Invoke-DevPlanAudit.ps1 -Phase D0 -SnapshotId D0-20260711-131541-R7 -EvidenceId F2S-AUD-DEVPLAN-D0-008",
+    "toolPath":  "plan/devplan/reviews/tools/Invoke-DevPlanAudit.ps1",
+    "toolSha256":  "206e808b72b3f22d87b576d58901118da28ae34ca81038d74f46ff2933267ab0"
+}

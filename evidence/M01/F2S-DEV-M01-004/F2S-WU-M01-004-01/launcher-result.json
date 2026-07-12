@@ -1,0 +1,10 @@
+{
+    "schemaVersion":  "1.0.0",
+    "status":  "STARTED",
+    "diagnosticCode":  "F2S-LAUNCH-OK",
+    "executablePath":  "E:\\workwork\\flash\\flash_to_spine\\FlashToSpineLauncher.exe",
+    "executableSha256":  "b8af97d4892ae0ea056c4936b77d065ba50ad8dfaab92c7dee8499b506e189b6",
+    "processId":  7392,
+    "exitCode":  null,
+    "message":  "FlashToSpine started."
+}

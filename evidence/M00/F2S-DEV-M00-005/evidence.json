@@ -1,0 +1,45 @@
+{
+  "schemaVersion": "1.0.0",
+  "evidenceId": "F2S-EVD-M00-005",
+  "taskId": "F2S-DEV-M00-005",
+  "status": "PASS",
+  "command": "npm run test:spine",
+  "exitCode": 0,
+  "startedAtUtc": "2026-07-11T07:47:16.693Z",
+  "endedAtUtc": "2026-07-11T07:47:16.693Z",
+  "runner": {
+    "kind": "local-development",
+    "os": "win32 10.0.22631",
+    "architecture": "x64",
+    "hostnameHash": "f3da3e8c48fbc119008475bba247ec014ab39af1f7e5d05bd1609c4951e6d3d5"
+  },
+  "toolVersions": {
+    "node": "v24.15.0"
+  },
+  "inputHashes": {},
+  "outputHashes": {
+    "tools/spikes/m00/psd-minimal-probe.mjs": "fa4daaba2e759897716ffee1e70e4b0877832c9916f2dc69107aa0a3e454ee06",
+    "tools/spikes/m00/spine42-evidence-check.mjs": "339a8ff278b0a48b241372ba9b9e6aece76a0d30025abecf68bd4f7061fbb669",
+    "fixtures/m00/spine42-probe/attachments/body.png": "ea372186eba8e2aae998d997f58fa743ad1a9b06dbf641eba725d9c4c7c09df5",
+    "fixtures/m00/spine42-probe/attachments/weapon.png": "990dad31012105e7e643c74725109174d0ac4d4efd5b63afb346d26e793918d8",
+    "fixtures/m00/spine42-probe/capability-manifest.json": "3cb40e32b7476f6caeaca71d8c25fe1c6802099a745ad7251a2613883ebde40d",
+    "fixtures/m00/spine42-probe/rig-ir.json": "bbcc0aa4740709d9d0eebe0aa573ecf43135b69ad839435a09f946ded1ef4fc2",
+    "fixtures/m00/spine42-probe/skeleton.json": "5a725a7fcc966b587c0ccc28823774c55a3ad9985e0af272f84c4c2f7671e359",
+    "docs/spikes/F2S-PSD-SPINE42-FEASIBILITY-001.md": "e9ada153f5819310577245ccb0316c317341a8c74d32803ecd136e13e99ad2b4"
+  },
+  "logRefs": [],
+  "reportRefs": [
+    "evidence/M00/F2S-DEV-M00-005/F2S-WU-M00-005-01/psd-roundtrip.json",
+    "fixtures/m00/spine42-probe/capability-manifest.json"
+  ],
+  "capabilityState": "EXTERNAL",
+  "externalBlockers": [
+    "User legal Spine Professional/eligible Enterprise 4.2.43 and explicit lease"
+  ],
+  "previousEvidenceRef": null,
+  "notRunReason": null,
+  "payload": {
+    "summary": "PSD and static contract pass; Editor roundtrip external.",
+    "generatedBy": "tools/evidence/create-envelope.mjs"
+  }
+}

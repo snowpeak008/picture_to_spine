@@ -1,0 +1,198 @@
+{
+    "schemaVersion":  "1.0.0",
+    "evidenceId":  "F2S-REV-R3A-001",
+    "phase":  "R3A",
+    "snapshotId":  "R3A-20260711-083655-FINAL",
+    "createdAtAsiaShanghai":  "2026-07-11T08:36:56.1786485+08:00",
+    "archivePath":  "plan/reviews/snapshots/R3A-20260711-083655-FINAL.zip",
+    "archiveSha256":  "db5aa31f72415edb163adb43c00ef95832790b96ed363d853ef32857f40b70d3",
+    "sourceRoot":  "plan",
+    "documentCount":  "25",
+    "generator":  {
+                      "name":  "New-PlanSnapshot.ps1",
+                      "version":  "1.0.1",
+                      "scriptPath":  "plan/reviews/tools/New-PlanSnapshot.ps1",
+                      "scriptSha256":  "60b6a9490c1d5094e1d117d3fbc7c2613c6449de24ed38a29f9a4c2f5b853767",
+                      "runtimePath":  "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+                      "runtimeVersion":  "5.1.22621.4391",
+                      "runtimeSha256":  "3247bcfd60f6dd25f34cb74b5889ab10ef1b3ec72b4d4b3d95b5b25b534560b8",
+                      "exactCommand":  "powershell -NoProfile -ExecutionPolicy Bypass -File plan/reviews/tools/New-PlanSnapshot.ps1 -Phase R3A -SnapshotId R3A-20260711-083655-FINAL -EvidenceId F2S-REV-R3A-001"
+                  },
+    "documents":  [
+                      {
+                          "docId":  "F2S-DOC-GOV-001",
+                          "path":  "plan/00-项目索引与计划治理.md",
+                          "revision":  "2.1",
+                          "size":  "18548",
+                          "sha256":  "c21d23ef387ecddc10369e47c0c32c10eb6352f97df70628329f5cb6ea37a510"
+                      },
+                      {
+                          "docId":  "F2S-DOC-CHARTER-001",
+                          "path":  "plan/01-产品章程范围与边界.md",
+                          "revision":  "1.9",
+                          "size":  "23328",
+                          "sha256":  "c4e9de003f44fb587201fd8eb6682c0a0cbd013099dcb32926a3fe481ff2f8e0"
+                      },
+                      {
+                          "docId":  "F2S-DOC-REQ-001",
+                          "path":  "plan/02-需求规格与验收标准.md",
+                          "revision":  "2.1",
+                          "size":  "41381",
+                          "sha256":  "6f22905985824321fc9ab8418bd19d0045bf424782fd1222ba29ff21cb1349df"
+                      },
+                      {
+                          "docId":  "F2S-DOC-CONTENT-001",
+                          "path":  "plan/03-内容动作素材与AI提示词设计.md",
+                          "revision":  "2.0",
+                          "size":  "38962",
+                          "sha256":  "6689e14a36c1880a7cbde3ae5bff986c5bd95c375d4a1903c4919eda2fca32ff"
+                      },
+                      {
+                          "docId":  "F2S-DOC-UX-001",
+                          "path":  "plan/04-用户流程与信息架构.md",
+                          "revision":  "2.7",
+                          "size":  "36590",
+                          "sha256":  "443e33c7648aee0ebe59c53f89605c0abe63ca061d6e5288111ea0eb3ef61c4f"
+                      },
+                      {
+                          "docId":  "F2S-DOC-UI-001",
+                          "path":  "plan/05-UI设计系统与页面规格.md",
+                          "revision":  "2.4",
+                          "size":  "42735",
+                          "sha256":  "b42b965f485dd00acde42000e7a3d6c579f0df00f407159adabac8a0d54418ca"
+                      },
+                      {
+                          "docId":  "F2S-DOC-ARCH-001",
+                          "path":  "plan/06-系统架构与设计模式.md",
+                          "revision":  "1.6",
+                          "size":  "18204",
+                          "sha256":  "650323e9c2af08407a4b8840766acd9ba3b5b736836f68dc94011f47452d49f1"
+                      },
+                      {
+                          "docId":  "F2S-DOC-ENV-001",
+                          "path":  "plan/07-Windows环境配置与工具链.md",
+                          "revision":  "1.5",
+                          "size":  "16752",
+                          "sha256":  "fc9f0e3f796c393b6d347a7feebe58b75d1b22ce54e54f2806d8f1e7c39a96d5"
+                      },
+                      {
+                          "docId":  "F2S-DOC-RENDER-001",
+                          "path":  "plan/08-前端渲染与编辑器内核.md",
+                          "revision":  "1.6",
+                          "size":  "21430",
+                          "sha256":  "5d8280faecaa2610b817bdae808d4a27502bee1abc9be691c128a33d85851114"
+                      },
+                      {
+                          "docId":  "F2S-DOC-DOMAIN-001",
+                          "path":  "plan/09-领域逻辑与工作流编排.md",
+                          "revision":  "3.2",
+                          "size":  "103500",
+                          "sha256":  "717e15026ebf6656984bbcbe3b8a4c4666833e42282889ab5bbc1d83d808b7ff"
+                      },
+                      {
+                          "docId":  "F2S-DOC-PIPE-001",
+                          "path":  "plan/10-本地图像处理与素材规划管线.md",
+                          "revision":  "1.4",
+                          "size":  "25629",
+                          "sha256":  "fadb5637fe8cefaccc52cc1e2fead928ddc650dc72254410272c8f9794b6a2e5"
+                      },
+                      {
+                          "docId":  "F2S-DOC-STORE-001",
+                          "path":  "plan/11-数据模型项目存储与迁移.md",
+                          "revision":  "2.8",
+                          "size":  "50631",
+                          "sha256":  "adde33882c2a30a6a67e783ca44f6b1309608c6d9d6b95aa135b33a5c911fc7a"
+                      },
+                      {
+                          "docId":  "F2S-DOC-IPC-001",
+                          "path":  "plan/12-IPC协议后台Worker与远程GPU.md",
+                          "revision":  "1.7",
+                          "size":  "20561",
+                          "sha256":  "06c8ffba3df992a3b345988330a4547531da08a8080d62a17676617206605e82"
+                      },
+                      {
+                          "docId":  "F2S-DOC-EXPORT-001",
+                          "path":  "plan/13-RigIR-PSD-PNG-Spine42导出.md",
+                          "revision":  "1.12",
+                          "size":  "34865",
+                          "sha256":  "1a06a0c9587b71a713a4d3f1b5351bdd84e229fbc844868c664d1a91fe2385a0"
+                      },
+                      {
+                          "docId":  "F2S-DOC-SEC-001",
+                          "path":  "plan/14-安全隐私许可证与供应链.md",
+                          "revision":  "2.0",
+                          "size":  "31974",
+                          "sha256":  "a06bbfdd243524628607523ae94e2e7bab7cfdee4d6bf17db5a38e5576f1790d"
+                      },
+                      {
+                          "docId":  "F2S-DOC-QUALITY-001",
+                          "path":  "plan/15-测试质量性能与可观测性.md",
+                          "revision":  "2.5",
+                          "size":  "30378",
+                          "sha256":  "e0c0f065c786ac98d113f39a25a1d9df9359a7b9afd44b09b8477433119bcbe9"
+                      },
+                      {
+                          "docId":  "F2S-DOC-ENG-001",
+                          "path":  "plan/16-工程规范代码组织与协作.md",
+                          "revision":  "2.2",
+                          "size":  "20843",
+                          "sha256":  "2405d4d85522fab1739b5fa6b254cda85787d013ae20e2d3efb3fefbb5a744f4"
+                      },
+                      {
+                          "docId":  "F2S-DOC-RECOVERY-001",
+                          "path":  "plan/17-异常恢复兼容与项目升级.md",
+                          "revision":  "2.5",
+                          "size":  "36357",
+                          "sha256":  "ed50bc019952e14d3a3133005061101224cf314cac75af2782e17568df2a75e0"
+                      },
+                      {
+                          "docId":  "F2S-DOC-RELEASE-001",
+                          "path":  "plan/18-交付发布安装更新与双击入口.md",
+                          "revision":  "3.3",
+                          "size":  "73824",
+                          "sha256":  "827003fde0281276d39988570da4ef8497cdd28ce82dd90516ae007bf52740b5"
+                      },
+                      {
+                          "docId":  "F2S-DOC-RISK-001",
+                          "path":  "plan/19-风险登记与应对.md",
+                          "revision":  "2.0",
+                          "size":  "18198",
+                          "sha256":  "321dcb33a1c5f7cbe4ac1100b889d3ab5a690c18a2ae561bf70bf488770e98ca"
+                      },
+                      {
+                          "docId":  "F2S-DOC-ROADMAP-001",
+                          "path":  "plan/20-路线图里程碑依赖与估算.md",
+                          "revision":  "2.0",
+                          "size":  "14751",
+                          "sha256":  "0fe72ea7a7b55e26a4d47785ea1b0c05f8bd33116e0ad70cacb4005ddf8fe156"
+                      },
+                      {
+                          "docId":  "F2S-DOC-TRACE-001",
+                          "path":  "plan/21-需求设计任务测试追踪矩阵.md",
+                          "revision":  "2.12",
+                          "size":  "61999",
+                          "sha256":  "ef76bad891360b4c7c1b325e8d20a233408afaf9b6984e1f62c5c78f34c88764"
+                      },
+                      {
+                          "docId":  "F2S-DOC-SCORE-001",
+                          "path":  "plan/22-逐文件评分与统筹整改记录.md",
+                          "revision":  "2.1",
+                          "size":  "23450",
+                          "sha256":  "12807aa64ecb7f1c1d04d5e1e2a3a57219e42ae06e03496bc6e14a595494a99c"
+                      },
+                      {
+                          "docId":  "F2S-DOC-COMPLIANCE-001",
+                          "path":  "plan/23-最终统筹合规审查.md",
+                          "revision":  "2.5",
+                          "size":  "17005",
+                          "sha256":  "e5c03e07eac5647796731f18209a7d0bd6cf3931ecf70f44d269c324c8fe0d57"
+                      },
+                      {
+                          "docId":  "F2S-DOC-ADR-001",
+                          "path":  "plan/24-架构决策ADR与未决事项.md",
+                          "revision":  "2.7",
+                          "size":  "41271",
+                          "sha256":  "bf14542ab33fd5f147cc582fda9bba39ae36c20712ee26973df41a92844c4700"
+                      }
+                  ]
+}

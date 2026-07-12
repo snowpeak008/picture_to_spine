@@ -1,0 +1,15 @@
+{
+    "schemaVersion":  "1.0.0",
+    "snapshotId":  "R3A-20260711-083655-FINAL",
+    "checkId":  "POLICY-COMMANDKIND-HASH-DOMAIN",
+    "status":  "ERROR",
+    "metric":  null,
+    "command":  "powershell -NoProfile -ExecutionPolicy Bypass -File plan/reviews/tools/Invoke-PlanAudit.ps1 -SnapshotId R3A-20260711-083655-FINAL",
+    "tool":  "PowerShell 5.1.22621.4391; Invoke-PlanAudit.ps1/1.0.2; canonical hash-domain assertion",
+    "exitCode":  2,
+    "startedAtAsiaShanghai":  "2026-07-11T08:37:12.6670857+08:00",
+    "endedAtAsiaShanghai":  "2026-07-11T08:37:12.6838794+08:00",
+    "details":  [
+                    "System.Management.Automation.MethodInvocationException: Exception calling \"IsMatch\" with \"2\" argument(s): \"parsing \"(?im)cross.kind|same key across command kinds|鍚宬ey璺▅璺??:commandKind|kind|鍛戒护)\" - Too many )\u0027s.\" ---\u003e System.ArgumentException: parsing \"(?im)cross.kind|same key across command kinds|鍚宬ey璺▅璺??:commandKind|kind|鍛戒护)\" - Too many )\u0027s.\r\n   at System.Text.RegularExpressions.RegexParser.ScanRegex()\r\n   at System.Text.RegularExpressions.RegexParser.Parse(String re, RegexOptions op)\r\n   at System.Text.RegularExpressions.Regex..ctor(String pattern, RegexOptions options, TimeSpan matchTimeout, Boolean useCache)\r\n   at System.Text.RegularExpressions.Regex.IsMatch(String input, String pattern)\r\n   at CallSite.Target(Closure , CallSite , Type , Object , String )\r\n   --- End of inner exception stack trace ---\r\n   at System.Management.Automation.ExceptionHandlingOps.CheckActionPreference(FunctionContext funcContext, Exception exception)\r\n   at System.Management.Automation.Interpreter.ActionCallInstruction`2.Run(InterpretedFrame frame)\r\n   at System.Management.Automation.Interpreter.EnterTryCatchFinallyInstruction.Run(InterpretedFrame frame)\r\n   at System.Management.Automation.Interpreter.EnterTryCatchFinallyInstruction.Run(InterpretedFrame frame)"
+                ]
+}

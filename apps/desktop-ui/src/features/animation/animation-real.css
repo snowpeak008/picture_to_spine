@@ -1,0 +1,264 @@
+.animation-workspace {
+  min-width: 0;
+}
+
+.animation-workspace .hit-approve {
+  border-color: #9a6430;
+  background: #5a3a22;
+}
+
+.animation-workspace .clip-strip {
+  overflow-x: auto;
+  grid-template-columns: repeat(10, minmax(112px, 1fr));
+  padding-bottom: 4px;
+}
+
+.animation-workspace .clip-strip button {
+  min-height: 48px;
+}
+
+.animation-workspace .clip-strip b,
+.animation-workspace .track-tree header b,
+.animation-workspace .track-tree section > b,
+.animation-workspace .anim-inspector section > b {
+  font-size: 12px;
+}
+
+.animation-workspace .clip-strip span,
+.animation-workspace .track-tree header em,
+.animation-workspace .track-tree > button,
+.animation-workspace .track-tree section p,
+.animation-workspace .anim-inspector li,
+.animation-workspace .game-boundary p,
+.animation-workspace .timeline-spacer,
+.animation-workspace .timeline-row > label,
+.animation-workspace .ruler button {
+  font-size: 12px;
+}
+
+.animation-workspace .track-tree > button {
+  min-height: 34px;
+  cursor: pointer;
+}
+
+.animation-workspace .track-tree > button.selected {
+  color: #f1ebff;
+  background: #352c45;
+  box-shadow: inset 3px 0 #9f87ef;
+}
+
+.animation-workspace .track-tree > button small,
+.animation-workspace .timeline-row label small {
+  font-size: 11px;
+}
+
+.animation-workspace .preview-controls button,
+.animation-workspace .timeline-row > div > button {
+  min-width: 24px;
+  min-height: 24px;
+}
+
+.animation-workspace .preview-controls > span {
+  font-size: 12px;
+}
+
+.animation-workspace .attachment-preview-boundary {
+  display: grid;
+  gap: 3px;
+  padding: 8px 10px;
+  border-top: 1px solid #4e4232;
+  background: #211d18;
+  color: #a99d88;
+  font-size: 10px;
+  line-height: 1.35;
+}
+
+.animation-workspace .attachment-preview-boundary strong {
+  color: #e0c89e;
+  font-size: 11px;
+}
+
+.animation-workspace .attachment-preview-boundary code {
+  color: #d69a9f;
+  overflow-wrap: anywhere;
+}
+
+.animation-workspace .pixi-host > span {
+  padding: 3px 5px;
+  border-radius: 4px;
+  background: rgba(17, 16, 24, .78);
+  color: #9b93a8;
+  font-size: 10px;
+}
+
+.animation-workspace .anim-inspector {
+  overflow: auto;
+}
+
+.animation-workspace .pose-marker-list label,
+.animation-workspace .keyframe-editor label {
+  display: grid;
+  gap: 5px;
+  color: #bdb5c9;
+  font-size: 12px;
+}
+
+.animation-workspace .pose-marker-list select,
+.animation-workspace .keyframe-editor input,
+.animation-workspace .keyframe-editor select {
+  width: 100%;
+  min-height: 30px;
+  box-sizing: border-box;
+  border: 1px solid #484052;
+  border-radius: 4px;
+  background: #211d29;
+  color: #f1ecf8;
+  padding: 5px 7px;
+}
+
+.animation-workspace .keyframe-editor {
+  display: grid;
+  gap: 8px;
+  margin-top: 9px;
+}
+
+.animation-workspace .new-track-form {
+  display: grid;
+  gap: 8px;
+}
+
+.animation-workspace .new-track-form label {
+  display: grid;
+  gap: 5px;
+  color: #bdb5c9;
+  font-size: 12px;
+}
+
+.animation-workspace .new-track-form select {
+  width: 100%;
+  min-height: 30px;
+  border: 1px solid #484052;
+  border-radius: 4px;
+  background: #211d29;
+  color: #f1ecf8;
+  padding: 5px 7px;
+}
+
+.animation-workspace .keyframe-editor article {
+  display: grid;
+  gap: 7px;
+  border: 1px solid #36303e;
+  border-radius: 6px;
+  padding: 8px;
+  background: #1c1922;
+}
+
+.animation-workspace .anim-inspector dl > div {
+  display: grid;
+  grid-template-columns: 74px 1fr;
+  gap: 8px;
+  margin: 6px 0;
+  font-size: 12px;
+}
+
+.animation-workspace .anim-inspector dt {
+  color: #837b8f;
+}
+
+.animation-workspace .anim-inspector dd {
+  margin: 0;
+  overflow-wrap: anywhere;
+}
+
+.animation-workspace .hit-marker-editor {
+  display: grid;
+  gap: 8px;
+  margin-top: 8px;
+}
+
+.animation-workspace .hit-marker-editor label {
+  display: grid;
+  gap: 5px;
+  color: #bdb5c9;
+  font-size: 12px;
+}
+
+.animation-workspace .hit-marker-editor input,
+.animation-workspace .hit-marker-editor select {
+  width: 100%;
+  min-height: 30px;
+  border: 1px solid #484052;
+  border-radius: 4px;
+  background: #211d29;
+  color: #f1ecf8;
+  padding: 5px 7px;
+}
+
+.animation-workspace .hit-marker-editor input[aria-invalid='true'] {
+  border-color: #d96b77;
+}
+
+.animation-workspace .hit-marker-editor small {
+  color: #837b8f;
+  line-height: 1.45;
+}
+
+.animation-workspace .marker-row > div > button {
+  border-radius: 50%;
+  transform: translateX(-50%);
+}
+
+.animation-workspace .timeline {
+  overflow: auto;
+  min-height: 205px;
+  height: auto;
+  max-height: 310px;
+}
+
+.animation-workspace .timeline > header,
+.animation-workspace .timeline-row {
+  min-width: 760px;
+}
+
+@media (max-width: 1180px) {
+  .animation-workspace .animation-main {
+    grid-template-columns: 190px minmax(360px, 1fr);
+    height: auto;
+  }
+
+  .animation-workspace .anim-inspector {
+    grid-column: 1 / -1;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 12px;
+    max-height: 360px;
+  }
+}
+
+@media (max-width: 780px) {
+  .animation-workspace > header {
+    align-items: stretch;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .animation-workspace .animation-main {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .animation-workspace .track-tree,
+  .animation-workspace .preview-area {
+    min-height: 280px;
+  }
+
+  .animation-workspace .anim-inspector {
+    display: block;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animation-workspace .timeline-row > div > button {
+    transition: none;
+  }
+}

@@ -1,0 +1,28 @@
+{
+    "schemaVersion":  "1.0.0",
+    "evidenceId":  "F2S-AUD-DEVPLAN-FINAL-002",
+    "snapshotId":  "FINAL-20260711-135705-R2",
+    "phase":  "FINAL",
+    "checkId":  "DEV-REGISTRY-PARITY",
+    "status":  "PASS",
+    "metric":  {
+                   "baselineDev":  80,
+                   "baselineEvd":  80,
+                   "taskHeadings":  80,
+                   "missing":  [
+
+                               ],
+                   "extra":  [
+
+                             ],
+                   "duplicates":  [
+
+                                  ]
+               },
+    "details":  [
+
+                ],
+    "command":  "powershell -NoProfile -ExecutionPolicy Bypass -File plan/devplan/reviews/tools/Invoke-DevPlanAudit.ps1 -Phase FINAL -SnapshotId FINAL-20260711-135705-R2 -EvidenceId F2S-AUD-DEVPLAN-FINAL-002",
+    "toolPath":  "plan/devplan/reviews/tools/Invoke-DevPlanAudit.ps1",
+    "toolSha256":  "38372a26b48cca5fb3eb0b5bc6683baa1c78d9aa89f8cef42b2ddadd8d0a8be3"
+}

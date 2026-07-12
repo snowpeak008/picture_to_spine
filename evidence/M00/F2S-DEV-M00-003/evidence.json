@@ -1,0 +1,42 @@
+{
+  "schemaVersion": "1.0.0",
+  "evidenceId": "F2S-EVD-M00-003",
+  "taskId": "F2S-DEV-M00-003",
+  "status": "PASS",
+  "command": "npm test",
+  "exitCode": 0,
+  "startedAtUtc": "2026-07-11T07:47:16.602Z",
+  "endedAtUtc": "2026-07-11T07:47:16.602Z",
+  "runner": {
+    "kind": "local-development",
+    "os": "win32 10.0.22631",
+    "architecture": "x64",
+    "hostnameHash": "f3da3e8c48fbc119008475bba247ec014ab39af1f7e5d05bd1609c4951e6d3d5"
+  },
+  "toolVersions": {
+    "node": "v24.15.0"
+  },
+  "inputHashes": {},
+  "outputHashes": {
+    "fixtures/m00/synthetic-character/LICENSES.json": "865cf560498504630851366abb761d9ee3e08834b9f0ccd78328ab496f636d62",
+    "fixtures/m00/synthetic-character/action-keyframes.png": "fef65cb8154e23a48794f7bb3ca8950033f732ec02da0863c15cbb63b43d7b88",
+    "fixtures/m00/synthetic-character/hashes.sha256": "5d1f897c1740fc7e4edb9253feb21f75af836742ccee8759f1c6bef28fe8c065",
+    "fixtures/m00/synthetic-character/manifest.json": "fa2c4909e8d4d874f2a3482845d8f7a8ff835127bd97882fb795671575f5a74e",
+    "fixtures/m00/synthetic-character/master.png": "ea372186eba8e2aae998d997f58fa743ad1a9b06dbf641eba725d9c4c7c09df5",
+    "fixtures/m00/synthetic-character/source.svg": "26dc72e9115307bf7724662f80b6f39cca22ccf0c84306f3e35539de2829f7ba",
+    "tools/fixtures/generate-synthetic-character.mjs": "dfd74a1c1116156949343e7703631d2c7b66b2581152eb4cc090282f2dfbb0e6",
+    "docs/testing/F2S-FIXTURE-POLICY-001.md": "cab77a1b389c48b5bca15d269dbbaffa77ee09e0056439acbccd543440c619d7"
+  },
+  "logRefs": [],
+  "reportRefs": [
+    "fixtures/m00/synthetic-character/hashes.sha256"
+  ],
+  "capabilityState": "VERIFIED",
+  "externalBlockers": [],
+  "previousEvidenceRef": null,
+  "notRunReason": null,
+  "payload": {
+    "summary": "Original deterministic ten-action fixture verified.",
+    "generatedBy": "tools/evidence/create-envelope.mjs"
+  }
+}

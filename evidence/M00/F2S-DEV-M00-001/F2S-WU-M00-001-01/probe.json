@@ -1,0 +1,94 @@
+{
+    "schemaVersion":  "1.0.0",
+    "probeId":  "F2S-TOOLCHAIN-PROBE-001",
+    "observedAtUtc":  "2026-07-11T07:17:50.3103927+00:00",
+    "machine":  {
+                    "os":  "Microsoft Windows NT 10.0.22631.0",
+                    "architecture":  "X64",
+                    "runnerKind":  "local-observation"
+                },
+    "tools":  [
+                  {
+                      "id":  "msvc-cl",
+                      "state":  "OBSERVED_LOCAL",
+                      "version":  "14.51.36248.0",
+                      "executablePath":  "C:\\Program Files (x86)\\Microsoft Visual Studio\\18\\BuildTools\\VC\\Tools\\MSVC\\14.51.36231\\bin\\Hostx64\\x64\\cl.exe",
+                      "sha256":  "dc8426b8760d92cf757df3d10b9f0244a95b454ff43194a58161568a0ec70d53",
+                      "source":  "Visual Studio Installer via vswhere + binary hash",
+                      "exitCode":  0
+                  },
+                  {
+                      "id":  "uv",
+                      "state":  "OBSERVED_LOCAL",
+                      "version":  "uv 0.11.8 (0e961dd9a 2026-04-27 x86_64-pc-windows-msvc)",
+                      "executablePath":  "C:\\Users\\admin\\.local\\bin\\uv.exe",
+                      "sha256":  "c3f337907f233811954d96e0ecf2d46df094413250ebdcd10d40d9b5c48febd2",
+                      "source":  "explicit PATH resolution + binary hash",
+                      "exitCode":  0
+                  },
+                  {
+                      "id":  "webview2-runtime",
+                      "state":  "OBSERVED_LOCAL",
+                      "version":  "150.0.4078.48",
+                      "executablePath":  null,
+                      "sha256":  null,
+                      "source":  "EdgeUpdate registry",
+                      "exitCode":  0
+                  },
+                  {
+                      "id":  "windows-sdk",
+                      "state":  "OBSERVED_LOCAL",
+                      "version":  "10.0.26100.0",
+                      "executablePath":  "C:\\Program Files (x86)\\Windows Kits\\10\\",
+                      "sha256":  null,
+                      "source":  "Windows Kits registry/filesystem",
+                      "exitCode":  0
+                  },
+                  {
+                      "id":  "python",
+                      "state":  "OBSERVED_LOCAL",
+                      "version":  "Python 3.12.4",
+                      "executablePath":  "C:\\Program Files\\Python312\\python.exe",
+                      "sha256":  "fd5c46d73d29ba21b04c844bbaf9096066136526911230645a2a040d23fb612b",
+                      "source":  "explicit PATH resolution + binary hash",
+                      "exitCode":  0
+                  },
+                  {
+                      "id":  "npm",
+                      "state":  "OBSERVED_LOCAL",
+                      "version":  "11.12.1",
+                      "executablePath":  "C:\\Program Files\\nodejs\\npm.cmd",
+                      "sha256":  "21b46c69ad6e2f231f02a9e120f4ba6c8e75fef5a45637103002eab99f888ab8",
+                      "source":  "explicit PATH resolution + binary hash",
+                      "exitCode":  0
+                  },
+                  {
+                      "id":  "node",
+                      "state":  "OBSERVED_LOCAL",
+                      "version":  "v24.15.0",
+                      "executablePath":  "C:\\Program Files\\nodejs\\node.exe",
+                      "sha256":  "3331e1ffe19874215472217c5e94f5a0c6d8e18c4ac7111d3937aa0ad5e9b4a5",
+                      "source":  "explicit PATH resolution + binary hash",
+                      "exitCode":  0
+                  },
+                  {
+                      "id":  "cargo",
+                      "state":  "OBSERVED_LOCAL",
+                      "version":  "cargo 1.96.0 (30a34c682 2026-05-25)",
+                      "executablePath":  "C:\\Users\\admin\\.cargo\\bin\\cargo.exe",
+                      "sha256":  "86478e53f769379d7f0ebfa7c9aa97cb76ca92233f79aa2cc0dbee2efaac73c7",
+                      "source":  "rustup-managed executable + binary hash",
+                      "exitCode":  0
+                  },
+                  {
+                      "id":  "rustc",
+                      "state":  "OBSERVED_LOCAL",
+                      "version":  "rustc 1.96.0 (ac68faa20 2026-05-25)",
+                      "executablePath":  "C:\\Users\\admin\\.cargo\\bin\\rustc.exe",
+                      "sha256":  "86478e53f769379d7f0ebfa7c9aa97cb76ca92233f79aa2cc0dbee2efaac73c7",
+                      "source":  "rustup-managed executable + binary hash",
+                      "exitCode":  0
+                  }
+              ],
+    "overallState":  "OBSERVED_LOCAL"
+}

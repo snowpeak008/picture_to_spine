@@ -1,0 +1,36 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "F2S-SCHEMA-IPC-001",
+  "oneOf": [{ "$ref": "#/$defs/Request" }, { "$ref": "#/$defs/Response" }],
+  "$defs": {
+    "Request": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["schemaVersion", "requestId", "method", "expectedRevision", "payload"],
+      "properties": {
+        "schemaVersion": { "const": "1.0.0" },
+        "requestId": { "type": "string", "pattern": "^[A-Za-z0-9_-]{1,128}$" },
+        "method": { "enum": ["bootstrap.status", "remoteGpu.status", "remoteGpu.importProfile", "remoteGpu.disable", "image.chooseAndPreflight", "image.promote", "project.create", "project.open", "project.recent", "master.create", "master.preview", "master.approve", "master.reject", "layers.initialize", "layers.add", "layers.delete", "layers.reorder", "layers.stroke", "layers.replacement.chooseAndPreflight", "layers.replacement.promote", "layers.status", "layers.approve", "rig.initialize", "rig.status", "rig.setBone", "rig.setSlot", "rig.reparentBone", "rig.setPivot", "rig.setSocket", "rig.approve", "motion.initialize", "motion.status", "motion.spec.update", "motion.keyPose.chooseAndPreflight", "motion.keyPose.promote", "motion.keyPose.alignment.set", "motion.keyPose.preview", "motion.keyPose.approve", "animation.initialize", "animation.status", "animation.track.put", "animation.poseMarker.set", "animation.hitMarker.set", "animation.pose.approve", "animation.hit.approve", "export.preflight", "export.chooseRootAndCommit", "export.history", "spineCli.status", "spineCli.selectAndAssess", "spineCli.clear", "spineCli.job.start", "spineCli.job.status", "diagnostics.status", "diagnostics.export"] },
+        "expectedRevision": { "type": ["integer", "null"], "minimum": 0 },
+        "payload": { "type": "object" }
+      }
+    },
+    "Response": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["schemaVersion", "requestId", "ok", "result", "error"],
+      "properties": {
+        "schemaVersion": { "const": "1.0.0" },
+        "requestId": { "type": "string" },
+        "ok": { "type": "boolean" },
+        "result": { "type": ["object", "array", "string", "number", "boolean", "null"] },
+        "error": { "oneOf": [{ "type": "null" }, { "$ref": "#/$defs/Error" }] }
+      }
+    },
+    "Error": {
+      "type": "object", "additionalProperties": false,
+      "required": ["code", "message", "retryable"],
+      "properties": { "code": { "type": "string" }, "message": { "type": "string" }, "retryable": { "type": "boolean" } }
+    }
+  }
+}

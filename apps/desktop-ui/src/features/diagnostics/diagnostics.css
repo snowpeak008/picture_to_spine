@@ -1,0 +1,16 @@
+.diagnostics-exported {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin-top: 16px;
+  padding: 12px 15px;
+  border: 1px solid #3f746d;
+  border-radius: 8px;
+  background: #15231f;
+  font-size: 10px;
+}
+
+.diagnostics-exported code {
+  overflow-wrap: anywhere;
+  color: var(--muted);
+}

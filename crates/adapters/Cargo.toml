@@ -1,0 +1,16 @@
+[package]
+name = "f2s-adapters"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+
+[dependencies]
+f2s-application = { path = "../application" }
+f2s-domain = { path = "../domain" }
+serde.workspace = true
+serde_json.workspace = true
+sha2.workspace = true
+image.workspace = true
+uuid.workspace = true
+windows.workspace = true

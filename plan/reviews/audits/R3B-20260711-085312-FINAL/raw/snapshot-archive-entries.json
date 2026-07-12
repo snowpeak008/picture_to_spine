@@ -1,0 +1,146 @@
+{
+    "schemaVersion":  "1.0.0",
+    "snapshotId":  "R3B-20260711-085312-FINAL",
+    "checkId":  "SNAPSHOT-ARCHIVE-ENTRIES",
+    "status":  "PASS",
+    "metric":  {
+                   "archiveEntryCount":  25,
+                   "expectedEntryCount":  25,
+                   "entries":  [
+                                   {
+                                       "path":  "plan/00-项目索引与计划治理.md",
+                                       "length":  "18552",
+                                       "sha256":  "78bca641d0ff5b5c5be39437d186423c9eba03843dfbbbf697abce2e7cc457fc"
+                                   },
+                                   {
+                                       "path":  "plan/01-产品章程范围与边界.md",
+                                       "length":  "23333",
+                                       "sha256":  "81f013d22fabb77f34408d09dd453ae341b84ad645be286cfc0e0b205f5beeb4"
+                                   },
+                                   {
+                                       "path":  "plan/02-需求规格与验收标准.md",
+                                       "length":  "41385",
+                                       "sha256":  "bdda917900972b6b55ae87ecc4624384bf65b0c0d8b830d80f216ff6f1e16c27"
+                                   },
+                                   {
+                                       "path":  "plan/03-内容动作素材与AI提示词设计.md",
+                                       "length":  "38966",
+                                       "sha256":  "3759a5c2cd7eb70e5976b4b2c3238e74b2c8c665e63ac5318d7a16a89bc84083"
+                                   },
+                                   {
+                                       "path":  "plan/04-用户流程与信息架构.md",
+                                       "length":  "36594",
+                                       "sha256":  "19982b4551c01932c2af8f42d35edace45318ff03a9aa27893241b69f7ea8905"
+                                   },
+                                   {
+                                       "path":  "plan/05-UI设计系统与页面规格.md",
+                                       "length":  "42739",
+                                       "sha256":  "9a1d201e1e8fe64c0d4f46b252bc45beefb5ec1d01978ebb76c2c4cf233fc489"
+                                   },
+                                   {
+                                       "path":  "plan/06-系统架构与设计模式.md",
+                                       "length":  "18208",
+                                       "sha256":  "27d82b54bbd473d3e65dad4149ce8a3166892fcd4403cc0fd7735c2e3f55c11b"
+                                   },
+                                   {
+                                       "path":  "plan/07-Windows环境配置与工具链.md",
+                                       "length":  "16756",
+                                       "sha256":  "ea8ac61f731597dd94e078f12a8e1d379a5678ec30d81d9fd8c707d7536c93e4"
+                                   },
+                                   {
+                                       "path":  "plan/08-前端渲染与编辑器内核.md",
+                                       "length":  "21434",
+                                       "sha256":  "718a33766e65361a0b4175ce5ffd37cbfca46dd47ba25889266e4faca0995d3c"
+                                   },
+                                   {
+                                       "path":  "plan/09-领域逻辑与工作流编排.md",
+                                       "length":  "103504",
+                                       "sha256":  "eaf90c57446a5b77f1980a5972ae75eddc2ab0ef4ac50ef7fcce0dc3406a26f8"
+                                   },
+                                   {
+                                       "path":  "plan/10-本地图像处理与素材规划管线.md",
+                                       "length":  "25633",
+                                       "sha256":  "41cb9a73537d68c1a2926a370ac7d6e5da8435d76453b567cc5cd921b21a718e"
+                                   },
+                                   {
+                                       "path":  "plan/11-数据模型项目存储与迁移.md",
+                                       "length":  "50635",
+                                       "sha256":  "1c81d2a3e271973e79e472443543f32f7e00f189bb75e04f040556c4b2a18b59"
+                                   },
+                                   {
+                                       "path":  "plan/12-IPC协议后台Worker与远程GPU.md",
+                                       "length":  "20565",
+                                       "sha256":  "31947c32c5375da3cc312b7f7938a21e0527e9f6b0d029b9feedfdab0373b114"
+                                   },
+                                   {
+                                       "path":  "plan/13-RigIR-PSD-PNG-Spine42导出.md",
+                                       "length":  "34869",
+                                       "sha256":  "09ba56ebdeecfed64d73ef41ddc4a709c7b380efc71a6b313f5e1fa7e39d9176"
+                                   },
+                                   {
+                                       "path":  "plan/14-安全隐私许可证与供应链.md",
+                                       "length":  "31978",
+                                       "sha256":  "a013bd614691ee3b336386caa5184926c34abbfd55aaf03cbf63e07c3fb86c2e"
+                                   },
+                                   {
+                                       "path":  "plan/15-测试质量性能与可观测性.md",
+                                       "length":  "30382",
+                                       "sha256":  "3fd8861debe57f2a8ae38bc3fa3a7e53a18c0f4918c3230f43423683f094ac92"
+                                   },
+                                   {
+                                       "path":  "plan/16-工程规范代码组织与协作.md",
+                                       "length":  "20847",
+                                       "sha256":  "cb7931f89f112fea3a16e9de50adeb3f2c992736457a0246de66a12e2f9f619d"
+                                   },
+                                   {
+                                       "path":  "plan/17-异常恢复兼容与项目升级.md",
+                                       "length":  "36361",
+                                       "sha256":  "74e1561779e5236f5435579261d945dde8aa2e8891844684aef85817887f6c9a"
+                                   },
+                                   {
+                                       "path":  "plan/18-交付发布安装更新与双击入口.md",
+                                       "length":  "73828",
+                                       "sha256":  "3df9668d417f078989a810cc866f67a2eff29eb9b67e70ec0ed3956c785d0179"
+                                   },
+                                   {
+                                       "path":  "plan/19-风险登记与应对.md",
+                                       "length":  "18202",
+                                       "sha256":  "c00db1a310e0111bae2acb1d47166eb530a49c38a8934f5067b7a124bf6b36c1"
+                                   },
+                                   {
+                                       "path":  "plan/20-路线图里程碑依赖与估算.md",
+                                       "length":  "14755",
+                                       "sha256":  "064ac573035f90732a7b4dfe435efbd01d41e027ccdd04a5c6afa2780355b461"
+                                   },
+                                   {
+                                       "path":  "plan/21-需求设计任务测试追踪矩阵.md",
+                                       "length":  "62003",
+                                       "sha256":  "cd1652bb62b462f16e184a027a380dd71a69626fafa764da4843f72cca6f00b2"
+                                   },
+                                   {
+                                       "path":  "plan/22-逐文件评分与统筹整改记录.md",
+                                       "length":  "28000",
+                                       "sha256":  "416bc91b470f50139f27d5e0e820a0728797608fc572f705f70c9b6a2841cbdf"
+                                   },
+                                   {
+                                       "path":  "plan/23-最终统筹合规审查.md",
+                                       "length":  "17221",
+                                       "sha256":  "bf9cf30ed7c0f36a8b7625df73b24e6274c38766990e74a3b54fafd438827442"
+                                   },
+                                   {
+                                       "path":  "plan/24-架构决策ADR与未决事项.md",
+                                       "length":  "41275",
+                                       "sha256":  "1cb459584c46c824d06c92a296fdecd74d2145562a021db391b4d798afb69550"
+                                   }
+                               ],
+                   "issueCount":  0
+               },
+    "command":  "powershell -NoProfile -ExecutionPolicy Bypass -File plan/reviews/tools/Invoke-PlanAudit.ps1 -SnapshotId R3B-20260711-085312-FINAL",
+    "tool":  "PowerShell 5.1.22621.4391; Invoke-PlanAudit.ps1/1.0.3; ZipArchive; .NET SHA256",
+    "exitCode":  0,
+    "startedAtAsiaShanghai":  "2026-07-11T08:53:31.8922338+08:00",
+    "endedAtAsiaShanghai":  "2026-07-11T08:53:31.9324259+08:00",
+    "details":  [
+
+                ]
+}

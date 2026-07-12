@@ -1,0 +1,47 @@
+{
+  "schemaVersion": "1.0.0",
+  "capabilityId": "F2S-SPINE-CAP-4.2.43-001",
+  "target": {
+    "product": "Spine Editor/Professional CLI",
+    "exactVersion": "4.2.43"
+  },
+  "ownerTask": "F2S-DEV-M00-005",
+  "manifestPath": "fixtures/m00/spine42-probe/capability-manifest.json",
+  "timeBase": {
+    "numerator": 1,
+    "denominator": 30000
+  },
+  "allowedFeatures": [
+    "bones",
+    "slots",
+    "skins",
+    "region-attachments",
+    "mesh-attachments",
+    "transform-constraints",
+    "events",
+    "draw-order",
+    "deform",
+    "sequences"
+  ],
+  "forbiddenBuiltinWriters": [
+    ".atlas",
+    ".spine",
+    ".skel"
+  ],
+  "openOutputs": [
+    "rig-ir.json",
+    "skeleton.json",
+    "attachments/*.png",
+    "atlas-input-manifest.json"
+  ],
+  "sourceHashes": {
+    "rig-ir.json": "bbcc0aa4740709d9d0eebe0aa573ecf43135b69ad839435a09f946ded1ef4fc2",
+    "skeleton.json": "5a725a7fcc966b587c0ccc28823774c55a3ad9985e0af272f84c4c2f7671e359"
+  },
+  "fixtureHashes": {
+    "attachments/body.png": "9ba52e1db41fbd2a10e90242bf14939158a1819d24740be7301f72f41f956c0b",
+    "attachments/weapon.png": "990dad31012105e7e643c74725109174d0ac4d4efd5b63afb346d26e793918d8"
+  },
+  "staticContractStatus": "VERIFIED",
+  "editorRoundTripStatus": "EXTERNAL"
+}

@@ -1,0 +1,40 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "F2S-TOOLCHAIN-PROBE-001",
+  "title": "FlashToSpine toolchain probe",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schemaVersion", "probeId", "observedAtUtc", "machine", "tools", "overallState"],
+  "properties": {
+    "schemaVersion": { "const": "1.0.0" },
+    "probeId": { "const": "F2S-TOOLCHAIN-PROBE-001" },
+    "observedAtUtc": { "type": "string", "format": "date-time" },
+    "machine": {
+      "type": "object",
+      "required": ["os", "architecture", "runnerKind"],
+      "properties": {
+        "os": { "type": "string" },
+        "architecture": { "type": "string" },
+        "runnerKind": { "enum": ["local-observation", "clean-vm-a", "clean-vm-b"] }
+      }
+    },
+    "tools": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["id", "state", "version", "executablePath", "sha256", "source", "exitCode"],
+        "properties": {
+          "id": { "type": "string" },
+          "state": { "enum": ["OBSERVED_LOCAL", "UNVERIFIED", "MISSING", "FAILED"] },
+          "version": { "type": ["string", "null"] },
+          "executablePath": { "type": ["string", "null"] },
+          "sha256": { "type": ["string", "null"], "pattern": "^[0-9a-f]{64}$" },
+          "source": { "type": "string" },
+          "exitCode": { "type": ["integer", "null"] }
+        }
+      }
+    },
+    "overallState": { "enum": ["OBSERVED_LOCAL", "UNVERIFIED", "FAILED"] }
+  }
+}

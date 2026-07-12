@@ -1,0 +1,23 @@
+{
+    "schemaVersion":  "1.0.0",
+    "snapshotId":  "R3B-20260711-085312-FINAL",
+    "checkId":  "HASH-07-ACTOR-POLICY-DOMAIN",
+    "status":  "PASS",
+    "metric":  {
+                   "sourceDocumentPrefix":  "18",
+                   "mode":  "domain",
+                   "domainSeparator":  "f2s-actor-attestation-policy-v1",
+                   "candidateLineCount":  1,
+                   "byteLength":  471,
+                   "expectedSha256":  "b370ab9a28a68c010297e706e71d62c063bc97167494a051439fc1b3328c0d90",
+                   "actualSha256":  "b370ab9a28a68c010297e706e71d62c063bc97167494a051439fc1b3328c0d90"
+               },
+    "command":  "powershell -NoProfile -ExecutionPolicy Bypass -File plan/reviews/tools/Invoke-PlanAudit.ps1 -SnapshotId R3B-20260711-085312-FINAL",
+    "tool":  "PowerShell 5.1.22621.4391; Invoke-PlanAudit.ps1/1.0.3; UTF-8 bytes; .NET SHA256",
+    "exitCode":  0,
+    "startedAtAsiaShanghai":  "2026-07-11T08:53:32.3610038+08:00",
+    "endedAtAsiaShanghai":  "2026-07-11T08:53:32.3669839+08:00",
+    "details":  [
+
+                ]
+}

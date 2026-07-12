@@ -1,0 +1,37 @@
+{
+    "schemaVersion":  "1.0.0",
+    "snapshotId":  "R3A-20260711-083655-FINAL",
+    "checkId":  "REQUIREMENTS-02-21-PARITY",
+    "status":  "PASS",
+    "metric":  {
+                   "sourceTotal":  102,
+                   "traceTotal":  102,
+                   "fr":  69,
+                   "nfr":  33,
+                   "p0":  96,
+                   "p1":  6,
+                   "p2":  0,
+                   "sourceDuplicateCount":  0,
+                   "traceDuplicateCount":  0,
+                   "missingCount":  0,
+                   "extraCount":  0,
+                   "priorityDifferenceCount":  0,
+                   "missing":  [
+
+                               ],
+                   "extra":  [
+
+                             ],
+                   "priorityDifferences":  [
+
+                                           ]
+               },
+    "command":  "powershell -NoProfile -ExecutionPolicy Bypass -File plan/reviews/tools/Invoke-PlanAudit.ps1 -SnapshotId R3A-20260711-083655-FINAL",
+    "tool":  "PowerShell 5.1.22621.4391; Invoke-PlanAudit.ps1/1.0.2; markdown table reducer",
+    "exitCode":  0,
+    "startedAtAsiaShanghai":  "2026-07-11T08:37:12.1901408+08:00",
+    "endedAtAsiaShanghai":  "2026-07-11T08:37:12.2573082+08:00",
+    "details":  [
+
+                ]
+}

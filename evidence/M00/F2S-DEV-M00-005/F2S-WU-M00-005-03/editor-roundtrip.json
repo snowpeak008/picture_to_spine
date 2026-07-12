@@ -1,0 +1,16 @@
+{
+  "schemaVersion": "1.0.0",
+  "evidenceType": "F2S-SPINE42-COMPAT-EVIDENCE-001",
+  "status": "NOT_RUN",
+  "capabilityState": "EXTERNAL",
+  "exactVersion": "4.2.43",
+  "observedAtUtc": "2026-07-11T07:17:58.959Z",
+  "leaseId": null,
+  "writerProvenance": "EXTERNAL_USER_TOOL",
+  "outputs": [],
+  "issues": [],
+  "notRunReason": "No user-approved Spine 4.2.43 evidence lease was supplied.",
+  "externalBlockers": [
+    "User legal Spine Professional/eligible Enterprise 4.2.43 and explicit lease"
+  ]
+}

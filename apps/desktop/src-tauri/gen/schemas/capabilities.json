@@ -1,0 +1,1 @@
+{"core-manual":{"identifier":"core-manual","description":"仅允许主窗口使用Tauri核心IPC；不授予shell、通用文件系统或HTTP能力。","local":true,"windows":["main"],"permissions":["core:default"]}}

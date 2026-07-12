@@ -1,0 +1,32 @@
+{
+    "schemaVersion":  "1.0.0",
+    "evidenceId":  "F2S-AUD-DEVPLAN-D0-006",
+    "snapshotId":  "D0-20260711-131230-R5",
+    "phase":  "D0",
+    "checkId":  "TRACE-MATRIX-REVERSE-COVERAGE",
+    "status":  "FAIL",
+    "metric":  {
+                   "dev":  80,
+                   "evd":  80,
+                   "wu":  187,
+                   "requirements":  102,
+                   "tests":  133
+               },
+    "details":  [
+                    "Trace source hash row missing: 01-M00-决策与可行性Spike.md",
+                    "Trace source hash row missing: 02-M01-工程骨架与工具链.md",
+                    "Trace source hash row missing: 03-M02-领域存储与协议基线.md",
+                    "Trace source hash row missing: 04-M03-项目导入母版与审批.md",
+                    "Trace source hash row missing: 05-M04-分层与素材修复.md",
+                    "Trace source hash row missing: 06-M05-Rig编辑与审批.md",
+                    "Trace source hash row missing: 07-M06-动作内容与提示词.md",
+                    "Trace source hash row missing: 08-M07-动画编辑预览与玩法标记.md",
+                    "Trace source hash row missing: 09-M08-导出与Spine42适配.md",
+                    "Trace source hash row missing: 10-M09-安全AI远程GPU与质量.md",
+                    "Trace source hash row missing: 11-M10-Windows打包入口更新.md",
+                    "Trace source hash row missing: 12-M11-验收封账与发布候选.md"
+                ],
+    "command":  "powershell -NoProfile -ExecutionPolicy Bypass -File plan/devplan/reviews/tools/Invoke-DevPlanAudit.ps1 -Phase D0 -SnapshotId D0-20260711-131230-R5 -EvidenceId F2S-AUD-DEVPLAN-D0-006",
+    "toolPath":  "plan/devplan/reviews/tools/Invoke-DevPlanAudit.ps1",
+    "toolSha256":  "b7d7f724ed08c24a27683b9532c6f959548139ebaff99cf7a1ab19e3605a6132"
+}

@@ -1,0 +1,49 @@
+{
+    "schemaVersion":  "1.0.0",
+    "probeId":  "F2S-SANDBOX-PROBE-001",
+    "status":  "NOT_RUN",
+    "capabilityState":  "UNVERIFIED",
+    "observedAtUtc":  "2026-07-11T07:17:50.3638535+00:00",
+    "controls":  [
+                     {
+                         "id":  "appcontainer-token",
+                         "required":  true,
+                         "state":  "NOT_RUN",
+                         "detail":  "Requires native CreateAppContainerProfile/DeriveAppContainerSid harness."
+                     },
+                     {
+                         "id":  "network-capability-empty",
+                         "required":  true,
+                         "state":  "NOT_RUN",
+                         "detail":  "Must prove network probe rejection from the actual worker token."
+                     },
+                     {
+                         "id":  "dedicated-job-root-acl",
+                         "required":  true,
+                         "state":  "NOT_RUN",
+                         "detail":  "Must prove writes outside the per-job root are denied."
+                     },
+                     {
+                         "id":  "job-object-kill-and-limits",
+                         "required":  true,
+                         "state":  "NOT_RUN",
+                         "detail":  "Must prove child termination, memory/process limits and no inherited handles."
+                     },
+                     {
+                         "id":  "breakaway-denied",
+                         "required":  true,
+                         "state":  "NOT_RUN",
+                         "detail":  "Must prove child/breakaway and handle escape attempts fail."
+                     }
+                 ],
+    "prerequisites":  {
+                          "windows":  true,
+                          "powershellArchitecture":  "X64",
+                          "appContainerApiAvailable":  true,
+                          "jobObjectApiAvailable":  true
+                      },
+    "notRunReason":  "Read-only preflight completed; native isolated worker harness is not built yet.",
+    "externalBlockers":  [
+                             "M09 native windows-appcontainer-v1 harness"
+                         ]
+}

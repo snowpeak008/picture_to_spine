@@ -1,0 +1,17 @@
+{
+  "schemaVersion": "1.0.0",
+  "rigId": "F2S-RIG-FIXTURE-001",
+  "timeBase": { "numerator": 1, "denominator": 30000 },
+  "bones": [
+    { "id": "root", "parent": null, "x": 0, "y": 0, "rotationMilliDegrees": 0 },
+    { "id": "body", "parent": "root", "x": 0, "y": 0, "rotationMilliDegrees": 0 },
+    { "id": "weapon", "parent": "body", "x": 48, "y": 72, "rotationMilliDegrees": -45000 }
+  ],
+  "slots": [
+    { "id": "body-slot", "bone": "body", "attachment": "body" },
+    { "id": "weapon-slot", "bone": "weapon", "attachment": "weapon" }
+  ],
+  "animations": {
+    "idle": { "durationTicks": 30000, "keys": [{ "tick": 0 }, { "tick": 30000 }] }
+  }
+}
