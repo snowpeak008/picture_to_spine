@@ -18,6 +18,9 @@
     "docs/maintenance/operations.md",
     "evidence/implementation/implementation-status.md",
     "evidence/implementation/final-validation.json",
+    "plan/NEWpic_reload/01-PSD分层资源包输入重设计.md",
+    "plan/NEWpic_reload/dev/00-PSD分层资源包原子开发计划.md",
+    "plan/NEWpic_reload/dev/01-原子任务卡-可执行版.md",
     "dist/FlashToSpine-Core/package-manifest.json"
   ],
   "ignore_missing": true

@@ -19,7 +19,9 @@
 
 2026-07-12 首次完成项目记忆同步：确认 FlashToSpine 是 Windows 闭源商业 Spine 4.2.43 Production Assist 内部候选；同步原生 Win32/WebView2 + React/Pixi + Rust 分层架构、人工审批门、开放格式/外部 Spine 边界、当前包与验证状态，并记录 WebView2 自身导航被拦截导致黑屏的修复规则。
 
-最新会话：`session_history/2026-07-12-001.md`。
+最新会话：`session_history/2026-07-12-002.md`。
+
+最新补充：用户实际试用确认当前“单图 + 手绘遮罩分层”主流程门槛过高；已裁定下一版应以 PSD / 透明 PNG LayerPack 资源包为主输入路径，允许受控重叠，以 draw order、pivot、socket、合成预览和人工审批管理质量。新增设计文档 `plan/NEWpic_reload/01-PSD分层资源包输入重设计.md`、顺序计划 `plan/NEWpic_reload/dev/00-PSD分层资源包原子开发计划.md`、可执行原子任务卡 `plan/NEWpic_reload/dev/01-原子任务卡-可执行版.md`。当前纯净项目已推送到 `https://github.com/snowpeak008/picture_to_spine`，远程 `main` 提交为 `1995b5d`。
 
 ---
 
@@ -29,7 +31,7 @@
 |---|---|---|
 | project_understanding/architecture.md | 已同步 | 2026-07-12 |
 | project_understanding/key_files.md | 已同步 | 2026-07-12 |
-| project_understanding/freshness.json | 有效（18 个关键文件） | 2026-07-12 |
+| project_understanding/freshness.json | 有效（20 个关键文件；dist 包 manifest 已清理后允许缺失） | 2026-07-12 |
 
 ---
 
@@ -64,4 +66,4 @@
 
 ## L4 待办决策
 
-当前重点：GUI 全业务链验收方案、真实 Spine 4.2.43 往返资源、私有远程 GPU transport 设计、旧 unsigned 项目迁移、clean-VM/签名/Release Gate，以及记忆写入的长期触发策略。详见 `decisions/open_questions.md`。
+当前重点：优先实现 LayerPack 最小闭环（NRD-001 至 NRD-019）、GUI 全业务链验收方案、真实 Spine 4.2.43 往返资源、私有远程 GPU transport 设计、旧 unsigned 项目迁移、clean-VM/签名/Release Gate，以及记忆写入的长期触发策略。详见 `decisions/open_questions.md`。

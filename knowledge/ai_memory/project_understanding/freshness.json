@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-12T11:26:19",
+  "generated_at": "2026-07-12T18:08:53",
   "files": {
     "AI_README.md": {
       "sha256": "9159b90b56061face7d621d52c50cc3c3b1cd1795b960e042b21132485ae8dd7",
@@ -10,8 +10,8 @@
       "size": 178
     },
     "knowledge/ai_memory/project_understanding/memory_config.json": {
-      "sha256": "325a2ca23d708ded47480179069625d0933eb447e113b0893d3e13314c0970e2",
-      "size": 804
+      "sha256": "2e1369fe49cfc9c0600124a4bb74de12435d7fc41e61b81831b1a962c62d240f",
+      "size": 1008
     },
     "README.md": {
       "sha256": "a37acb72ca38ea2dee6edc6c9109d11a7b70ea7eef4899a89874d1cf75211fbd",
@@ -69,9 +69,17 @@
       "sha256": "694ff2ef3ba4cc24048c6dca23b597bf94c86aaf4b1c7a90466effc6d7c4c333",
       "size": 3127
     },
-    "dist/FlashToSpine-Core/package-manifest.json": {
-      "sha256": "648b6976f011a4841e57c7c5db9291628109e6d019d1f082edbf843eca32b74d",
-      "size": 2948
+    "plan/NEWpic_reload/01-PSD分层资源包输入重设计.md": {
+      "sha256": "2bcf690df1d49f388d4575807cb2bcb5ea49ad914e6bdeb3cb874d599099751f",
+      "size": 20417
+    },
+    "plan/NEWpic_reload/dev/00-PSD分层资源包原子开发计划.md": {
+      "sha256": "f309df20adf64b50bdea22e74dddc96e6b3feb28367f0f9bf7292ad672a3e6fe",
+      "size": 31165
+    },
+    "plan/NEWpic_reload/dev/01-原子任务卡-可执行版.md": {
+      "sha256": "9d69841e4a4e76b677854af185ebe230e5f67facaa599848306f0a04c24d16bc",
+      "size": 35680
     }
   }
 }
